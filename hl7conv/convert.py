@@ -1,4 +1,4 @@
-from util import split_segments
+from .util import split_segments
 
 
 def split_hl7_parent_field_to_json(parent_key: int, parent_value: str) -> dict:

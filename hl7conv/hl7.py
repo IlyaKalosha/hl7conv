@@ -1,4 +1,4 @@
-from convert import convert_hl7_to_json
+from .convert import convert_hl7_to_json
 
 
 class HL7:
