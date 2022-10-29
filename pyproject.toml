@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "hl7conv"
+version = "0.1.0"
+description = ""
+authors = ["IlyaKalosha1 <ikalosha@remedypointsolutions.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
