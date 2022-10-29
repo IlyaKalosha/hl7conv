@@ -1,7 +1,9 @@
 import logging
-from .hl7 import HL7
 
-__all__ = ["HL7"]
+from .hl7json import HL7JSON
+
+
+__all__ = ["HL7JSON"]
 
 # setup library logging
 logging.getLogger(__name__).addHandler(logging.NullHandler())
