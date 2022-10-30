@@ -75,7 +75,7 @@ class HL7JSON:
     @staticmethod
     def _split_hl7_parent_field_to_json(parent_key: int, parent_value: str) -> dict:
         list_of_sub_fields: list = parent_value.split("^")
-        children_json = dict(enumerate(list_of_sub_fields, start=1))
-        for key in children_json.copy().keys():
-            children_json[f"{parent_key}.{key}"] = children_json.pop(key)
+        children_json = dict()
+        for key, value in enumerate(list_of_sub_fields, start=1):
+            children_json[f"{parent_key}.{key}"] = value
         return children_json
