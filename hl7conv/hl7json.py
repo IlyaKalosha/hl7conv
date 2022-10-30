@@ -80,6 +80,5 @@ class HL7JSON:
             children_json[f"{parent_key}.{key}"] = value
         return children_json
 
-    """
-    test comment
-    """
+
+
