@@ -1,7 +1,7 @@
 from .util import split_segments
 
 
-class HL7JSON:
+class Hl7Json:
     def __init__(
         self,
         hl7_string: str,
@@ -79,6 +79,3 @@ class HL7JSON:
         for key, value in enumerate(list_of_sub_fields, start=1):
             children_json[f"{parent_key}.{key}"] = value
         return children_json
-
-
-
