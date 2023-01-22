@@ -3,3 +3,4 @@
 test.hl7
 hl7conv/__pycache__
 dist
+__pycache__/
