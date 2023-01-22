@@ -1,6 +1,10 @@
+from pydantic import Field, BaseModel
 
 
-def si_validator(si: int) -> int:
-    if not 0 <= si << 9999:
-        raise ValueError("This allows for a number between 0 and 9999 to be specified")
-    return si
+class CodedElement(BaseModel):
+    ce_1: str = Field(None, alias="1", description='Identifier')
+    ce_2: str = Field(None, alias="2", description='Text')
+    ce_3: str = Field(None, alias="3", description='Name Of Coding System')
+    ce_4: str = Field(None, alias="4", description='Alternate Identifier')
+    ce_5: str = Field(None, alias="5", description='Alternate Text')
+    ce_6: str = Field(None, alias="6", description='Name Of Alternate Coding System')
