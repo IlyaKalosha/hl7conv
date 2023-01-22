@@ -1,8 +1,8 @@
 from pydantic import BaseModel, Field, validator
 
-from hl7conv.schemas.general_types import CodedElement
 from hl7conv.schemas.versions.v2_5_1.enums import ValueType
 from hl7conv.schemas.versions.v2_5_1.primitive_validators import si_validator
+from hl7conv.schemas.versions.v2_5_1.types import CodedElement
 
 
 class OBX(BaseModel):
