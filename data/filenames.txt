@@ -1,163 +1,283 @@
-SEX
-MARITAL STATUS
-EVENT TYPE CODE
-PATIENT CLASS
-RACE
-RELIGION
-ADMISSION TYPE
-ACKNOWLEDGMENT CODE
-AMBULATORY STATUS
-PHYSICIAN ID
-CHARGING SYSTEM
-STOCK LOCATION
-ISOLATION
-TRANSACTION TYPE
-PATIENT TYPE
-ANESTHESIA CODE
-UNUSED TABLE
-BAD DEBT AGENCY CODE
-BILLING STATUS
-ADMIT SOURCE
-FEE SCHEDULE
-PRIORITY (COMPONENT 6 QTY/TIMING[735])
-CHARGE/PRICE INDICATOR
-ROUTE
-SITE ADMINISTERED
-UNITS OF MEASURE - ISO528,1977
-ORDER STATUS
-INS. COMPANY PLAN CODE
-CONDITION CODE
-CONTRACT CODE
-COURTESY CODE
-CREDIT RATING
-WHAT SUBJECT FILTER
-DEPARTMENT CODE
-ACCIDENT CODE
-DIAGNOSIS CODE
-DIAGNOSIS TYPE
-DIAGNOSIS CODING METHOD
-DRG CODE
-DRG GROUPER REVIEW CODE
-CONSENT CODE
-ERROR CODE
-CHECK DIGIT SCHEME
-EVENT REASON
-RELATIONSHIP
-FINANCIAL CLASS
-ACTION CODE
-EMPLOYMENT STATUS
-GUARANTOR TYPE
-HOSPITAL SERVICE
-SOURCE OF SPECIMEN
-INS. PLAN ID
-INTEREST RATE CODE
-DIAGNOSTIC SERVICE SECTION ID
-REPORT TYPES
-MESSAGE TYPE
-ABNORMAL FLAGS
-LOCATION
-NATURE OF ABNORMAL TESTING
-OUTLIER TYPE
-PERFORMED BY
-OBSERVATION RESULT STATUS CODES INTERPRETATION
+Sex
+Marital Status
+Event Type
+Patient Class
+Race
+Religion
+Admission Type
+Acknowledgement Code
+Ambulatory Status
+Physician ID
+Transaction Type
+Patient Type
+Anesthesia Code
+Bad Dept Agency Code
+Billing Status
+Admit Source
+Fee Schedule
+Priority
+Charge/Price Indicator
+Order Status
+Company Plan Code
+Condition Code
+Contract Code
+Courtesy Code
+Credit Rating
+What Subject Filter
+Department Code
+Accident Code
+Diagnosis Code
+Diagnosis Type
+Diagnosis Coding Methed
+DRG Code
+DRG Grouper Review Code
+Consent Code
+Check Digit Scheme
+Event Reason
+Relationship
+Financial Class
+Specimen Action Code
+Employment Status
+Guarantor Relationship
+Hospital Service
+Specimen Source Codes
+Insurance Plan ID
+Interest Rate Code
+Diagnostic Service Section ID
+Message Type
+Abnormal Flags
+Location
+Nature of Abnormal Testing
+Outlier Type
+Performed By
+Observation Result Status Codes Interpretation
 Plan ID
-PRE-ADMIT TESTING
-PROCEDURE CODE
-PROCEDURE CODING METHOD
-PROCEDURE TYPE
-QUERY PRIORITY
-RE-ADMISSION INDICATOR
-RELEASE OF INFORMATION
-REPORT OF ELIGIBILITY
-TYPE OF AGREEMENT CODE
-VIP INDICATOR
-WHEN TO CHARGE
-DISPLAY LEVEL
-DELAYED ACKNOWLEDGMENT TYPE
-PROCESSING ID
-VERSION ID
-SOURCE OF COMMENT
-QUERY FORMAT CODE
-DEFERRED RESPONSE TYPE
-QUERY RESULTS LEVEL
-REPORT PRIORITY
-TRANSFER TO BAD DEBT CODE
-DELETE ACCOUNT CODE
-DISCHARGE DISPOSITION
-DISCHARGED TO LOCATION
-DIET TYPE
-SERVICING FACILITY
-BED STATUS
-ACCOUNT STATUS
-MAJOR DIAGNOSTIC CATEGORY
-ORDER CONTROL
-RESPONSE FLAG
-CHARGE TYPE
-RESULT STATUS - OBR
-TRANSPORTATION MODE
-VALUE TYPE
-QUANTITY LIMITED REQUEST
-ALLERGY TYPE
-ALLERGY SEVERITY
-ACCOMODATION CODE
-VISIT USER CODE
-CONTRACT ROLE
-TRANSACTION CODE
-PROCEDURE PRACTITIONER TYPE
-ASSIGNMENT OF BENEFITS
-Y/N Indicator
-MAIL CLAIM PARTY
-EMPLOYER INFORMATION DATA
-CHAMPUS SERVICE
-CHAMPUS RANK/GRADE
-CHAMPUS STATE
-NON-COVEREDINSURANCE CODE
-ELIGIBILITY SOURCE
+Pre-admit Test Indicator
+Procedure Code
+Procedure Coding Method
+Query Priority
+Re-admission Indicator
+Release Information
+Type of Agreement
+VIP Indicator
+When to Charge
+Delayed Acknowledgement Type
+Processing ID
+Version ID
+Source of Comment
+Query/Response Format Code
+Deferred Response Type
+Query Results Level
+Report Priority
+Transfer to Bad Debt Code
+Delete Account Code
+Discharged Disposition
+Discharged to Location
+Diet Type
+Servicing Facility
+Bed Status
+Account Status
+Major Diagnostic Category
+Order Control Code
+Response Flag
+Charge Type
+Result Status
+Transportation Mode
+Value Type
+Quantity Limited Request
+Allergy Type
+Allergy Severity
+Accommodation Code
+Visit User Code
+Contact Role
+Transaction Code
+Procedure Practitioner Identifier Code Type
+Assignment of Benefits
+Yes/No Indicator
+Mail Claim Party
+Employer Information Data
+Champus Service
+Champus Rank/Grade
+Champus Status
+Non-covered Insurance Code
+Eligibility Source
 Room Type
-AMOUNT TYPE
-POLICY TYPE
-PENALTY TYPE
-DAY TYPE
-PRECERTIFICATION PATIENT TYPE
-SECOND OPINION STATUS
-SECOND OPINION DOCUMENTATION RECEIVED
-VALUE CODE
-ACCEPT/APPLICATION ACKNOWLEDGEMENT CONDITIONS
-DATE/TIME QUALIFIER
-WHIHC DATE/TIME STATUS QUALIFIER
-DATE/TIME SELECTION QUALIFIER
-DIET TYPE
-TRAY TYPE
-ALLOW SUBSTITUTION
-ROUTE OF ADMINISTRATION
-ADMINISTRIVE SITE
-ADMINISTRATION DEVICE
-ADMINISTRATION METHOD
-RX COMPONENT TYPE
-SUBSTITUTION STATUS
-PROCESSING PRIORITY
-REPORTIN PRIORITY
-DERIVED SPECIMEN
+Amount Type
+Policy Type
+Penalty Type
+Day Type
+Pre-certification Patient Type
+Second Opinion Status
+Second Opinion Documentation Received
+Value Code
+Accept/Application Acknowledgement Conditions
+Which Date/Time Qualifier
+Which Date/Time Status Qualifier
+Date/Time Selection Qualifier
+Diet Type
+Tray Type
+Allow Substitution
+Route of Administration
+Administrative Site
+Adminstration Device
+Administration Method
+RX Component Type
+Substitution Status
+Processing Priority
+Reporting Priority
+Derived Specimen
 Country Code
-VETERANS MILITARY STATUS
-COORDINATION OF BENEFITS
-NATURE OF TEST/OBSERVATION
-MASTER FILE IDENTIFIER CODE
-MASTER FILE APPLICATION IDENTIFIER
-CONFIDENTIALITY CODE
-FILE-LEVEL EVENT CODE
+Veterans Military Status
+Coordination of Benefits
+Nature of Test/Observation
+Master File Identifier Code
+Master File Application Identifier
+Confidentiality code
+File Level Event Code
 Response Level
-REcord Level Event Code
-MFN Recode-Level Error Return
+Record Level Event Code
+MFN Record Level Error Return
 Staff Type
 Active/Inactive
 Department
-Preferred Method Of Contrct
+Preferred Method of Contact
 Practioner Category
-Provider billing
+Provider Billing
 Operator ID
 Ethnic Group
-Adress Type
-Type Of Data
-Visit Id type
+Address Type
+Main type of referenced Data
+Visit ID Type
 Amount Class
+Name Type
+Telecommunication Use Code
+Telecommunication Equipment Type
+Identifier Type
+Organizational Name Type
+Price Type
+Segment Action Code
+Processing Mode
+Query Response Status
+Relational Operator
+Relational Conjunction
+Alternate Character Sets
+Nationality
+Purge Status
+Special Program Codes
+Publicity Code
+Patient Status
+Visit Priority
+Charge Adjustment
+Recurring Service
+Living Arrangements
+Contact Reason
+Living Dependency
+Transport Arranged
+Escort Required
+Manufacturers of Vaccines
+Diagnosis Classification
+Outlier Type
+Procedure Functional Type
+Student Status
+Insurance Company Contact Reason
+Non-concur Code/Description
+Report Timing
+Report Source
+Reported To
+Event Qualification
+Event Seriousness
+Event Expected
+Event Consequence
+Patient Outcome
+Primary Observer's Qualification
+Identity may be Divulged
+Single Use Device
+Product Problem
+Product Available for Inspection
+Start of Evaluation
+Product Source
+Generic Product
+Relatedness Assessment
+Action Taken in Response to the Event
+Causality Observations
+Indirect Exposure Mechanism
+Kind of Quantity
+Duration Categories
+Time Delay Post Challenge
+Nature of Challenge
+Relationship Modifier
+Modality
+Patient Location Type
+Location Equipment
+Privacy Level
+Level of Care
+Location Department
+Specialty Type
+Days of the Week
+Override
+Charge on Indicator
+Report Type Code
+Document Completion Status
+Document Confidentiality Status
+Document Availability Status
+Document Storage Status
+Appointment Reason Codes
+Appointment Type Codes
+Filler Status Codes
+Allow Substitution Codes
+Referral Priority
+Referral Type
+Referral Disposition
+Referral Status
+Referral Category
+Insurance Company ID Codes
+Provider Role
+Action Code
+Census Tract
+County/parish
+MIME base64 encoding Characters
+Subtype of Referenced Data
+Vaccines Administered
+Billing Category
+Time Selection Criteria Parameter Class Codes
+Handicap
+Language
+CN ID source
+CP Range Type
+Encoding
+Namespace ID
+Universal ID type
+Point Of Care
+Room
+Bed
+Person Location Type
+Location Status
+Building
+Floor
+Coverage Type
+Job Status
+Policy Scope
+Policy Source
+Living Will
+Organ Donor
+Annotations
+Department Cost Center
+Item Natural Account Code
+Dispense Method
+Completion Status
+Action Code
+Location Characteristic ID
+Location Relationship ID
+Visit Indicator
+Job Class
+Employee Classification
+Quantity Method
+Marketing Basis
+Facility Type
+Network Source Type
+Driver´s License Issuing Authority
+Disabled Person
+Repeat Pattern
+Referral Reason
+Certification Status
+Practitioner ID number type

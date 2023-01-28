@@ -10,7 +10,7 @@ headers = {
     (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
 }
 
-responce = requests.get('http://www.hl7.eu/HL7v2x/v22/hl7v22tab.htm', headers=headers)
+responce = requests.get('http://www.hl7.eu/HL7v2x/v23/hl7v23tab.htm', headers=headers)
 
 soup = BeautifulSoup(responce.text, 'lxml')
 
@@ -30,12 +30,12 @@ for href in range(0, len(aa_href), 5):
     all_hrefs.append(aa_href[href].find('a').get('href'))
 
 for z in all_hrefs:
-    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\hrefs.txt', 'a') as file:
+    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\hrefs.txt', 'a', encoding='utf-8') as file:
         file.write(z + '\n')
     file.close()
 
 for z in filename:
-    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\filenames.txt', 'a') as file:
+    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\filenames.txt', 'a', encoding='utf-8') as file:
         file.write(z + '\n')
     file.close()
 
