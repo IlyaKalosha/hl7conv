@@ -10,7 +10,7 @@ headers = {
     (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
 }
 
-responce = requests.get('http://www.hl7.eu/HL7v2x/v21/hl7v21tab.htm', headers=headers)
+responce = requests.get('http://www.hl7.eu/HL7v2x/v22/hl7v22tab.htm', headers=headers)
 
 soup = BeautifulSoup(responce.text, 'lxml')
 
