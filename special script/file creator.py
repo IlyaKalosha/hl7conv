@@ -11,9 +11,9 @@ headers = {
 
 }
 
-url = 'http://www.hl7.eu/HL7v2x/v251/'
-filename_len = open('/data/filenames.txt', 'r').readlines()
-all_urls = open('/data/hrefs.txt', 'r').readlines()
+url = 'http://www.hl7.eu/HL7v2x/v21/'
+filename_len = open('../data/filenames.txt', 'r').readlines()
+all_urls = open('../data/hrefs.txt', 'r').readlines()
 filename_len_without_n = [x.replace('\n', '').replace("'", ' ').replace('/', '-').replace(',', ' ').replace('\t', '') for x in filename_len]
 filename_for_class = [x.replace('\n', '').replace("'", ' ').replace('/', '-').replace(',', ' ')\
                           .replace('\t', '').replace(' ', '').replace('-', '_') for x in filename_len]

@@ -1,476 +1,105 @@
-Administrative Sex
-Marital Status
-Event type
-Patient Class
-Race
-Religion
-Admission Type
-Acknowledgment code
-Ambulatory Status
-Physician ID
-Transaction Type
-Patient Type
-Anesthesia Code
-Bad Debt Agency Code
-Billing Status
-Admit Source
-Fee Schedule
-Priority
-Charge or Price Indicator
-Order status
-Company Plan Code
-Condition Code
-Contract Code
-Courtesy Code
-Credit Rating
-What subject filter
-Department Code
-Accident Code
-Diagnosis Code
-Diagnosis Type
-Diagnosis Coding Method
-Diagnosis related group
-DRG grouper review code
-Consent Code
-Check digit scheme
-Event reason
-Relationship
-Financial class
-Specimen Action Code
-Employment Status
-Guarantor Type
-Hospital Service
-Specimen Source Codes
-Insurance Plan ID
-Interest Rate Code
-Diagnostic Service Section ID
-Message type
-Abnormal flags
-Nature of Abnormal Testing
-Outlier Type
-Performed by
-Observation result status codes interpretation
+SEX
+MARITAL STATUS
+EVENT TYPE CODE
+PATIENT CLASS
+ETHNIC GROUP
+RELIGION
+ADMISSION TYPE
+ACKNOWLEDGMENT CODE
+AMBULATORY STATUS
+PHYSICIAN ID
+CHARGING SYSTEM
+STOCK LOCATION
+ISOLATION
+TRANSACTION TYPE
+PATIENT TYPE
+ANESTHESIA CODE
+UNUSED TABLE
+BAD DEBT AGENCY CODE
+BILLING STATUS
+ADMIT SOURCE
+FEE SCHEDULE
+PRIORITY (COMPONENT 6 QTY/TIMING[735])
+CHARGE/PRICE INDICATOR
+ROUTE
+SITE ADMINISTERED
+UNITS OF MEASURE - ISO528,1977
+ORDER STATUS
+INS. COMPANY PLAN CODE
+CONDITION
+CONTRACT CODE
+COURTESY CODE
+CREDIT RATING
+DANGER CODE
+WHAT SUBJECT FILTER
+DEPARTMENT CODE
+ACCIDENT CODE
+DIAGNOSIS CODE
+DIAGNOSIS TYPE
+DIAGNOSIS CODING METHOD
+DRG CODE
+DRG GROUPER REVIEW CODE
+DRUG CODE
+CONSENT CODE
+ERROR CODE
+CHECK DIGIT SCHEME
+EVENT REASON
+RELATIONSHIP
+FINANCIAL CLASS
+ACTION CODE
+EMPLOYMENT STATUS
+GUARANTOR TYPE
+HOSPITAL SERVICE
+SOURCE OF SPECIMEN
+INS. PLAN ID
+INTEREST RATE CODE
+DIAGNOSTIC SERVICE SECTION ID
+REPORT TYPES
+MESSAGE TYPE
+ABNORMAL FLAGS
+LOCATION
+NATURE OF ABNORMAL TESTING
+NOTICE OF ADMISSION
+OUTLIER TYPE
+PERFORMED BY
+OBSERVATION RESULT STATUS
 Plan ID
-Pre-Admit Test Indicator
-Procedure Code
-Procedure Coding Method
-Query priority
-Re-Admission Indicator
-Release Information
-Type of Agreement
-VIP Indicator
-Invocation event
-Processing ID
-Version ID
-Source of comment
-Query or response format code
-Deferred response type
-Query results level
-Report priority
-Transfer to Bad Debt Code
-Delete Account Code
-Discharge Disposition
-Discharged to location
-Diet Type
-Servicing Facility
-Bed Status
-Account Status
-Major Diagnostic Category
-Order control codes
-Response flag
-Charge type
-Result Status
-Transportation Mode
-Value type
-Quantity limited request
-Allergen Type
-Allergy Severity
-Accommodation code
-Visit User Code
-Contact Role
-Transaction Code
-Procedure Practitioner Identifier Code Type
-Assignment of Benefits
-Yes or no indicator
-Mail Claim Party
-Employer Information Data
-Military Service
-Military Rank or Grade
-Military Status
-Non-covered Insurance Code
-Eligibility Source
-Room type
-Amount type
-Policy type
-Money or percentage indicator
-Day type
-Certification patient type
-Second Opinion Status
-Second Opinion Documentation Received
-Value code
-Accept or application acknowledgment conditions
-Which date or time qualifier
-Which date or time status qualifier
-Date or time selection qualifier
-Diet Code Specification Type
-Tray Type
-Allow Substitution
-Route of Administration
-Body site
-Administration Device
-Administration Method
-RX Component Type
-Substitution Status
-Processing priority
-Reporting priority
-Derived specimen
-Citizenship
-Veterans Military Status
-Coordination of Benefits
-Nature of Service or Test or Observation
-Master file identifier code
-Confidentiality code
-File level event code
-Response level
-Record-level event code
-MFN record-level error return
-Staff type
-Active or Inactive
-Department
-Preferred method of contact
-Practitioner category
-Provider billing
-Operator ID
-Ethnic Group
-Address type
-Type of referenced data
-Amount class
-Name type
-Telecommunication use code
-Telecommunication equipment type
-Identifier type
-Organizational name type
-Price type
-Segment action code
-Processing mode
-Query Response Status
-Relational operator
-Relational conjunction
-Alternate character sets
-Nationality
-Purge Status Code
-Special Program Code
-Publicity Code
-Patient Status Code
-Visit Priority Code
-Patient Charge Adjustment
-Recurring Service Code
-Living Arrangement
-Contact Reason
-Living Dependency
-Transport Arranged
-Escort Required
-Manufacturers of Vaccines (code=MVX)
-Diagnosis Classification
-DRG Payor
-Procedure Functional Type
-Student Status
-Insurance Company Contact Reason
-Non-Concur Code or Description
-Report timing
-Report source
-Event Reported To
-Event Qualification
-Event Seriousness
-Event Expected
-Event Consequence
-Patient Outcome
-Primary Observer's Qualification
-Identity May Be Divulged
-Single Use Device
-Product Problem
-Product Available for Inspection
-Status of Evaluation
-Product source
-Generic Product
-Relatedness Assessment
-Action Taken in Response to the Event
-Causality Observations
-Indirect exposure mechanism
-Kind of quantity
-Duration categories
-Time delay post challenge
-Nature of challenge
-Relationship modifier
-Modality
-Patient location type
-Location Equipment
-Privacy Level
-Level of Care
-Location Department
-Specialty Type
-Days of the week
-Override
-Charge On Indicator
-Document Type
-Document completion status
-Document Confidentiality Status
-Document Availability Status
-Document Storage Status
-Appointment reason codes
-Appointment Type Codes
-Filler status codes
-Allow Substitution Codes
-Referral priority
-Referral type
-Referral disposition
-Referral status
-Referral category
-Insurance company ID codes
-Provider role
-Problem or Goal Action Code
-Census tract
-County or parish
-Subtype of Referenced Data
-Vaccines administered
-Billing Category
-Time selection criteria parameter class codes
-Handicap
-Primary Language
-CN ID source
-CP Range Type
-Encoding
-Namespace ID
-Universal ID type
-Point of care
-Room
-Bed
-Person location type
-Location status
-Building
-Floor
-Coverage Type
-Job Status
-Policy Scope
-Policy Source
-Living Will Code
-Organ Donor Code
-Annotations
-Department Cost Center
-Item Natural Account Code
-Dispense Method
-Completion Status
-Action Code
-Location characteristic ID
-Location Relationship ID
-Visit Indicator
-Job code
-Employee classification
-Quantity method
-Marketing basis
-Facility type
-Source type
-Driver's license issuing authority
-Disabled Person Code
-Repeat pattern
-Referral reason
-Certification status
-Practitioner ID number type
-Advanced Beneficiary Notice Code
-Procedure code modifier
-Guarantor Credit Rating Code
-Military Recipient
-Military Handicapped Program Code
-Patient's Relationship to Insured
-Appeal Reason
-Certification Agency
-State or province
-Special Program Indicator
-PSRO or UR Approval Indicator
-Occurrence code
-Occurrence span
-CWE statuses
-Message structure
-Primary key value type
-Alternate character set handling scheme
-Message error condition codes
-Practitioner group
-Diagnosis Priority
-Degree or license or certificate
-Application
-Facility
-Assigning authority
-Comment type
-Equipment state
-Local/remote control state
-Alert level
-Remote control command
-Specimen Role
-Container status
-Additive/Preservative
-Specimen component
-Treatment
-System induced contaminants
-Artificial blood
-Special Handling Code
-Other environmental factors
-Carrier type
-Tray type
-Separator type
-Cap type
-Drug interference
-Substance status
-Substance type
-Manufacturer identifier
-Supplier identifier
-Command response
-Processing type
-Analyte repeat status
-Segment group
-Match reason
-Match algorithms
-Response modality
-Modify indicator
-Coding system
-Sequencing
-Continuation style code
-Country code
-Government reimbursement program
-School type
-Language Ability
-Language Proficiency
-Organization Unit
-Participant Organization Unit Type
-Application change type
-Supplemental Service Information Values
-Category Identifier
-Consent Identifier
-Units of Time
-DRG Transfer Type
-Procedure DRG Type
-Tissue Type Code
-Procedure Priority
-Severity of Illness Code
-Triage Code
-Case Category Code
-Gestation Category Code
-Newborn Code
-Blood Product Code
-Risk Management Incident Code
-Incident Type Code
-Production Class Code
-Mode of Arrival Code
-Recreational Drug Use Code
-Admission Level of Care Code
-Precaution Code
-Patient Condition Code
-Advance Directive Code
-Sensitivity to Causative Agent Code
-Alert Device Code
-Allergy Clinical Status
-Data types
-Immunization Registry Status
-Location Service Code
-Provider role
-Name assembly order
-Identity Reliability Code
-Species Code
-Breed Code
-Name context
-Event type
-Substance identifier
-Health care provider type code
-Health care provider classification
-Health care provider area of specialization
-Type of Bill Code
-Revenue code
-Overall Claim Disposition Code
-OCE Edit Code
-Reimbursement Action Code
-Denial or Rejection Code
-License Number
-Location cost center
-Inventory Number
-Facility ID
-Name/address representation
-Ambulatory Payment Classification Code
-Modifier Edit Code
-Payment Adjustment Code
-Packaging Status Code
-Reimbursement Type Code
-Query name
-TQ conjunction ID
-Formulary Status
-Practitioner Organization Unit Type
-Charge Type Reason
-Medically Necessary Duplicate Procedure Reason
-Controlled Substance Schedule
-Formulary Status
-Pharmaceutical Substances
-Pharmacy Order Types
-Order Type
-Authorization Mode
-Dispense Type
-Extended Priority Codes
-Specimen Type
-Specimen Collection Method
-Risk Codes
-Specimen Reject Reason
-Specimen Quality
-Specimen Appropriateness
-Specimen Condition
-Specimen Child Role
-Body Site Modifier
-Consent Type
-Consent Mode
-Consent Status
-Consent Bypass Reason
-Consent Disclosure Level
-Consent Non-Disclosure Reason
-Non-Subject Consenter Reason
-Sequence/Results Flag
-Sequence Condition Code
-Cyclic Entry/Exit Indicator
-Service Request Relationship
-Observation Result Handling
-Blood Product Processing Requirements
-Indication For Use
-Blood Product Dispense Status
-BP Observation Status Codes Interpretation
-Commercial Product
-Blood Product Transfusion/Disposition Status
-Transfusion Adverse Reaction
-Transfusion Interrupted Reason
-Error severity
-Inform person code
-Override type
-Override reason
-Override code
-Computation type
-Sequence condition
-Privilege
-Privilege class
-Calendar alignment
-Event related period
-Precision
-Organization, agency, department	
-Institution
-Expanded yes/no indicator
-Application error code
-Notify Clergy Code
-Signature Code
-Certificate Status
-Institution
-Institution Relationship Type
-Cost Center Code
-Inactive Reason Code
-Specimen Type Modifier
-Specimen Source Type Modifier
-Specimen Collection Site
-Container Condition
-Language Translated To
-Jurisdictional Breadth
-Signatory's Relationship to Subject
-NDC Codes
-Body Parts
-Advanced beneficiary notice override reason
+PRE-ADMIT TESTING
+PROCEDURE CODE
+PROCEDURE CODING METHOD
+PROCEDURE TYPE
+QUERY PRIORITY
+RE-ADMISSION INDICATOR
+RELEASE OF INFORMATION
+REPORT OF ELIGIBILITY
+FINANCIAL TRANSACTION CODE
+TYPE OF AGREEMENT CODE
+VIP INDICATOR
+WHEN TO CHARGE
+DISPLAY LEVEL
+DELAYED ACKNOWLEDGMENT TYPE
+PROCESSING ID
+VERSION CONTROL TABLE
+SOURCE OF COMMENT
+QUERY FORMAT CODE
+DEFERRED RESPONSE TYPE
+QUERY RESULTS LEVEL
+REPORT PRIORITY
+TRANSFER TO BAD DEBT CODE
+DELETE ACCOUNT CODE
+DISCHARGED DISPOSITION
+DISCHARGED TO LOCATION
+DIET TYPE
+SERVICING FACILITY
+BED STATUS
+ACCOUNT STATUS
+MAJOR DIAGNOSTIC CATEGORY
+ORDER CONTROL
+RESPONSE FLAG
+CHARGE TYPE
+RESULT STATUS - OBR
+TRANSPORTATION MODE
+VALUE TYPE
+QUANTITY LIMITED REQUEST
+Room Type
+Country Code

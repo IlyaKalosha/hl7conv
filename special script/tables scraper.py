@@ -10,7 +10,7 @@ headers = {
     (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
 }
 
-responce = requests.get('http://www.hl7.eu/HL7v2x/v251/hl7v251tab.htm', headers=headers)
+responce = requests.get('http://www.hl7.eu/HL7v2x/v21/hl7v21tab.htm', headers=headers)
 
 soup = BeautifulSoup(responce.text, 'lxml')
 
@@ -20,17 +20,22 @@ aa_href = table_values.find_all('td', class_='table')
 
 
 
-# filename = []
-# all_hrefs = []
+filename = []
+all_hrefs = []
 
-# for file in range(1, len(aa_href), 5):
-#     filename.append(aa_href[file].text)
-#
-# for href in range(0, len(aa_href), 5):
-#     all_hrefs.append(aa_href[href].find('a').get('href'))
-#
-# for z in filename:
-#     with open('../data/filenames.txt', 'a') as file:
-#         file.write(z + '\n')
-#     file.close()
+for file in range(1, len(aa_href), 5):
+    filename.append(aa_href[file].text)
+
+for href in range(0, len(aa_href), 5):
+    all_hrefs.append(aa_href[href].find('a').get('href'))
+
+for z in all_hrefs:
+    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\hrefs.txt', 'a') as file:
+        file.write(z + '\n')
+    file.close()
+
+for z in filename:
+    with open('C:\\Users\\Stas\\Desktop\\hl7conv\\data\\filenames.txt', 'a') as file:
+        file.write(z + '\n')
+    file.close()
 
