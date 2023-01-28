@@ -1,5 +1,4 @@
-from .util import split_segments
-
+from util import split_segments
 
 class Hl7Json:
     def __init__(
@@ -79,3 +78,9 @@ class Hl7Json:
         for key, value in enumerate(list_of_sub_fields, start=1):
             children_json[f"{parent_key}.{key}"] = value
         return children_json
+
+hl = Hl7Json('hl7exp')
+
+hl7_file = hl.from_file('C:/Users/Stas/Desktop/hl7conv/hl7conv/hl7_example.txt')
+for i in hl7_file._convert_hl7_to_json():
+    print(i)
