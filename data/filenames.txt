@@ -1,11 +1,11 @@
 Administrative Sex
 Marital Status
-Event type
+Event Type
 Patient Class
 Race
 Religion
 Admission Type
-Acknowledgment code
+Acknowledgment Code
 Ambulatory Status
 Physician ID
 Transaction Type
@@ -23,36 +23,34 @@ Condition Code
 Contract Code
 Courtesy Code
 Credit Rating
-What subject filter
 Department Code
 Accident Code
 Diagnosis Code
 Diagnosis Type
-Diagnosis related group
-DRG grouper review code
+Diagnosis Related Group
+DRG Grouper Review Code
 Consent Code
-Check digit scheme
-Event reason
+Check Digit Scheme
+Event Reason
 Relationship
-Financial class
+Financial Class
 Specimen Action Code
 Employment Status
 Guarantor Type
 Hospital Service
-Specimen Source Codes
-Insurance Plan ID
+Insurance plan ID
 Interest Rate Code
 Diagnostic Service Section ID
-Message type
-Abnormal flags
+Message Type
+Interpretation Codes
 Nature of Abnormal Testing
 Outlier Type
 Performed by
-Observation result status codes interpretation
+Observation Result Status Codes Interpretation
 Plan ID
 Pre-Admit Test Indicator
 Procedure Code
-Query priority
+Query Priority
 Re-Admission Indicator
 Release Information
 Type of Agreement
@@ -60,35 +58,31 @@ VIP Indicator
 Invocation event
 Processing ID
 Version ID
-Source of comment
-Query/response format code
-Deferred response type
-Query results level
-Report priority
+Source of Comment
 Transfer to Bad Debt Code
 Delete Account Code
 Discharge Disposition
-Discharged to location
+Discharged to Location
 Diet Type
 Servicing Facility
 Bed Status
 Account Status
 Major Diagnostic Category
-Order control codes
-Response flag
-Charge type
+Order Control Codes
+Response Flag
+Charge Type
 Result Status
 Transportation Mode
-Value type
-Quantity limited request
+Value Type
+Quantity Limited Request
 Allergen Type
 Allergy Severity
-Accommodation code
+Accommodation Code
 Visit User Code
 Contact Role
 Transaction Code
 Assignment of Benefits
-Yes/no indicator
+Yes/no Indicator
 Mail Claim Party
 Employer Information Data
 Military Service
@@ -96,64 +90,61 @@ Military Rank/Grade
 Military Status
 Non-covered Insurance Code
 Eligibility Source
-Room type
-Amount type
-Policy type
-Money or percentage indicator
-Day type
-Certification patient type
+Room Type
+Amount Type
+Policy Type
+Money or Percentage Indicator
+Day Type
+Certification Patient Type
 Second Opinion Status
 Second Opinion Documentation Received
-Value code
-Accept/application acknowledgment conditions
-Which date/time qualifier
-Which date/time status qualifier
-Date/time selection qualifier
+Value Code
+Accept/Application Acknowledgment Conditions
 Diet Code Specification Type
 Tray Type
 Allow Substitution
 Route of Administration
-Body site
+Body Site
 Administration Device
 Administration Method
 RX Component Type
 Substitution Status
-Processing priority
-Reporting priority
-Derived specimen
+Processing Priority
+Reporting Priority
+Derived Specimen
 Citizenship
 Veterans Military Status
 Coordination of Benefits
 Nature of Service/Test/Observation
-Master file identifier code
-Confidentiality code
-File level event code
-Response level
-Record-level event code
-MFN record-level error return
+Master File Identifier Code
+Confidentiality Code
+File Level Event Code
+Response Level
+Record-level Event Code
+MFN Record-level Error Return
 Staff type
 Active/Inactive
 Department
-Preferred method of contact
-Practitioner category
-Provider billing
+Preferred Method of Contact
+Practitioner Category
+Provider Billing
 Operator ID
 Ethnic Group
-Address type
-Type of referenced data
-Amount class
-Name type
-Telecommunication use code
-Telecommunication equipment type
-Identifier type
-Organizational name type
-Price type
+Address Type
+Type of Referenced Data
+Amount Class
+Name Type
+Telecommunication Use Code
+Telecommunication Equipment Type
+Identifier Type
+Organizational Name Type
+Price Type
 Segment action code
-Processing mode
+Processing Mode
 Query Response Status
-Relational operator
-Relational conjunction
-Alternate character sets
+Relational Operator
+Relational Conjunction
+Alternate Character Sets
 Nationality
 Purge Status Code
 Special Program Code
@@ -174,8 +165,8 @@ Procedure Functional Type
 Student Status
 Insurance Company Contact Reason
 Non-Concur Code/Description
-Report timing
-Report source
+Report Timing
+Report Source
 Event Reported To
 Event Qualification
 Event Seriousness
@@ -188,29 +179,29 @@ Single Use Device
 Product Problem
 Product Available for Inspection
 Status of Evaluation
-Product source
+Product Source
 Generic Product
 Relatedness Assessment
 Action Taken in Response to the Event
 Causality Observations
-Indirect exposure mechanism
-Kind of quantity
-Duration categories
-Time delay post challenge
-Nature of challenge
-Relationship modifier
+Indirect Exposure Mechanism
+Kind of Quantity
+Duration Categories
+Time Delay Post Challenge
+Nature of Challenge
+Relationship Modifier
 Modality
-Patient location type
+Patient Location Type
 Location Equipment
 Privacy Level
 Level of Care
 Location Department
 Specialty Type
-Days of the week
+Days of the Week
 Override
 Charge On Indicator
 Document Type
-Document completion status
+Document Completion Status
 Document Confidentiality Status
 Document Availability Status
 Document Storage Status
@@ -218,32 +209,32 @@ Appointment reason codes
 Appointment Type Codes
 Filler status codes
 Allow Substitution Codes
-Referral priority
-Referral type
-Referral disposition
-Referral status
-Referral category
-Insurance company ID codes
-Provider role
-Problem/goal action code
-Census tract
-County/parish
+Referral Priority
+Referral Type
+Referral Disposition
+Referral Status
+Referral Category
+Insurance Company ID Codes
+Provider Role
+Problem/Goal Action Code
+Census Tract
+County/Parish
 Subtype of Referenced Data
 Vaccines administered
 Billing Category
-Time selection criteria parameter class codes
+Time Selection Criteria Parameter Class Codes
 Handicap
 Primary Language
-CN ID source
+CN ID Source
 CP Range Type
 Encoding
 Namespace ID
-Universal ID type
-Point of care
+Universal ID Type
+Point of Care
 Room
 Bed
-Person location type
-Location status
+Person Location Type
+Location Status
 Building
 Floor
 Coverage Type
@@ -257,21 +248,21 @@ Department Cost Center
 Item Natural Account Code
 Dispense Method
 Completion Status
-Location characteristic ID
+Location Characteristic ID
 Location Relationship ID
 Visit Indicator
-Job code
-Employee classification
-Quantity method
-Marketing basis
-Facility type
-Source type
-Driver's license issuing authority
-Disabled Person Code
-Repeat pattern
-Referral reason
-Certification status
-Practitioner ID number type
+Job Code
+Employee Classification
+Quantity Method
+Marketing Basis
+Facility Type
+Source Type
+Driver's License Issuing Authority
+Disabled Person Code  	
+Repeat Pattern
+Referral Reason
+Certification Status
+Practitioner ID Number Type
 Advanced Beneficiary Notice Code
 Procedure Code Modifier
 Guarantor Credit Rating Code
@@ -280,64 +271,62 @@ Military Handicapped Program Code
 Patient's Relationship to Insured
 Appeal Reason
 Certification Agency
-State/province
-Special Program Indicator
-PSRO/UR Approval Indicator
-Occurrence code
-Occurrence span
+State/Province
+Occurrence Code
+Occurrence Span
 CWE statuses
-Message structure
-Primary key value type
-Alternate character set handling scheme
-Message error condition codes
-Practitioner group
+Message Structure
+Primary Key Value Type
+Alternate Character Set Handling Scheme
+Message Error Condition Codes
+Practitioner Group
 Diagnosis Priority
-Degree/license/certificate
+Degree/License/Certificate
 Application
 Facility
-Assigning authority
-Comment type
-Equipment state
-Local/remote control state
-Alert level
-Remote control command
+Assigning Authority
+Comment Type
+Equipment State
+Local/Remote Control State
+Alert Level
+Remote Control Command
 Specimen Role
-Container status
+Container Status
 Additive/Preservative
-Specimen component
+Specimen Component
 Treatment
-System induced contaminants
-Artificial blood
+System Induced Contaminants
+Artificial Blood
 Special Handling Code
-Other environmental factors
-Carrier type
-Tray type
-Separator type
-Cap type
-Drug interference
-Substance status
-Substance type
-Manufacturer identifier
-Supplier identifier
-Command response
-Processing type
-Analyte repeat status
-Segment group
-Match reason
-Match algorithms
-Response modality
-Modify indicator
-Coding system
+Other Environmental Factors
+Carrier Type
+Tray Type
+Separator Type
+Cap Type
+Drug Interference
+Substance Status
+Substance Type
+Manufacturer Identifier
+Supplier Identifier
+Command Response
+Processing Type
+Analyte Repeat Status
+Segment Group
+Match Reason
+Match Algorithms
+Response Modality
+Modify Indicator
+Coding System
 Sequencing
-Continuation style code
-Country code
-Government reimbursement program
-School type
+Continuation Style Code
+Country Code
+Government Reimbursement Program
+School Type
 Language Ability
 Language Proficiency
 Organization Unit
 Participant Organization Unit Type
-Application change type
+Application Change Type
 Supplemental Service Information Values
 Category Identifier
 Consent Identifier
@@ -364,20 +353,20 @@ Advance Directive Code
 Sensitivity to Causative Agent Code
 Alert Device Code
 Allergy Clinical Status
-Data types
+Data Types
 Immunization Registry Status
 Location Service Code
-Provider role
-Name assembly order
+Provider Role
+Name Assembly Order
 Identity Reliability Code
 Species Code
 Breed Code
-Name context
-Event type
-Substance identifier
-Health care provider type code
-Health care provider classification
-Health care provider area of specialization
+Name Context
+Event Type
+Substance Identifier
+Health Care Provider Type Code
+Health Care Provider Classification
+Health Care Provider Area of Specialization
 Type of Bill Code
 Revenue code
 Overall Claim Disposition Code
@@ -385,17 +374,17 @@ OCE Edit Code
 Reimbursement Action Code
 Denial or Rejection Code
 License Number
-Location cost center
+Location Cost Center
 Inventory Number
 Facility ID
-Name/address representation
+Name/Address Representation
 Ambulatory Payment Classification Code
 Modifier Edit Code
 Payment Adjustment Code
 Packaging Status Code
 Reimbursement Type Code
-Query name
-TQ conjunction ID
+Query Name
+TQ Conjunction ID
 Formulary Status
 Practitioner Organization Unit Type
 Charge Type Reason
@@ -430,29 +419,28 @@ Cyclic Entry/Exit Indicator
 Service Request Relationship
 Observation Result Handling
 Blood Product Processing Requirements
-Indication For Use
+Indication for Use
 Blood Product Dispense Status
 BP Observation Status Codes Interpretation
 Commercial Product
 Blood Product Transfusion/Disposition Status
 Transfusion Adverse Reaction
 Transfusion Interrupted Reason
-Error severity
-Inform person code
-Override type
-Override reason
-Message waiting priority
-Override code
-Computation type
-Sequence condition
+Error Severity
+Inform Person Code
+Override Type
+Override Reason
+Message Waiting Priority
+Override Code
+Computation Type
 Privilege
-Privilege class
-Calendar alignment
-Event related period
-Organization, agency, department
+Privilege Class
+Calendar Alignment
+Event Related Period
+Organization, Agency, Department
 Institution
-Expanded yes/no indicator
-Application error code
+Expanded Yes/no Indicator
+Application Error Code
 Notify Clergy Code
 Signature Code
 Certificate Status
@@ -468,7 +456,7 @@ Jurisdictional Breadth
 Signatory's Relationship to Subject
 NDC Codes
 Body Parts
-Advanced beneficiary notice override reason
+Advanced Beneficiary Notice Override Reason
 Invoice Control Code
 Invoice Reason Codes
 Invoice Type
@@ -527,7 +515,7 @@ MIME Types
 Problem Severity
 Problem Perspective
 Referral Documentation Completion Status
-Telecommunication expiration reason
+Telecommunication Expiration Reason
 Supply Risk Codes
 Product/Service Code
 Product/Service Code Modifier
@@ -535,4 +523,13 @@ Role Executing Physician
 Medical Role Executing Physician
 Side of body
 Present On Admission (POA) Indicator
+Security Check Scheme
+Shipment Status
+ActPriority
+Confidentiality
+Package Type
+Patient Results Release Categorization Scheme
+Acquisition Modality
+Participation
+Monetary Denomination Code
 no table for CE
