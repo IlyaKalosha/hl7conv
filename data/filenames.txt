@@ -28,7 +28,6 @@ Department Code
 Accident Code
 Diagnosis Code
 Diagnosis Type
-Diagnosis Coding Method
 Diagnosis related group
 DRG grouper review code
 Consent Code
@@ -53,7 +52,6 @@ Observation result status codes interpretation
 Plan ID
 Pre-Admit Test Indicator
 Procedure Code
-Procedure Coding Method
 Query priority
 Re-Admission Indicator
 Release Information
@@ -89,7 +87,6 @@ Accommodation code
 Visit User Code
 Contact Role
 Transaction Code
-Procedure Practitioner Identifier Code Type
 Assignment of Benefits
 Yes/no indicator
 Mail Claim Party
@@ -259,8 +256,7 @@ Annotations
 Department Cost Center
 Item Natural Account Code
 Dispense Method
-Completion Status for valid values.
-Action Code
+Completion Status
 Location characteristic ID
 Location Relationship ID
 Visit Indicator
@@ -445,6 +441,7 @@ Error severity
 Inform person code
 Override type
 Override reason
+Message waiting priority
 Override code
 Computation type
 Sequence condition
@@ -452,7 +449,6 @@ Privilege
 Privilege class
 Calendar alignment
 Event related period
-Precision
 Organization, agency, department
 Institution
 Expanded yes/no indicator
@@ -468,9 +464,75 @@ Specimen Type Modifier
 Specimen Source Type Modifier
 Specimen Collection Site
 Container Condition
-Language Translated To
 Jurisdictional Breadth
 Signatory's Relationship to Subject
 NDC Codes
 Body Parts
 Advanced beneficiary notice override reason
+Invoice Control Code
+Invoice Reason Codes
+Invoice Type
+Benefit Group
+Payee Type
+Payee Relationship to Invoice
+Product/Service Status
+Quantity Units
+Product/Services Clarification Codes
+Processing Consideration Codes
+Adjustment Category Code
+Provider Adjustment Reason Code
+Adjustment Action
+Payment Method Code
+Invoice Processing Results Status
+Tax status
+User Authentication Credential Type Code
+Address Expiration Reason
+Address Usage
+Protection Code
+Item Status Codes
+Item Importance Codes
+Reorder Theory Codes
+Labor Calculation Type
+Date Format
+Device Type
+Lot Control
+Device Data State
+Load Status
+Device Status
+Cycle Type
+Access Restriction Value
+Access Restriction Reason Code
+Mood Codes
+CCL Value
+DRG Diagnosis Determination Status
+Grouper Status
+Status Patient
+DRG Status Financial Calculation
+DRG Grouping Status
+Status Weight At Birth
+Status Respiration Minutes
+Status Admission
+DRG Procedure Determination Status
+DRG Procedure Relevance
+Resource Type or Category
+Item Status
+Item Type
+Approving Regulatory Agency
+Ruling Act
+Sterilization Type
+Maintenance Cycle
+Maintenance Type
+Package
+MIME Types
+Problem Severity
+Problem Perspective
+Referral Documentation Completion Status
+Telecommunication expiration reason
+Supply Risk Codes
+Product/Service Code
+Product/Service Code Modifier
+Role Executing Physician
+Medical Role Executing Physician
+Side of body
+Present On Admission (POA) Indicator
+no table for CE

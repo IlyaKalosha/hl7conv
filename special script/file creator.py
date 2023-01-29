@@ -11,7 +11,7 @@ headers = {
 
 }
 
-url = 'http://www.hl7.eu/HL7v2x/v25/'
+url = 'http://www.hl7.eu/HL7v2x/v26/'
 filename_len = open('../data/filenames.txt', 'r').readlines()
 all_urls = open('../data/hrefs.txt', 'r').readlines()
 filename_len_without_n = [x.replace('\n', '').replace("'", ' ').replace('/', '-').replace(',', ' ').replace('\t', '') for x in filename_len]
