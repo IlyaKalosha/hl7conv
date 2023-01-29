@@ -11,7 +11,7 @@ headers = {
 
 }
 
-url = 'http://www.hl7.eu/HL7v2x/v231/'
+url = 'http://www.hl7.eu/HL7v2x/v24/'
 filename_len = open('../data/filenames.txt', 'r').readlines()
 all_urls = open('../data/hrefs.txt', 'r').readlines()
 filename_len_without_n = [x.replace('\n', '').replace("'", ' ').replace('/', '-').replace(',', ' ').replace('\t', '') for x in filename_len]
@@ -55,7 +55,7 @@ for all in range(len(filename_len)):
                             replace('.', '_').replace('<', '_').replace('>', '_').replace('&', '_').\
                             replace('', 'NEL').replace('-', '_').replace('or', '_').replace('+', '_').replace('??', 'QQ').\
                             replace('*', 'star').replace('#', 'hashtag').replace('%', 'percent').\
-                            replace('(code=MVX)', '') + ' = ' + f'"{tables[x].text}"' + '\n')
+                            replace('(code=MVX)', '').replace(',', '_') + ' = ' + f'"{tables[x].text}"' + '\n')
 
                         else:
 
@@ -63,7 +63,7 @@ for all in range(len(filename_len)):
                             replace('.', '_').replace('<', '_').replace('>', '_').replace('&', '_').\
                             replace('', 'NEL').replace('-', '_').replace('or', '_').replace('+', '_').replace('??', 'QQ').\
                             replace('*', 'star').replace('#', 'hashtag').replace('%', 'percent').\
-                            replace('(code=MVX)', '') + ' = ' + f'"{tables[x].text}"' + '\n')
+                            replace('(code=MVX)', '').replace(',', '_') + ' = ' + f'"{tables[x].text}"' + '\n')
 
                 scrap_two.close()
 
