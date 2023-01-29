@@ -1,66 +1,65 @@
-Administrative sex
-Marital status
+Administrative Sex
+Marital Status
 Event type
-Patient class
+Patient Class
 Race
 Religion
-Admission type
+Admission Type
 Acknowledgment code
-Ambulatory status
+Ambulatory Status
 Physician ID
-Transaction type
-Patient type
-Anesthesia code
-Bad debt agency code
-Billing status
-Admit source
-Fee schedule
+Transaction Type
+Patient Type
+Anesthesia Code
+Bad Debt Agency Code
+Billing Status
+Admit Source
+Fee Schedule
 Priority
-Charge/price indicator
+Charge/Price Indicator
 Order status
-Company plan code
-Condition code
-Contract code
-Courtesy code
-Credit rating
+Company Plan Code
+Condition Code
+Contract Code
+Courtesy Code
+Credit Rating
 What subject filter
-Department code
-Accident code
-Diagnosis code
-Diagnosis type
-Diagnosis coding method
+Department Code
+Accident Code
+Diagnosis Code
+Diagnosis Type
+Diagnosis Coding Method
 Diagnosis related group
 DRG grouper review code
-Consent code
+Consent Code
 Check digit scheme
 Event reason
 Relationship
 Financial class
-Specimen action code
-Employment status
-Guarantor type
-Hospital service
-Specimen source codes
-Insurance plan ID
-Interest rate code
-Diagnostic service section ID
+Specimen Action Code
+Employment Status
+Guarantor Type
+Hospital Service
+Specimen Source Codes
+Insurance Plan ID
+Interest Rate Code
+Diagnostic Service Section ID
 Message type
 Abnormal flags
-Nature of abnormal testing
-Outlier type
+Nature of Abnormal Testing
+Outlier Type
 Performed by
 Observation result status codes interpretation
 Plan ID
-Pre-admit test indicator
+Pre-Admit Test Indicator
 Procedure Code
-Procedure coding method
+Procedure Coding Method
 Query priority
-Re-admission indicator
-Release information
-Type of agreement
-VIP indicator
-When to charge
-Delayed acknowledgment type
+Re-Admission Indicator
+Release Information
+Type of Agreement
+VIP Indicator
+Invocation event
 Processing ID
 Version ID
 Source of comment
@@ -68,67 +67,67 @@ Query/response format code
 Deferred response type
 Query results level
 Report priority
-Transfer to bad debt code
-Delete account code
-Discharge disposition
+Transfer to Bad Debt Code
+Delete Account Code
+Discharge Disposition
 Discharged to location
-Diet type
-Servicing facility
-Bed status
-Account status
-Major diagnostic category
-Order Control codes
+Diet Type
+Servicing Facility
+Bed Status
+Account Status
+Major Diagnostic Category
+Order control codes
 Response flag
 Charge type
-Result status
-Transportation mode
+Result Status
+Transportation Mode
 Value type
 Quantity limited request
-Allergen type
-Allergy severity
+Allergen Type
+Allergy Severity
 Accommodation code
-Visit user code
+Visit User Code
 Contact Role
-Transaction code
-Procedure practitioner identifier code type
-Assignment of benefits
+Transaction Code
+Procedure Practitioner Identifier Code Type
+Assignment of Benefits
 Yes/no indicator
-Mail claim party
-Employer information data
-Military service
-Military rank/grade
-Military status
-Non-covered insurance code
-Eligibility source
+Mail Claim Party
+Employer Information Data
+Military Service
+Military Rank/Grade
+Military Status
+Non-covered Insurance Code
+Eligibility Source
 Room type
 Amount type
 Policy type
-Penalty type
+Money or percentage indicator
 Day type
-Pre-certification patient type
-Second opinion status
-Second opinion documentation received
+Certification patient type
+Second Opinion Status
+Second Opinion Documentation Received
 Value code
 Accept/application acknowledgment conditions
 Which date/time qualifier
 Which date/time status qualifier
 Date/time selection qualifier
-Diet code specification type
-Tray type
-Allow substitution
-Route of administration
+Diet Code Specification Type
+Tray Type
+Allow Substitution
+Route of Administration
 Body site
-Administration device
-Administration method
-RX component type
-Substitution status
+Administration Device
+Administration Method
+RX Component Type
+Substitution Status
 Processing priority
 Reporting priority
 Derived specimen
 Citizenship
-Veterans military status
-Coordination of benefits
-Nature of service/test/observation
+Veterans Military Status
+Coordination of Benefits
+Nature of Service/Test/Observation
 Master file identifier code
 Confidentiality code
 File level event code
@@ -136,13 +135,13 @@ Response level
 Record-level event code
 MFN record-level error return
 Staff type
-Active/inactive
+Active/Inactive
 Department
 Preferred method of contact
 Practitioner category
 Provider billing
 Operator ID
-Ethnic group
+Ethnic Group
 Address type
 Type of referenced data
 Amount class
@@ -154,49 +153,49 @@ Organizational name type
 Price type
 Segment action code
 Processing mode
-Query response status
+Query Response Status
 Relational operator
 Relational conjunction
 Alternate character sets
 Nationality
-Purge status code
-Special Program Codes
-Publicity code
-Patient Status
-Visit priority code
-Patient charge adjustment
-Recurring Service
-Living arrangement
-Contact reason
-Living dependency
-Transport arranged
-Escort required
-Manufacturers of vaccines (code=MVX)
-Diagnosis classification
-DRG payor
-Procedure functional type
-Student status
-Insurance company contact reason
-Non-concur code/description
+Purge Status Code
+Special Program Code
+Publicity Code
+Patient Status Code
+Visit Priority Code
+Patient Charge Adjustment
+Recurring Service Code
+Living Arrangement
+Contact Reason
+Living Dependency
+Transport Arranged
+Escort Required
+Manufacturers of Vaccines (code=MVX)
+Diagnosis Classification
+DRG Payor
+Procedure Functional Type
+Student Status
+Insurance Company Contact Reason
+Non-Concur Code/Description
 Report timing
 Report source
-Event reported to
-Event qualification
-Event seriousness
-Event expected
-Event consequence
-Patient outcome
-Primary observer's qualification
-Identity may be divulged
-Single use device
-Product problem
-Product available for inspection
-Status of evaluation
+Event Reported To
+Event Qualification
+Event Seriousness
+Event Expected
+Event Consequence
+Patient Outcome
+Primary Observer's Qualification
+Identity May Be Divulged
+Single Use Device
+Product Problem
+Product Available for Inspection
+Status of Evaluation
 Product source
-Generic product
-Relatedness assessment
-Action taken in response to the event
-Causality observations
+Generic Product
+Relatedness Assessment
+Action Taken in Response to the Event
+Causality Observations
 Indirect exposure mechanism
 Kind of quantity
 Duration categories
@@ -205,40 +204,39 @@ Nature of challenge
 Relationship modifier
 Modality
 Patient location type
-Location equipment
-Privacy level
-Level of care
-Location department
-Specialty type
+Location Equipment
+Privacy Level
+Level of Care
+Location Department
+Specialty Type
 Days of the week
 Override
-Charge on indicator
-Document type
+Charge On Indicator
+Document Type
 Document completion status
-Document confidentiality status
-Document availability status
-Document storage status
+Document Confidentiality Status
+Document Availability Status
+Document Storage Status
 Appointment reason codes
-Appointment type codes
+Appointment Type Codes
 Filler status codes
-Allow substitution codes
+Allow Substitution Codes
 Referral priority
 Referral type
 Referral disposition
 Referral status
 Referral category
-Insurance Company ID Codes
+Insurance company ID codes
 Provider role
 Problem/goal action code
 Census tract
 County/parish
-MIME base64 encoding characters
 Subtype of Referenced Data
 Vaccines administered
-Billing category
+Billing Category
 Time selection criteria parameter class codes
 Handicap
-Primary language
+Primary Language
 CN ID source
 CP Range Type
 Encoding
@@ -251,44 +249,44 @@ Person location type
 Location status
 Building
 Floor
-Coverage type
-Job status
-Policy scope
-Policy source
-Living will code
-Organ donor code
+Coverage Type
+Job Status
+Policy Scope
+Policy Source
+Living Will Code
+Organ Donor Code
 Annotations
 Department Cost Center
 Item Natural Account Code
-Dispense method
-Completion status
-Action code
+Dispense Method
+Completion Status for valid values.
+Action Code
 Location characteristic ID
-Location relationship ID
-Visit indicator
-Job code/class
+Location Relationship ID
+Visit Indicator
+Job code
 Employee classification
 Quantity method
 Marketing basis
 Facility type
 Source type
-Drivers license issuing authority
-Disabled person
+Driver's license issuing authority
+Disabled Person Code
 Repeat pattern
 Referral reason
 Certification status
 Practitioner ID number type
-Advanced beneficiary notice code
-Procedure Code modifier
-Guarantor credit rating code
-Military recipient
-Military handicapped program code
-Patient's relationship to insured
-Appeal reason
-Certification agency
-Auto accident state
-Special program indicator
-PSRO/UR approval indicator
+Advanced Beneficiary Notice Code
+Procedure Code Modifier
+Guarantor Credit Rating Code
+Military Recipient
+Military Handicapped Program Code
+Patient's Relationship to Insured
+Appeal Reason
+Certification Agency
+State/province
+Special Program Indicator
+PSRO/UR Approval Indicator
 Occurrence code
 Occurrence span
 CWE statuses
@@ -297,24 +295,24 @@ Primary key value type
 Alternate character set handling scheme
 Message error condition codes
 Practitioner group
-Diagnosis priority
-Degree
-Sending/receiving application
-Sending/receiving facility
+Diagnosis Priority
+Degree/license/certificate
+Application
+Facility
 Assigning authority
 Comment type
 Equipment state
 Local/remote control state
 Alert level
 Remote control command
-Specimen role
+Specimen Role
 Container status
-Additive
+Additive/Preservative
 Specimen component
 Treatment
 System induced contaminants
 Artificial blood
-Special handling considerations
+Special Handling Code
 Other environmental factors
 Carrier type
 Tray type
@@ -333,76 +331,146 @@ Match reason
 Match algorithms
 Response modality
 Modify indicator
-Coding System
+Coding system
 Sequencing
 Continuation style code
 Country code
 Government reimbursement program
 School type
-Language ability
-Language proficiency
-Organization unit
+Language Ability
+Language Proficiency
+Organization Unit
 Participant Organization Unit Type
 Application change type
-Supplemental service information values
-Category identifier
-Consent identifier
-Units of time
-DRG transfer type
-Procedure DRG type
-Tissue type code
-Procedure priority
-Severity of illness code
-Triage code
-Case category code
-Gestation category code
-Newborn code
-Blood product code
-Risk management incident code
-Incident type code
-Production class Code
-Mode of arrival code
-Recreational drug use code
-Admission level of care code
-Precaution code
-Patient condition code
-Advance directive code
-Sensitivity to Causative Agent code
-Alert device code
-Allergy clinical status
+Supplemental Service Information Values
+Category Identifier
+Consent Identifier
+Units of Time
+DRG Transfer Type
+Procedure DRG Type
+Tissue Type Code
+Procedure Priority
+Severity of Illness Code
+Triage Code
+Case Category Code
+Gestation Category Code
+Newborn Code
+Blood Product Code
+Risk Management Incident Code
+Incident Type Code
+Production Class Code
+Mode of Arrival Code
+Recreational Drug Use Code
+Admission Level of Care Code
+Precaution Code
+Patient Condition Code
+Advance Directive Code
+Sensitivity to Causative Agent Code
+Alert Device Code
+Allergy Clinical Status
 Data types
-Immunization registry status
-Location service code
+Immunization Registry Status
+Location Service Code
 Provider role
 Name assembly order
 Identity Reliability Code
 Species Code
 Breed Code
 Name context
-Conformance statements
 Event type
 Substance identifier
 Health care provider type code
 Health care provider classification
 Health care provider area of specialization
-Type of bill code
+Type of Bill Code
 Revenue code
-Overall claim disposition code
-OCE edit code
+Overall Claim Disposition Code
+OCE Edit Code
 Reimbursement Action Code
-Denial or rejection code
-License number
+Denial or Rejection Code
+License Number
 Location cost center
-Inventory number
+Inventory Number
 Facility ID
 Name/address representation
-Ambulatory payment classification code
-Modifier edit code
-Payment adjustment code
-Packaging status code
-Reimbursement type code
+Ambulatory Payment Classification Code
+Modifier Edit Code
+Payment Adjustment Code
+Packaging Status Code
+Reimbursement Type Code
 Query name
-TQ Conjunction ID
-Formulary status
+TQ conjunction ID
+Formulary Status
 Practitioner Organization Unit Type
-for unknown CE data elements
+Charge Type Reason
+Medically Necessary Duplicate Procedure Reason
+Controlled Substance Schedule
+Formulary Status
+Pharmaceutical Substances
+Pharmacy Order Types
+Order Type
+Authorization Mode
+Dispense Type
+Extended Priority Codes
+Specimen Type
+Specimen Collection Method
+Risk Codes
+Specimen Reject Reason
+Specimen Quality
+Specimen Appropriateness
+Specimen Condition
+Specimen Child Role
+Body Site Modifier
+Consent Type
+Consent Mode
+Consent Status
+Consent Bypass Reason
+Consent Disclosure Level
+Consent Non-Disclosure Reason
+Non-Subject Consenter Reason
+Sequence/Results Flag
+Sequence Condition Code
+Cyclic Entry/Exit Indicator
+Service Request Relationship
+Observation Result Handling
+Blood Product Processing Requirements
+Indication For Use
+Blood Product Dispense Status
+BP Observation Status Codes Interpretation
+Commercial Product
+Blood Product Transfusion/Disposition Status
+Transfusion Adverse Reaction
+Transfusion Interrupted Reason
+Error severity
+Inform person code
+Override type
+Override reason
+Override code
+Computation type
+Sequence condition
+Privilege
+Privilege class
+Calendar alignment
+Event related period
+Precision
+Organization, agency, department
+Institution
+Expanded yes/no indicator
+Application error code
+Notify Clergy Code
+Signature Code
+Certificate Status
+Institution
+Institution Relationship Type
+Cost Center Code
+Inactive Reason Code
+Specimen Type Modifier
+Specimen Source Type Modifier
+Specimen Collection Site
+Container Condition
+Language Translated To
+Jurisdictional Breadth
+Signatory's Relationship to Subject
+NDC Codes
+Body Parts
+Advanced beneficiary notice override reason
