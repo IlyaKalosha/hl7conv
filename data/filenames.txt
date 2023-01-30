@@ -38,7 +38,7 @@ Specimen Action Code
 Employment Status
 Guarantor Type
 Hospital Service
-Insurance plan ID
+Insurance Plan ID
 Interest Rate Code
 Diagnostic Service Section ID
 Message Type
@@ -310,7 +310,7 @@ Manufacturer Identifier
 Supplier Identifier
 Command Response
 Processing Type
-Analyte Repeat Status
+Analyte repeat status
 Segment Group
 Match Reason
 Match Algorithms
@@ -326,7 +326,7 @@ Language Ability
 Language Proficiency
 Organization Unit
 Participant Organization Unit Type
-Application Change Type
+Application change type
 Supplemental Service Information Values
 Category Identifier
 Consent Identifier
@@ -532,4 +532,5 @@ Patient Results Release Categorization Scheme
 Acquisition Modality
 Participation
 Monetary Denomination Code
+Relevant Clincial Information
 no table for CE

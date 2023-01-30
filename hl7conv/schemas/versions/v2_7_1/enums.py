@@ -4,7 +4,7 @@ from enum import Enum
 
 class AdministrativeSex(str, Enum):
      """
-     001 - Administrative Sex
+     0001 - Administrative Sex
 
      F  Female
      M  Male
@@ -25,7 +25,7 @@ class AdministrativeSex(str, Enum):
 
 class MaritalStatus(str, Enum):
      """
-     002 - Marital Status
+     0002 - Marital Status
 
      A  Separated
      D  Divorced
@@ -66,7 +66,7 @@ class MaritalStatus(str, Enum):
 
 class EventType(str, Enum):
      """
-     003 - Event Type
+     0003 - Event Type
 
      A01  ADT/ACK - Admit/visit notification
      A02  ADT/ACK - Transfer a patient
@@ -721,7 +721,7 @@ class EventType(str, Enum):
 
 class PatientClass(str, Enum):
      """
-     004 - Patient Class
+     0004 - Patient Class
 
      E  Emergency
      I  Inpatient
@@ -748,7 +748,7 @@ class PatientClass(str, Enum):
 
 class Race(str, Enum):
      """
-     005 - Race
+     0005 - Race
 
      1002-5  American Indian or Alaska Native
      2028-9  Asian
@@ -769,7 +769,7 @@ class Race(str, Enum):
 
 class Religion(str, Enum):
      """
-     006 - Religion
+     0006 - Religion
 
      AGN  Agnostic
      ATH  Atheist
@@ -948,7 +948,7 @@ class Religion(str, Enum):
 
 class AdmissionType(str, Enum):
      """
-     007 - Admission Type
+     0007 - Admission Type
 
      A  Accident
      E  Emergency
@@ -971,7 +971,7 @@ class AdmissionType(str, Enum):
 
 class AcknowledgmentCode(str, Enum):
      """
-     008 - Acknowledgment Code
+     0008 - Acknowledgment Code
 
      AA  Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept
      AE  Original mode: Application Error - Enhanced mode: Application acknowledgment: Error
@@ -992,7 +992,7 @@ class AcknowledgmentCode(str, Enum):
 
 class AmbulatoryStatus(str, Enum):
      """
-     009 - Ambulatory Status
+     0009 - Ambulatory Status
 
      A0  No functional limitations
      A1  Ambulates with assistive device
@@ -1033,7 +1033,7 @@ class AmbulatoryStatus(str, Enum):
 
 class TransactionType(str, Enum):
      """
-     017 - Transaction Type
+     0017 - Transaction Type
 
      CG  Charge
      CD  Credit
@@ -1052,7 +1052,7 @@ class TransactionType(str, Enum):
 
 class Priority(str, Enum):
      """
-     027 - Priority
+     0027 - Priority
 
      S  Stat (do immediately)
      A  As soon as possible (a priority lower than stat)
@@ -1071,7 +1071,7 @@ class Priority(str, Enum):
 
 class Orderstatus(str, Enum):
      """
-     038 - Order status
+     0038 - Order status
 
      A  Some, but not all, results available
      CA  Order was canceled
@@ -1098,7 +1098,7 @@ class Orderstatus(str, Enum):
 
 class DiagnosisType(str, Enum):
      """
-     052 - Diagnosis Type
+     0052 - Diagnosis Type
 
      A  Admitting
      W  Working
@@ -1113,7 +1113,7 @@ class DiagnosisType(str, Enum):
 
 class CheckDigitScheme(str, Enum):
      """
-     061 - Check Digit Scheme
+     0061 - Check Digit Scheme
 
      BCV  Bank Card Validation Number
      NPI  Check digit algorithm in the US National Provider Identifier
@@ -1132,7 +1132,7 @@ class CheckDigitScheme(str, Enum):
 
 class EventReason(str, Enum):
      """
-     062 - Event Reason
+     0062 - Event Reason
 
      01  Patient request
      02  Physician/health practitioner order
@@ -1151,7 +1151,7 @@ class EventReason(str, Enum):
 
 class Relationship(str, Enum):
      """
-     063 - Relationship
+     0063 - Relationship
 
      SEL  Self
      SPO  Spouse
@@ -1224,7 +1224,7 @@ class Relationship(str, Enum):
 
 class SpecimenActionCode(str, Enum):
      """
-     065 - Specimen Action Code
+     0065 - Specimen Action Code
 
      A  Add ordered tests to the existing specimen
      G  Generated order; reflex order
@@ -1247,7 +1247,7 @@ class SpecimenActionCode(str, Enum):
 
 class EmploymentStatus(str, Enum):
      """
-     066 - Employment Status
+     0066 - Employment Status
 
      1  Full time employed
      2  Part time employed
@@ -1278,7 +1278,7 @@ class EmploymentStatus(str, Enum):
 
 class HospitalService(str, Enum):
      """
-     069 - Hospital Service
+     0069 - Hospital Service
 
      MED  Medical Service
      SUR  Surgical Service
@@ -1297,7 +1297,7 @@ class HospitalService(str, Enum):
 
 class DiagnosticServiceSectionID(str, Enum):
      """
-     074 - Diagnostic Service Section ID
+     0074 - Diagnostic Service Section ID
 
      AU  Audiology
      BG  Blood Gases
@@ -1384,7 +1384,7 @@ class DiagnosticServiceSectionID(str, Enum):
 
 class MessageType(str, Enum):
      """
-     076 - Message Type
+     0076 - Message Type
 
      ACK  General acknowledgment message
      ADR  ADT response
@@ -1665,7 +1665,7 @@ class MessageType(str, Enum):
 
 class InterpretationCodes(str, Enum):
      """
-     078 - Interpretation Codes
+     0078 - Interpretation Codes
 
      L  Below low normal
      H  Above high normal
@@ -1734,7 +1734,7 @@ class InterpretationCodes(str, Enum):
 
 class NatureofAbnormalTesting(str, Enum):
      """
-     080 - Nature of Abnormal Testing
+     0080 - Nature of Abnormal Testing
 
      A  An age-based population
      N  None - generic normal range
@@ -1757,7 +1757,7 @@ class NatureofAbnormalTesting(str, Enum):
 
 class OutlierType(str, Enum):
      """
-     083 - Outlier Type
+     0083 - Outlier Type
 
      D  Outlier days
      C  Outlier cost
@@ -1770,7 +1770,7 @@ class OutlierType(str, Enum):
 
 class ObservationResultStatusCodesInterpretation(str, Enum):
      """
-     085 - Observation Result Status Codes Interpretation
+     0085 - Observation Result Status Codes Interpretation
 
      C  Record coming over is a correction and thus replaces a final result
      D  Deletes the OBX record
@@ -1803,7 +1803,7 @@ class ObservationResultStatusCodesInterpretation(str, Enum):
 
 class QueryPriority(str, Enum):
      """
-     091 - Query Priority
+     0091 - Query Priority
 
      D  Deferred
      I  Immediate
@@ -1816,7 +1816,7 @@ class QueryPriority(str, Enum):
 
 class Re_AdmissionIndicator(str, Enum):
      """
-     092 - Re-Admission Indicator
+     0092 - Re-Admission Indicator
 
      R  Re-admission
      """
@@ -1827,7 +1827,7 @@ class Re_AdmissionIndicator(str, Enum):
 
 class ReleaseInformation(str, Enum):
      """
-     093 - Release Information
+     0093 - Release Information
 
      Y  Yes
      N  No
@@ -1841,7 +1841,7 @@ class ReleaseInformation(str, Enum):
 
 class TypeofAgreement(str, Enum):
      """
-     098 - Type of Agreement
+     0098 - Type of Agreement
 
      S  Standard
      U  Unified
@@ -1856,7 +1856,7 @@ class TypeofAgreement(str, Enum):
 
 class Invocationevent(str, Enum):
      """
-     100 - Invocation event
+     0100 - Invocation event
 
      D  On discharge
      O  On receipt of order
@@ -1875,7 +1875,7 @@ class Invocationevent(str, Enum):
 
 class ProcessingID(str, Enum):
      """
-     103 - Processing ID
+     0103 - Processing ID
 
      D  Debugging
      P  Production
@@ -1890,7 +1890,7 @@ class ProcessingID(str, Enum):
 
 class VersionID(str, Enum):
      """
-     104 - Version ID
+     0104 - Version ID
 
      2.0  Release 2.0
      2.0D  Demo 2.0
@@ -1903,6 +1903,7 @@ class VersionID(str, Enum):
      2.5.1  Release 2.5.1
      2.6  Release 2.6
      2.7  Release 2.7
+     2.7.1  Release 2.7.1
      """
 
 
@@ -1917,11 +1918,12 @@ class VersionID(str, Enum):
      _2_5_1 = "2.5.1"
      _2_6 = "2.6"
      _2_7 = "2.7"
+     _2_7_1 = "2.7.1"
 
 
 class SourceofComment(str, Enum):
      """
-     105 - Source of Comment
+     0105 - Source of Comment
 
      L  Ancillary (filler) department is source of comment
      P  Orderer (placer) is source of comment
@@ -1936,7 +1938,7 @@ class SourceofComment(str, Enum):
 
 class BedStatus(str, Enum):
      """
-     116 - Bed Status
+     0116 - Bed Status
 
      C  Closed
      H  Housekeeping
@@ -1957,7 +1959,7 @@ class BedStatus(str, Enum):
 
 class OrderControlCodes(str, Enum):
      """
-     119 - Order Control Codes
+     0119 - Order Control Codes
 
      AF  Order/service refill request approval
      CA  Cancel order/service request
@@ -2068,7 +2070,7 @@ class OrderControlCodes(str, Enum):
 
 class ResponseFlag(str, Enum):
      """
-     121 - Response Flag
+     0121 - Response Flag
 
      E  Report exceptions only
      R  Same as E, also Replacement and Parent-Child
@@ -2087,7 +2089,7 @@ class ResponseFlag(str, Enum):
 
 class ChargeType(str, Enum):
      """
-     122 - Charge Type
+     0122 - Charge Type
 
      CH  Charge
      CO  Contract
@@ -2112,7 +2114,7 @@ class ChargeType(str, Enum):
 
 class ResultStatus(str, Enum):
      """
-     123 - Result Status
+     0123 - Result Status
 
      O  Order received; specimen not yet received
      I  No results available; specimen received, procedure incomplete
@@ -2143,7 +2145,7 @@ class ResultStatus(str, Enum):
 
 class TransportationMode(str, Enum):
      """
-     124 - Transportation Mode
+     0124 - Transportation Mode
 
      CART  Cart - patient travels on cart or gurney
      PORT  The examining device goes to patient's location
@@ -2160,7 +2162,7 @@ class TransportationMode(str, Enum):
 
 class ValueType(str, Enum):
      """
-     125 - Value Type
+     0125 - Value Type
 
      AD  Address
      CNE  Coded with No Exceptions
@@ -2231,7 +2233,7 @@ class ValueType(str, Enum):
 
 class QuantityLimitedRequest(str, Enum):
      """
-     126 - Quantity Limited Request
+     0126 - Quantity Limited Request
 
      CH  Characters
      LI  Lines
@@ -2250,7 +2252,7 @@ class QuantityLimitedRequest(str, Enum):
 
 class AllergenType(str, Enum):
      """
-     127 - Allergen Type
+     0127 - Allergen Type
 
      DA  Drug allergy
      FA  Food allergy
@@ -2275,7 +2277,7 @@ class AllergenType(str, Enum):
 
 class AllergySeverity(str, Enum):
      """
-     128 - Allergy Severity
+     0128 - Allergy Severity
 
      SV  Severe
      MO  Moderate
@@ -2292,7 +2294,7 @@ class AllergySeverity(str, Enum):
 
 class VisitUserCode(str, Enum):
      """
-     130 - Visit User Code
+     0130 - Visit User Code
 
      TE  Teaching
      HO  Home
@@ -2309,7 +2311,7 @@ class VisitUserCode(str, Enum):
 
 class ContactRole(str, Enum):
      """
-     131 - Contact Role
+     0131 - Contact Role
 
      E  Employer
      C  Emergency Contact
@@ -2334,7 +2336,7 @@ class ContactRole(str, Enum):
 
 class AssignmentofBenefits(str, Enum):
      """
-     135 - Assignment of Benefits
+     0135 - Assignment of Benefits
 
      Y  Yes
      N  No
@@ -2349,7 +2351,7 @@ class AssignmentofBenefits(str, Enum):
 
 class Yes_noIndicator(str, Enum):
      """
-     136 - Yes-no Indicator
+     0136 - Yes-no Indicator
 
      Y  Yes
      N  No
@@ -2362,7 +2364,7 @@ class Yes_noIndicator(str, Enum):
 
 class MailClaimParty(str, Enum):
      """
-     137 - Mail Claim Party
+     0137 - Mail Claim Party
 
      E  Employer
      G  Guarantor
@@ -2381,7 +2383,7 @@ class MailClaimParty(str, Enum):
 
 class MilitaryService(str, Enum):
      """
-     140 - Military Service
+     0140 - Military Service
 
      USA  US Army
      USN  US Navy
@@ -2412,7 +2414,7 @@ class MilitaryService(str, Enum):
 
 class MilitaryRank_Grade(str, Enum):
      """
-     141 - Military Rank-Grade
+     0141 - Military Rank-Grade
 
      O3  Officers
      O1  Officers
@@ -2471,7 +2473,7 @@ class MilitaryRank_Grade(str, Enum):
 
 class MilitaryStatus(str, Enum):
      """
-     142 - Military Status
+     0142 - Military Status
 
      ACT  Active duty
      RET  Retired
@@ -2486,7 +2488,7 @@ class MilitaryStatus(str, Enum):
 
 class EligibilitySource(str, Enum):
      """
-     144 - Eligibility Source
+     0144 - Eligibility Source
 
      1  Insurance company
      2  Employer
@@ -2509,7 +2511,7 @@ class EligibilitySource(str, Enum):
 
 class RoomType(str, Enum):
      """
-     145 - Room Type
+     0145 - Room Type
 
      PRI  Private room
      2PRI  Second private room
@@ -2530,7 +2532,7 @@ class RoomType(str, Enum):
 
 class AmountType(str, Enum):
      """
-     146 - Amount Type
+     0146 - Amount Type
 
      DF  Differential
      LM  Limit
@@ -2549,7 +2551,7 @@ class AmountType(str, Enum):
 
 class PolicyType(str, Enum):
      """
-     147 - Policy Type
+     0147 - Policy Type
 
      ANC  Ancillary
      2ANC  Second ancillary
@@ -2568,7 +2570,7 @@ class PolicyType(str, Enum):
 
 class MoneyorPercentageIndicator(str, Enum):
      """
-     148 - Money or Percentage Indicator
+     0148 - Money or Percentage Indicator
 
      AT  Currency amount
      PC  Percentage
@@ -2581,7 +2583,7 @@ class MoneyorPercentageIndicator(str, Enum):
 
 class DayType(str, Enum):
      """
-     149 - Day Type
+     0149 - Day Type
 
      AP  Approved
      DE  Denied
@@ -2596,7 +2598,7 @@ class DayType(str, Enum):
 
 class CertificationPatientType(str, Enum):
      """
-     150 - Certification Patient Type
+     0150 - Certification Patient Type
 
      ER  Emergency
      IPE  Inpatient elective
@@ -2611,9 +2613,20 @@ class CertificationPatientType(str, Enum):
      UR = "UR"
 
 
+class ValueCode(str, Enum):
+     """
+     0153 - Value Code
+
+       See NUBC codes
+     """
+
+
+     NEL = ""
+
+
 class Accept_ApplicationAcknowledgmentConditions(str, Enum):
      """
-     155 - Accept-Application Acknowledgment Conditions
+     0155 - Accept-Application Acknowledgment Conditions
 
      AL  Always
      NE  Never
@@ -2630,7 +2643,7 @@ class Accept_ApplicationAcknowledgmentConditions(str, Enum):
 
 class DietCodeSpecificationType(str, Enum):
      """
-     159 - Diet Code Specification Type
+     0159 - Diet Code Specification Type
 
      D  Diet
      S  Supplement
@@ -2645,7 +2658,7 @@ class DietCodeSpecificationType(str, Enum):
 
 class TrayType(str, Enum):
      """
-     160 - Tray Type
+     0160 - Tray Type
 
      EARLY  Early tray
      LATE  Late tray
@@ -2664,7 +2677,7 @@ class TrayType(str, Enum):
 
 class AllowSubstitution(str, Enum):
      """
-     161 - Allow Substitution
+     0161 - Allow Substitution
 
      N  Substitutions are NOT authorized.  (This is the default - null.)
      G  Allow generic substitutions.
@@ -2679,7 +2692,7 @@ class AllowSubstitution(str, Enum):
 
 class RouteofAdministration(str, Enum):
      """
-     162 - Route of Administration
+     0162 - Route of Administration
 
      AP  Apply Externally
      B  Buccal
@@ -2782,7 +2795,7 @@ class RouteofAdministration(str, Enum):
 
 class BodySite(str, Enum):
      """
-     163 - Body Site
+     0163 - Body Site
 
      BE  Bilateral Ears
      OU  Bilateral Eyes
@@ -2899,7 +2912,7 @@ class BodySite(str, Enum):
 
 class AdministrationDevice(str, Enum):
      """
-     164 - Administration Device
+     0164 - Administration Device
 
      AP  Applicator
      BT  Buretrol
@@ -2926,7 +2939,7 @@ class AdministrationDevice(str, Enum):
 
 class AdministrationMethod(str, Enum):
      """
-     165 - Administration Method
+     0165 - Administration Method
 
      CH  Chew
      DI  Dissolve
@@ -2965,7 +2978,7 @@ class AdministrationMethod(str, Enum):
 
 class RXComponentType(str, Enum):
      """
-     166 - RX Component Type
+     0166 - RX Component Type
 
      B  Base
      A  Additive
@@ -2978,7 +2991,7 @@ class RXComponentType(str, Enum):
 
 class SubstitutionStatus(str, Enum):
      """
-     167 - Substitution Status
+     0167 - Substitution Status
 
      N  No substitute was dispensed.  This is equivalent to the default (null) value.
      G  A generic substitution was dispensed.
@@ -3009,7 +3022,7 @@ class SubstitutionStatus(str, Enum):
 
 class ProcessingPriority(str, Enum):
      """
-     168 - Processing Priority
+     0168 - Processing Priority
 
      S  Stat (do immediately)
      A  As soon as possible (a priority lower than stat)
@@ -3032,7 +3045,7 @@ class ProcessingPriority(str, Enum):
 
 class ReportingPriority(str, Enum):
      """
-     169 - Reporting Priority
+     0169 - Reporting Priority
 
      C  Call back results
      R  Rush reporting
@@ -3045,7 +3058,7 @@ class ReportingPriority(str, Enum):
 
 class DerivedSpecimen(str, Enum):
      """
-     170 - Derived Specimen
+     0170 - Derived Specimen
 
      P  Parent Observation
      C  Child Observation
@@ -3060,7 +3073,7 @@ class DerivedSpecimen(str, Enum):
 
 class CoordinationofBenefits(str, Enum):
      """
-     173 - Coordination of Benefits
+     0173 - Coordination of Benefits
 
      CO  Coordination
      IN  Independent
@@ -3073,7 +3086,7 @@ class CoordinationofBenefits(str, Enum):
 
 class NatureofService_Test_Observation(str, Enum):
      """
-     174 - Nature of Service-Test-Observation
+     0174 - Nature of Service-Test-Observation
 
      P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
      F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
@@ -3092,7 +3105,7 @@ class NatureofService_Test_Observation(str, Enum):
 
 class MasterFileIdentifierCode(str, Enum):
      """
-     175 - Master File Identifier Code
+     0175 - Master File Identifier Code
 
      CDM  Charge description master file
      CMA  Clinical study with phases and scheduled master file
@@ -3127,7 +3140,7 @@ class MasterFileIdentifierCode(str, Enum):
 
 class ConfidentialityCode(str, Enum):
      """
-     177 - Confidentiality Code
+     0177 - Confidentiality Code
 
      V  Very restricted
      R  Restricted
@@ -3156,7 +3169,7 @@ class ConfidentialityCode(str, Enum):
 
 class FileLevelEventCode(str, Enum):
      """
-     178 - File Level Event Code
+     0178 - File Level Event Code
 
      REP  Replace current version of this master file with the version contained in this message
      UPD  Change file records as defined in the record-level event codes for each record that follows
@@ -3169,11 +3182,11 @@ class FileLevelEventCode(str, Enum):
 
 class ResponseLevel(str, Enum):
      """
-     179 - Response Level
+     0179 - Response Level
 
      NE  Never.  No application-level response needed
      ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-     AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
+     AL  Always.  All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
      SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
      """
 
@@ -3186,7 +3199,7 @@ class ResponseLevel(str, Enum):
 
 class Record_levelEventCode(str, Enum):
      """
-     180 - Record-level Event Code
+     0180 - Record-level Event Code
 
      MAD  Add record to master file
      MDL  Delete record from master file
@@ -3205,7 +3218,7 @@ class Record_levelEventCode(str, Enum):
 
 class MFNRecord_levelErrorReturn(str, Enum):
      """
-     181 - MFN Record-level Error Return
+     0181 - MFN Record-level Error Return
 
      S  Successful posting of the record defined by the MFE segment
      U  Unsuccessful posting of the record defined by the MFE segment
@@ -3218,7 +3231,7 @@ class MFNRecord_levelErrorReturn(str, Enum):
 
 class Active_Inactive(str, Enum):
      """
-     183 - Active-Inactive
+     0183 - Active-Inactive
 
      A  Active Staff
      I  Inactive Staff
@@ -3231,7 +3244,7 @@ class Active_Inactive(str, Enum):
 
 class PreferredMethodofContact(str, Enum):
      """
-     185 - Preferred Method of Contact
+     0185 - Preferred Method of Contact
 
      B  Beeper Number
      C  Cellular Phone Number
@@ -3252,7 +3265,7 @@ class PreferredMethodofContact(str, Enum):
 
 class ProviderBilling(str, Enum):
      """
-     187 - Provider Billing
+     0187 - Provider Billing
 
      I  Institution bills for provider
      P  Provider does own billing
@@ -3265,7 +3278,7 @@ class ProviderBilling(str, Enum):
 
 class EthnicGroup(str, Enum):
      """
-     189 - Ethnic Group
+     0189 - Ethnic Group
 
      H  Hispanic or Latino
      N  Not Hispanic or Latino
@@ -3280,7 +3293,7 @@ class EthnicGroup(str, Enum):
 
 class AddressType(str, Enum):
      """
-     190 - Address Type
+     0190 - Address Type
 
      BA  Bad address
      BI  Billing Address
@@ -3325,7 +3338,7 @@ class AddressType(str, Enum):
 
 class TypeofReferencedData(str, Enum):
      """
-     191 - Type of Referenced Data
+     0191 - Type of Referenced Data
 
      AP  Other application data, typically uninterpreted binary data (HL7 V2.3 and later)
      AU  Audio data (HL7 V2.3 and later)
@@ -3354,7 +3367,7 @@ class TypeofReferencedData(str, Enum):
 
 class AmountClass(str, Enum):
      """
-     193 - Amount Class
+     0193 - Amount Class
 
      AT  Amount
      LM  Limit
@@ -3371,7 +3384,7 @@ class AmountClass(str, Enum):
 
 class NameType(str, Enum):
      """
-     200 - Name Type
+     0200 - Name Type
 
      D  Customary Name
      L  Official Registry Name
@@ -3422,7 +3435,7 @@ class NameType(str, Enum):
 
 class TelecommunicationUseCode(str, Enum):
      """
-     201 - Telecommunication Use Code
+     0201 - Telecommunication Use Code
 
      PRN  Primary Residence Number
      ORN  Other Residence Number
@@ -3449,7 +3462,7 @@ class TelecommunicationUseCode(str, Enum):
 
 class TelecommunicationEquipmentType(str, Enum):
      """
-     202 - Telecommunication Equipment Type
+     0202 - Telecommunication Equipment Type
 
      PH  Telephone
      FX  Fax
@@ -3478,7 +3491,7 @@ class TelecommunicationEquipmentType(str, Enum):
 
 class IdentifierType(str, Enum):
      """
-     203 - Identifier Type
+     0203 - Identifier Type
 
      ACSN  Accession ID
      AM  American Express
@@ -3703,7 +3716,7 @@ class IdentifierType(str, Enum):
 
 class OrganizationalNameType(str, Enum):
      """
-     204 - Organizational Name Type
+     0204 - Organizational Name Type
 
      A  Alias name
      L  Legal name
@@ -3720,7 +3733,7 @@ class OrganizationalNameType(str, Enum):
 
 class PriceType(str, Enum):
      """
-     205 - Price Type
+     0205 - Price Type
 
      AP  administrative price or handling fee
      DC  direct unit cost
@@ -3743,12 +3756,12 @@ class PriceType(str, Enum):
 
 class Segmentactioncode(str, Enum):
      """
-     206 - Segment action code
+     0206 - Segment action code
 
      A  Add/Insert
      D  Delete
      U  Update
-     X  No Change
+     X  No change
      """
 
 
@@ -3760,7 +3773,7 @@ class Segmentactioncode(str, Enum):
 
 class ProcessingMode(str, Enum):
      """
-     207 - Processing Mode
+     0207 - Processing Mode
 
      A  Archive
      R  Restore from archive
@@ -3779,7 +3792,7 @@ class ProcessingMode(str, Enum):
 
 class QueryResponseStatus(str, Enum):
      """
-     208 - Query Response Status
+     0208 - Query Response Status
 
      OK  Data found, no errors (this is the default)
      NF  No data found, no errors
@@ -3796,7 +3809,7 @@ class QueryResponseStatus(str, Enum):
 
 class RelationalOperator(str, Enum):
      """
-     209 - Relational Operator
+     0209 - Relational Operator
 
      EQ  Equal
      NE  Not Equal
@@ -3821,7 +3834,7 @@ class RelationalOperator(str, Enum):
 
 class RelationalConjunction(str, Enum):
      """
-     210 - Relational Conjunction
+     0210 - Relational Conjunction
 
      AND  Default
      OR  
@@ -3834,7 +3847,7 @@ class RelationalConjunction(str, Enum):
 
 class AlternateCharacterSets(str, Enum):
      """
-     211 - Alternate Character Sets
+     0211 - Alternate Character Sets
 
      ASCII  The printable 7-bit ASCII character set.
      8859/1  The printable characters from the ISO 8859/1 Character set
@@ -3889,7 +3902,7 @@ class AlternateCharacterSets(str, Enum):
 
 class PurgeStatusCode(str, Enum):
      """
-     213 - Purge Status Code
+     0213 - Purge Status Code
 
      P  Marked for purge.  User is no longer able to update the visit.
      D  The visit is marked for deletion and the user cannot enter new data against it.
@@ -3904,7 +3917,7 @@ class PurgeStatusCode(str, Enum):
 
 class SpecialProgramCode(str, Enum):
      """
-     214 - Special Program Code
+     0214 - Special Program Code
 
      CH  Child Health Assistance
      ES  Elective Surgery Program
@@ -3923,7 +3936,7 @@ class SpecialProgramCode(str, Enum):
 
 class PublicityCode(str, Enum):
      """
-     215 - Publicity Code
+     0215 - Publicity Code
 
      F  Family only
      N  No Publicity
@@ -3940,7 +3953,7 @@ class PublicityCode(str, Enum):
 
 class PatientStatusCode(str, Enum):
      """
-     216 - Patient Status Code
+     0216 - Patient Status Code
 
      AI  Active Inpatient
      DI  Discharged Inpatient
@@ -3953,7 +3966,7 @@ class PatientStatusCode(str, Enum):
 
 class VisitPriorityCode(str, Enum):
      """
-     217 - Visit Priority Code
+     0217 - Visit Priority Code
 
      1  Emergency
      2  Urgent
@@ -3968,7 +3981,7 @@ class VisitPriorityCode(str, Enum):
 
 class LivingArrangement(str, Enum):
      """
-     220 - Living Arrangement
+     0220 - Living Arrangement
 
      A  Alone
      F  Family
@@ -3989,7 +4002,7 @@ class LivingArrangement(str, Enum):
 
 class LivingDependency(str, Enum):
      """
-     223 - Living Dependency
+     0223 - Living Dependency
 
      S  Spouse Dependent
      M  Medical Supervision Required
@@ -4008,7 +4021,7 @@ class LivingDependency(str, Enum):
 
 class TransportArranged(str, Enum):
      """
-     224 - Transport Arranged
+     0224 - Transport Arranged
 
      A  Arranged
      N  Not Arranged
@@ -4023,7 +4036,7 @@ class TransportArranged(str, Enum):
 
 class EscortRequired(str, Enum):
      """
-     225 - Escort Required
+     0225 - Escort Required
 
      R  Required
      N  Not Required
@@ -4038,7 +4051,7 @@ class EscortRequired(str, Enum):
 
 class ManufacturersofVaccines(str, Enum):
      """
-     227 - Manufacturers of Vaccines (code=MVX)
+     0227 - Manufacturers of Vaccines (code=MVX)
 
      AB  Abbott Laboratories
      AD  Adams Laboratories, Inc.
@@ -4157,7 +4170,7 @@ class ManufacturersofVaccines(str, Enum):
 
 class DiagnosisClassification(str, Enum):
      """
-     228 - Diagnosis Classification
+     0228 - Diagnosis Classification
 
      C  Consultation
      D  Diagnosis
@@ -4182,7 +4195,7 @@ class DiagnosisClassification(str, Enum):
 
 class DRGPayor(str, Enum):
      """
-     229 - DRG Payor
+     0229 - DRG Payor
 
      M  Medicare
      C  Champus
@@ -4197,7 +4210,7 @@ class DRGPayor(str, Enum):
 
 class ProcedureFunctionalType(str, Enum):
      """
-     230 - Procedure Functional Type
+     0230 - Procedure Functional Type
 
      A  Anesthesia
      P  Procedure for treatment (therapeutic, including operations)
@@ -4214,7 +4227,7 @@ class ProcedureFunctionalType(str, Enum):
 
 class StudentStatus(str, Enum):
      """
-     231 - Student Status
+     0231 - Student Status
 
      F  Full-time student
      P  Part-time student
@@ -4229,7 +4242,7 @@ class StudentStatus(str, Enum):
 
 class InsuranceCompanyContactReason(str, Enum):
      """
-     232 - Insurance Company Contact Reason
+     0232 - Insurance Company Contact Reason
 
      01  Medicare claim status
      02  Medicaid claim status
@@ -4244,7 +4257,7 @@ class InsuranceCompanyContactReason(str, Enum):
 
 class ReportTiming(str, Enum):
      """
-     234 - Report Timing
+     0234 - Report Timing
 
      CO  Correction
      AD  Additional information
@@ -4273,7 +4286,7 @@ class ReportTiming(str, Enum):
 
 class ReportSource(str, Enum):
      """
-     235 - Report Source
+     0235 - Report Source
 
      C  Clinical trial
      L  Literature
@@ -4302,7 +4315,7 @@ class ReportSource(str, Enum):
 
 class EventReportedTo(str, Enum):
      """
-     236 - Event Reported To
+     0236 - Event Reported To
 
      M  Manufacturer
      L  Local facility/user facility
@@ -4319,7 +4332,7 @@ class EventReportedTo(str, Enum):
 
 class EventQualification(str, Enum):
      """
-     237 - Event Qualification
+     0237 - Event Qualification
 
      I  Interaction
      O  Overdose
@@ -4344,7 +4357,7 @@ class EventQualification(str, Enum):
 
 class EventSeriousness(str, Enum):
      """
-     238 - Event Seriousness
+     0238 - Event Seriousness
 
      Y  Yes
      S  Significant
@@ -4359,7 +4372,7 @@ class EventSeriousness(str, Enum):
 
 class EventExpected(str, Enum):
      """
-     239 - Event Expected
+     0239 - Event Expected
 
      Y  Yes
      N  No
@@ -4374,7 +4387,7 @@ class EventExpected(str, Enum):
 
 class EventConsequence(str, Enum):
      """
-     240 - Event Consequence
+     0240 - Event Consequence
 
      D  Death
      L  Life threatening
@@ -4401,7 +4414,7 @@ class EventConsequence(str, Enum):
 
 class PatientOutcome(str, Enum):
      """
-     241 - Patient Outcome
+     0241 - Patient Outcome
 
      D  Died
      R  Recovering
@@ -4424,7 +4437,7 @@ class PatientOutcome(str, Enum):
 
 class PrimaryObserversQualification(str, Enum):
      """
-     242 - Primary Observer s Qualification
+     0242 - Primary Observer s Qualification
 
      P  Physician (osteopath, homeopath)
      R  Pharmacist
@@ -4447,7 +4460,7 @@ class PrimaryObserversQualification(str, Enum):
 
 class IdentityMayBeDivulged(str, Enum):
      """
-     243 - Identity May Be Divulged
+     0243 - Identity May Be Divulged
 
      Y  Yes
      N  No
@@ -4462,7 +4475,7 @@ class IdentityMayBeDivulged(str, Enum):
 
 class StatusofEvaluation(str, Enum):
      """
-     247 - Status of Evaluation
+     0247 - Status of Evaluation
 
      Y  Evaluation completed
      P  Evaluation in progress
@@ -4495,7 +4508,7 @@ class StatusofEvaluation(str, Enum):
 
 class ProductSource(str, Enum):
      """
-     248 - Product Source
+     0248 - Product Source
 
      A  Actual product involved in incident was evaluated
      L  A product from the same lot as the actual product involved was evaluated
@@ -4512,7 +4525,7 @@ class ProductSource(str, Enum):
 
 class RelatednessAssessment(str, Enum):
      """
-     250 - Relatedness Assessment
+     0250 - Relatedness Assessment
 
      H  Highly probable
      M  Moderately probable
@@ -4531,7 +4544,7 @@ class RelatednessAssessment(str, Enum):
 
 class ActionTakeninResponsetotheEvent(str, Enum):
      """
-     251 - Action Taken in Response to the Event
+     0251 - Action Taken in Response to the Event
 
      WP  Product withdrawn permanently
      WT  Product withdrawn temporarily
@@ -4552,7 +4565,7 @@ class ActionTakeninResponsetotheEvent(str, Enum):
 
 class CausalityObservations(str, Enum):
      """
-     252 - Causality Observations
+     0252 - Causality Observations
 
      AW  Abatement of event after product withdrawn
      BE  Event recurred after product reintroduced
@@ -4583,7 +4596,7 @@ class CausalityObservations(str, Enum):
 
 class IndirectExposureMechanism(str, Enum):
      """
-     253 - Indirect Exposure Mechanism
+     0253 - Indirect Exposure Mechanism
 
      B  Breast milk
      P  Transplacental
@@ -4602,7 +4615,7 @@ class IndirectExposureMechanism(str, Enum):
 
 class KindofQuantity(str, Enum):
      """
-     254 - Kind of Quantity
+     0254 - Kind of Quantity
 
      CACT  *Catalytic Activity
      CNC  *Catalytic Concentration
@@ -4815,7 +4828,7 @@ class KindofQuantity(str, Enum):
 
 class DurationCategories(str, Enum):
      """
-     255 - Duration Categories
+     0255 - Duration Categories
 
      PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
      *  (asterisk) Life of the "unit."  Used for blood products.
@@ -4876,7 +4889,7 @@ class DurationCategories(str, Enum):
 
 class TimeDelayPostChallenge(str, Enum):
      """
-     256 - Time Delay Post Challenge
+     0256 - Time Delay Post Challenge
 
      BS  Baseline (time just before the challenge)
      PEAK  The time post drug dose at which the highest drug level is reached (differs by drug)
@@ -4973,7 +4986,7 @@ class TimeDelayPostChallenge(str, Enum):
 
 class NatureofChallenge(str, Enum):
      """
-     257 - Nature of Challenge
+     0257 - Nature of Challenge
 
      CFST  Fasting (no calorie intake) for the period specified in the time component of the term, e.g., 1H POST CFST
      EXCZ  Exercise undertaken as challenge (can be quantified)
@@ -4988,7 +5001,7 @@ class NatureofChallenge(str, Enum):
 
 class RelationshipModifier(str, Enum):
      """
-     258 - Relationship Modifier
+     0258 - Relationship Modifier
 
      CONTROL  Control
      PATIENT  Patient
@@ -5005,7 +5018,7 @@ class RelationshipModifier(str, Enum):
 
 class Modality(str, Enum):
      """
-     259 - Modality
+     0259 - Modality
 
      AS  Angioscopy
      BS  Biomagnetic imaging
@@ -5066,7 +5079,7 @@ class Modality(str, Enum):
 
 class PatientLocationType(str, Enum):
      """
-     260 - Patient Location Type
+     0260 - Patient Location Type
 
      N  Nursing Unit
      R  Room
@@ -5091,7 +5104,7 @@ class PatientLocationType(str, Enum):
 
 class LocationEquipment(str, Enum):
      """
-     261 - Location Equipment
+     0261 - Location Equipment
 
      OXY  Oxygen
      SUC  Suction
@@ -5116,7 +5129,7 @@ class LocationEquipment(str, Enum):
 
 class PrivacyLevel(str, Enum):
      """
-     262 - Privacy Level
+     0262 - Privacy Level
 
      F  Isolation
      P  Private room
@@ -5137,7 +5150,7 @@ class PrivacyLevel(str, Enum):
 
 class LevelofCare(str, Enum):
      """
-     263 - Level of Care
+     0263 - Level of Care
 
      A  Ambulatory
      E  Emergency
@@ -5160,7 +5173,7 @@ class LevelofCare(str, Enum):
 
 class SpecialtyType(str, Enum):
      """
-     265 - Specialty Type
+     0265 - Specialty Type
 
      AMB  Ambulatory
      PSY  Psychiatric
@@ -5221,7 +5234,7 @@ class SpecialtyType(str, Enum):
 
 class DaysoftheWeek(str, Enum):
      """
-     267 - Days of the Week
+     0267 - Days of the Week
 
      SAT  Saturday
      SUN  Sunday
@@ -5244,7 +5257,7 @@ class DaysoftheWeek(str, Enum):
 
 class Override(str, Enum):
      """
-     268 - Override
+     0268 - Override
 
      X  Override not allowed
      A  Override allowed
@@ -5259,7 +5272,7 @@ class Override(str, Enum):
 
 class ChargeOnIndicator(str, Enum):
      """
-     269 - Charge On Indicator
+     0269 - Charge On Indicator
 
      O  Charge on Order
      R  Charge on Result
@@ -5272,7 +5285,7 @@ class ChargeOnIndicator(str, Enum):
 
 class DocumentType(str, Enum):
      """
-     270 - Document Type
+     0270 - Document Type
 
      AR  Autopsy report
      CD  Cardiodiagnostics
@@ -5309,7 +5322,7 @@ class DocumentType(str, Enum):
 
 class DocumentCompletionStatus(str, Enum):
      """
-     271 - Document Completion Status
+     0271 - Document Completion Status
 
      DI  Dictated
      DO  Documented
@@ -5332,7 +5345,7 @@ class DocumentCompletionStatus(str, Enum):
 
 class DocumentConfidentialityStatus(str, Enum):
      """
-     272 - Document Confidentiality Status
+     0272 - Document Confidentiality Status
 
      V  Very restricted
      R  Restricted
@@ -5347,7 +5360,7 @@ class DocumentConfidentialityStatus(str, Enum):
 
 class DocumentAvailabilityStatus(str, Enum):
      """
-     273 - Document Availability Status
+     0273 - Document Availability Status
 
      AV  Available for patient care
      CA  Deleted
@@ -5364,7 +5377,7 @@ class DocumentAvailabilityStatus(str, Enum):
 
 class DocumentStorageStatus(str, Enum):
      """
-     275 - Document Storage Status
+     0275 - Document Storage Status
 
      AC  Active
      AA  Active and archived
@@ -5381,7 +5394,7 @@ class DocumentStorageStatus(str, Enum):
 
 class Appointmentreasoncodes(str, Enum):
      """
-     276 - Appointment reason codes
+     0276 - Appointment reason codes
 
      ROUTINE  Routine appointment - default if not valued
      WALKIN  A previously unscheduled walk-in visit
@@ -5400,7 +5413,7 @@ class Appointmentreasoncodes(str, Enum):
 
 class AppointmentTypeCodes(str, Enum):
      """
-     277 - Appointment Type Codes
+     0277 - Appointment Type Codes
 
      Normal  Routine schedule request type - default if not valued
      Tentative  A request for a tentative (e.g., "penciled in") appointment
@@ -5415,7 +5428,7 @@ class AppointmentTypeCodes(str, Enum):
 
 class Fillerstatuscodes(str, Enum):
      """
-     278 - Filler status codes
+     0278 - Filler status codes
 
      Pending  Appointment has not yet been confirmed
      Waitlist  Appointment has been placed on a waiting list for a particular slot, or set of slots
@@ -5446,7 +5459,7 @@ class Fillerstatuscodes(str, Enum):
 
 class AllowSubstitutionCodes(str, Enum):
      """
-     279 - Allow Substitution Codes
+     0279 - Allow Substitution Codes
 
      No  Substitution of this resource is not allowed
      Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
@@ -5463,7 +5476,7 @@ class AllowSubstitutionCodes(str, Enum):
 
 class ReferralPriority(str, Enum):
      """
-     280 - Referral Priority
+     0280 - Referral Priority
 
      S  STAT
      A  ASAP
@@ -5478,7 +5491,7 @@ class ReferralPriority(str, Enum):
 
 class ReferralType(str, Enum):
      """
-     281 - Referral Type
+     0281 - Referral Type
 
      Lab  Laboratory
      Rad  Radiology
@@ -5499,7 +5512,7 @@ class ReferralType(str, Enum):
 
 class ReferralDisposition(str, Enum):
      """
-     282 - Referral Disposition
+     0282 - Referral Disposition
 
      WR  Send Written Report
      RP  Return Patient After Evaluation
@@ -5516,7 +5529,7 @@ class ReferralDisposition(str, Enum):
 
 class ReferralStatus(str, Enum):
      """
-     283 - Referral Status
+     0283 - Referral Status
 
      A  Accepted
      P  Pending
@@ -5533,7 +5546,7 @@ class ReferralStatus(str, Enum):
 
 class ReferralCategory(str, Enum):
      """
-     284 - Referral Category
+     0284 - Referral Category
 
      I  Inpatient
      O  Outpatient
@@ -5550,7 +5563,7 @@ class ReferralCategory(str, Enum):
 
 class ProviderRole(str, Enum):
      """
-     286 - Provider Role
+     0286 - Provider Role
 
      RP  Referring Provider
      PP  Primary Care Provider
@@ -5567,7 +5580,7 @@ class ProviderRole(str, Enum):
 
 class Problem_GoalActionCode(str, Enum):
      """
-     287 - Problem-Goal Action Code
+     0287 - Problem-Goal Action Code
 
      AD  ADD
      CO  CORRECT
@@ -5590,7 +5603,7 @@ class Problem_GoalActionCode(str, Enum):
 
 class SubtypeofReferencedData(str, Enum):
      """
-     291 - Subtype of Referenced Data
+     0291 - Subtype of Referenced Data
 
      Octet-stream  Uninterpreted binary data
      BASIC  ISDN PCM audio data
@@ -5606,7 +5619,7 @@ class SubtypeofReferencedData(str, Enum):
      SGML  Standard Generalized Markup Language (HL7 V2.3.1 and later)
      TIFF  TIFF image data
      JOT  Electronic ink data (Jot 1.0 standard)
-1312
+       Source RFC 2046
      x-hl7-cda-level-one  HL7 Clinical Document Architecture Level One document
      """
 
@@ -5625,12 +5638,13 @@ class SubtypeofReferencedData(str, Enum):
      SGML = "SGML"
      TIFF = "TIFF"
      JOT = "JOT"
+     NEL = ""
      x_hl7_cda_level_one = "x-hl7-cda-level-one"
 
 
 class Vaccinesadministered(str, Enum):
      """
-     292 - Vaccines administered
+     0292 - Vaccines administered
 
      54  adenovirus, type 4
      55  adenovirus, type 7
@@ -5887,7 +5901,7 @@ class Vaccinesadministered(str, Enum):
 
 class TimeSelectionCriteriaParameterClassCodes(str, Enum):
      """
-     294 - Time Selection Criteria Parameter Class Codes
+     0294 - Time Selection Criteria Parameter Class Codes
 
      Prefstart  An indicator that there is a preferred start time for the appointment request, service or resource.
      Prefend  An indicator that there is a preferred end time for the appointment request, service or resource.
@@ -5914,7 +5928,7 @@ class TimeSelectionCriteriaParameterClassCodes(str, Enum):
 
 class CPRangeType(str, Enum):
      """
-     298 - CP Range Type
+     0298 - CP Range Type
 
      P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
      F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
@@ -5927,7 +5941,7 @@ class CPRangeType(str, Enum):
 
 class Encoding(str, Enum):
      """
-     299 - Encoding
+     0299 - Encoding
 
      A  No encoding - data are displayable ASCII characters.
      Hex  Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
@@ -5942,7 +5956,7 @@ class Encoding(str, Enum):
 
 class UniversalIDType(str, Enum):
      """
-     301 - Universal ID Type
+     0301 - Universal ID Type
 
      DNS  An Internet host name, in accordance with RFC 1035; or an IP address. Either in ASCII or as integers, with periods between components ("dotted" notation).
      EUI64  IEEE 64-bit Extended Unique Identifier is comprised of a  24-bit company identifier and a 40-bit instance identifier.  The value shall be formatted as 16 ASCII HEX digits, for example, "AABBCC1122334455".  The 24-bit company identifier, formally known as 
@@ -5985,7 +5999,7 @@ class UniversalIDType(str, Enum):
 
 class PersonLocationType(str, Enum):
      """
-     305 - Person Location Type
+     0305 - Person Location Type
 
      C  Clinic
      D  Department
@@ -6008,7 +6022,7 @@ class PersonLocationType(str, Enum):
 
 class CoverageType(str, Enum):
      """
-     309 - Coverage Type
+     0309 - Coverage Type
 
      H  Hospital/institutional
      P  Physician/professional
@@ -6025,7 +6039,7 @@ class CoverageType(str, Enum):
 
 class JobStatus(str, Enum):
      """
-     311 - Job Status
+     0311 - Job Status
 
      P  Permanent
      T  Temporary
@@ -6042,7 +6056,7 @@ class JobStatus(str, Enum):
 
 class LivingWillCode(str, Enum):
      """
-     315 - Living Will Code
+     0315 - Living Will Code
 
      Y  Yes, patient has a living will
      F  Yes, patient has a living will but it is not on file
@@ -6061,7 +6075,7 @@ class LivingWillCode(str, Enum):
 
 class OrganDonorCode(str, Enum):
      """
-     316 - Organ Donor Code
+     0316 - Organ Donor Code
 
      Y  Yes, patient is a documented donor and documentation is on file
      F  Yes, patient is a documented donor, but documentation is not on file
@@ -6084,7 +6098,7 @@ class OrganDonorCode(str, Enum):
 
 class Annotations(str, Enum):
      """
-     317 - Annotations
+     0317 - Annotations
 
      9900  Pace spike
      9901  SAS marker
@@ -6103,7 +6117,7 @@ class Annotations(str, Enum):
 
 class DispenseMethod(str, Enum):
      """
-     321 - Dispense Method
+     0321 - Dispense Method
 
      TR  Traditional
      UD  Unit Dose
@@ -6120,7 +6134,7 @@ class DispenseMethod(str, Enum):
 
 class CompletionStatus(str, Enum):
      """
-     322 - Completion Status
+     0322 - Completion Status
 
      CP  Complete
      RE  Refused
@@ -6137,7 +6151,7 @@ class CompletionStatus(str, Enum):
 
 class LocationCharacteristicID(str, Enum):
      """
-     324 - Location Characteristic ID
+     0324 - Location Characteristic ID
 
      SMK  Smoking
      LIC  Licensed
@@ -6170,7 +6184,7 @@ class LocationCharacteristicID(str, Enum):
 
 class LocationRelationshipID(str, Enum):
      """
-     325 - Location Relationship ID
+     0325 - Location Relationship ID
 
      RX  Nearest  pharmacy
      RX2  Second nearest pharmacy
@@ -6193,7 +6207,7 @@ class LocationRelationshipID(str, Enum):
 
 class VisitIndicator(str, Enum):
      """
-     326 - Visit Indicator
+     0326 - Visit Indicator
 
      A  Account level (default)
      V  Visit level
@@ -6206,7 +6220,7 @@ class VisitIndicator(str, Enum):
 
 class QuantityMethod(str, Enum):
      """
-     329 - Quantity Method
+     0329 - Quantity Method
 
      A  Actual count
      E  Estimated (see comment)
@@ -6219,7 +6233,7 @@ class QuantityMethod(str, Enum):
 
 class MarketingBasis(str, Enum):
      """
-     330 - Marketing Basis
+     0330 - Marketing Basis
 
      510K  510 (K)
      510E  510 (K) exempt
@@ -6240,7 +6254,7 @@ class MarketingBasis(str, Enum):
 
 class FacilityType(str, Enum):
      """
-     331 - Facility Type
+     0331 - Facility Type
 
      U  User
      M  Manufacturer
@@ -6257,7 +6271,7 @@ class FacilityType(str, Enum):
 
 class SourceType(str, Enum):
      """
-     332 - Source Type
+     0332 - Source Type
 
      I  Initiate
      A  Accept
@@ -6270,7 +6284,7 @@ class SourceType(str, Enum):
 
 class DisabledPersonCode(str, Enum):
      """
-     334 - Disabled Person Code  
+     0334 - Disabled Person Code  
 
      PT  Patient
      GT  Guarantor
@@ -6287,7 +6301,7 @@ class DisabledPersonCode(str, Enum):
 
 class RepeatPattern(str, Enum):
      """
-     335 - Repeat Pattern
+     0335 - Repeat Pattern
 
      Q<integer>S  every  seconds
      Q<integer>M  every  minutes
@@ -6352,7 +6366,7 @@ class RepeatPattern(str, Enum):
 
 class ReferralReason(str, Enum):
      """
-     336 - Referral Reason
+     0336 - Referral Reason
 
      S  Second Opinion
      P  Patient Preference
@@ -6369,7 +6383,7 @@ class ReferralReason(str, Enum):
 
 class CertificationStatus(str, Enum):
      """
-     337 - Certification Status
+     0337 - Certification Status
 
      C  Certified
      E  Eligible
@@ -6382,7 +6396,7 @@ class CertificationStatus(str, Enum):
 
 class PractitionerIDNumberType(str, Enum):
      """
-     338 - Practitioner ID Number Type
+     0338 - Practitioner ID Number Type
 
      CY  County number
      DEA  Drug Enforcement Agency no.
@@ -6415,7 +6429,7 @@ class PractitionerIDNumberType(str, Enum):
 
 class AdvancedBeneficiaryNoticeCode(str, Enum):
      """
-     339 - Advanced Beneficiary Notice Code
+     0339 - Advanced Beneficiary Notice Code
 
      1  Service is subject to medical necessity procedures
      2  Patient has been informed of responsibility, and agrees to pay for service
@@ -6432,7 +6446,7 @@ class AdvancedBeneficiaryNoticeCode(str, Enum):
 
 class PatientsRelationshiptoInsured(str, Enum):
      """
-     344 - Patient s Relationship to Insured
+     0344 - Patient s Relationship to Insured
 
      01  Patient is insured
      02  Spouse
@@ -6477,9 +6491,31 @@ class PatientsRelationshiptoInsured(str, Enum):
      _19 = "19"
 
 
+class OccurrenceCode(str, Enum):
+     """
+     0350 - Occurrence Code
+
+       Use NUBC codes
+     """
+
+
+     NEL = ""
+
+
+class OccurrenceSpan(str, Enum):
+     """
+     0351 - Occurrence Span
+
+       use NUBC codes
+     """
+
+
+     NEL = ""
+
+
 class CWEstatuses(str, Enum):
      """
-     353 - CWE statuses
+     0353 - CWE statuses
 
      U  Unknown
      UASK  Asked but Unknown
@@ -6498,7 +6534,7 @@ class CWEstatuses(str, Enum):
 
 class MessageStructure(str, Enum):
      """
-     354 - Message Structure
+     0354 - Message Structure
 
      ACK  Varies
      ADR_A19  
@@ -6722,14 +6758,6 @@ class MessageStructure(str, Enum):
      VXX_V02  V02
      ORU_W01  W01
      QRF_W02  W02
-     QBP_Z73  Z73
-     RSP_Z82  Z82
-     RSP_Z86  Z86
-     RSP_Z88  Z88
-     RSP_Z90  Z90
-     RTB_Knn  Knn
-     RTB_Z74  Z74
-     QBP_Qnn  Qnn
      """
 
 
@@ -6955,19 +6983,11 @@ class MessageStructure(str, Enum):
      VXX_V02 = "VXX_V02"
      ORU_W01 = "ORU_W01"
      QRF_W02 = "QRF_W02"
-     QBP_Z73 = "QBP_Z73"
-     RSP_Z82 = "RSP_Z82"
-     RSP_Z86 = "RSP_Z86"
-     RSP_Z88 = "RSP_Z88"
-     RSP_Z90 = "RSP_Z90"
-     RTB_Knn = "RTB_Knn"
-     RTB_Z74 = "RTB_Z74"
-     QBP_Qnn = "QBP_Qnn"
 
 
 class PrimaryKeyValueType(str, Enum):
      """
-     355 - Primary Key Value Type
+     0355 - Primary Key Value Type
 
      PL  Person location
      CE  Coded element
@@ -6982,7 +7002,7 @@ class PrimaryKeyValueType(str, Enum):
 
 class AlternateCharacterSetHandlingScheme(str, Enum):
      """
-     356 - Alternate Character Set Handling Scheme
+     0356 - Alternate Character Set Handling Scheme
 
      ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension Technique". .
      2.3  The character set switching mode specified in HL7 2.5, section 2.7.2 and section 2.A.46, "XPN - extended person name".
@@ -6997,7 +7017,7 @@ class AlternateCharacterSetHandlingScheme(str, Enum):
 
 class MessageErrorConditionCodes(str, Enum):
      """
-     357 - Message Error Condition Codes
+     0357 - Message Error Condition Codes
 
      0  Message accepted
      100  Segment sequence error
@@ -7034,7 +7054,7 @@ class MessageErrorConditionCodes(str, Enum):
 
 class DiagnosisPriority(str, Enum):
      """
-     359 - Diagnosis Priority
+     0359 - Diagnosis Priority
 
      0  Not included in diagnosis ranking
      1  The primary diagnosis
@@ -7050,7 +7070,7 @@ class DiagnosisPriority(str, Enum):
 
 class Degree_License_Certificate(str, Enum):
      """
-     360 - Degree-License-Certificate
+     0360 - Degree-License-Certificate
 
      PN  Advanced Practice Nurse
      AAS  Associate of Applied Science
@@ -7179,7 +7199,7 @@ class Degree_License_Certificate(str, Enum):
 
 class CommentType(str, Enum):
      """
-     364 - Comment Type
+     0364 - Comment Type
 
      PI  Patient Instructions
      AI  Ancillary Instructions
@@ -7204,7 +7224,7 @@ class CommentType(str, Enum):
 
 class EquipmentState(str, Enum):
      """
-     365 - Equipment State
+     0365 - Equipment State
 
      PU  Powered Up
      IN  Initializing
@@ -7215,7 +7235,7 @@ class EquipmentState(str, Enum):
      PA  Pausing
      PD  Paused
      ES  E-stopped
-1312
+       (null) No state change
      """
 
 
@@ -7228,31 +7248,33 @@ class EquipmentState(str, Enum):
      PA = "PA"
      PD = "PD"
      ES = "ES"
+     NEL = ""
 
 
 class Local_RemoteControlState(str, Enum):
      """
-     366 - Local-Remote Control State
+     0366 - Local-Remote Control State
 
      L  Local
      R  Remote
-1312
+       (null) No state change
      """
 
 
      L = "L"
      R = "R"
+     NEL = ""
 
 
 class AlertLevel(str, Enum):
      """
-     367 - Alert Level
+     0367 - Alert Level
 
      N  Normal
      W  Warning
      S  Serious
      C  Critical
-1312
+       (null) No level change
      """
 
 
@@ -7260,11 +7282,12 @@ class AlertLevel(str, Enum):
      W = "W"
      S = "S"
      C = "C"
+     NEL = ""
 
 
 class RemoteControlCommand(str, Enum):
      """
-     368 - Remote Control Command
+     0368 - Remote Control Command
 
      SA  Sampling
      LO  Load
@@ -7311,7 +7334,7 @@ class RemoteControlCommand(str, Enum):
 
 class SpecimenRole(str, Enum):
      """
-     369 - Specimen Role
+     0369 - Specimen Role
 
      B  Blind Sample
      C  Calibrator, used for initial setting of calibration
@@ -7342,7 +7365,7 @@ class SpecimenRole(str, Enum):
 
 class ContainerStatus(str, Enum):
      """
-     370 - Container Status
+     0370 - Container Status
 
      I  Identified
      P  In Position
@@ -7367,7 +7390,7 @@ class ContainerStatus(str, Enum):
 
 class Additive_Preservative(str, Enum):
      """
-     371 - Additive-Preservative
+     0371 - Additive-Preservative
 
      F10  10% Formalin
      C32  3.2%  Citrate
@@ -7490,7 +7513,7 @@ class Additive_Preservative(str, Enum):
 
 class SpecimenComponent(str, Enum):
      """
-     372 - Specimen Component
+     0372 - Specimen Component
 
      SUP  Supernatant
      SED  Sediment
@@ -7515,7 +7538,7 @@ class SpecimenComponent(str, Enum):
 
 class Treatment(str, Enum):
      """
-     373 - Treatment
+     0373 - Treatment
 
      LDLP  LDL Precipitation
      RECA  Recalification
@@ -7540,7 +7563,7 @@ class Treatment(str, Enum):
 
 class SystemInducedContaminants(str, Enum):
      """
-     374 - System Induced Contaminants
+     0374 - System Induced Contaminants
 
      CNTM  Present, type of contamination unspecified
      """
@@ -7551,7 +7574,7 @@ class SystemInducedContaminants(str, Enum):
 
 class ArtificialBlood(str, Enum):
      """
-     375 - Artificial Blood
+     0375 - Artificial Blood
 
      SFHB  Stromal free hemoglobin preparations
      FLUR  Fluorocarbons
@@ -7564,7 +7587,7 @@ class ArtificialBlood(str, Enum):
 
 class SpecialHandlingCode(str, Enum):
      """
-     376 - Special Handling Code
+     0376 - Special Handling Code
 
      C37  Body temperature
      AMB  Ambient temperature
@@ -7607,7 +7630,7 @@ class SpecialHandlingCode(str, Enum):
 
 class OtherEnvironmentalFactors(str, Enum):
      """
-     377 - Other Environmental Factors
+     0377 - Other Environmental Factors
 
      ATM  Opened container, atmosphere and duration unspecified
      A60  Opened container, indoor atmosphere, 60 minutes duration
@@ -7620,7 +7643,7 @@ class OtherEnvironmentalFactors(str, Enum):
 
 class SubstanceStatus(str, Enum):
      """
-     383 - Substance Status
+     0383 - Substance Status
 
      EW  Expired Warning
      EE  Expired Error
@@ -7651,7 +7674,7 @@ class SubstanceStatus(str, Enum):
 
 class SubstanceType(str, Enum):
      """
-     384 - Substance Type
+     0384 - Substance Type
 
      SR  Single Test Reagent
      MR  Multiple Test Reagent
@@ -7684,7 +7707,7 @@ class SubstanceType(str, Enum):
 
 class CommandResponse(str, Enum):
      """
-     387 - Command Response
+     0387 - Command Response
 
      OK  Command completed successfully
      TI  Command cannot be completed within requested completion time
@@ -7703,7 +7726,7 @@ class CommandResponse(str, Enum):
 
 class ProcessingType(str, Enum):
      """
-     388 - Processing Type
+     0388 - Processing Type
 
      P  Regular Production
      E  Evaluation
@@ -7714,9 +7737,9 @@ class ProcessingType(str, Enum):
      E = "E"
 
 
-class AnalyteRepeatStatus(str, Enum):
+class Analyterepeatstatus(str, Enum):
      """
-     389 - Analyte Repeat Status
+     0389 - Analyte repeat status
 
      O  Original, first run
      R  Repeated without dilution
@@ -7733,7 +7756,7 @@ class AnalyteRepeatStatus(str, Enum):
 
 class SegmentGroup(str, Enum):
      """
-     391 - Segment Group
+     0391 - Segment Group
 
      ADMINISTRATION  
      ALLERGY  
@@ -7748,6 +7771,8 @@ class SegmentGroup(str, Enum):
      CLOCK  
      CLOCK_AND_STATISTICS  
      CLOCK_AND_STATS_WITH_NOTE  
+     CLOCK_AND_STATS_WITH_NOTES  
+     CLOCK_AND_STATS_WITH_NOTES_ALT  
      COMMAND  
      COMMAND_RESPONSE  
      COMMON_ORDER  
@@ -7882,6 +7907,8 @@ class SegmentGroup(str, Enum):
      CLOCK = "CLOCK"
      CLOCK_AND_STATISTICS = "CLOCK_AND_STATISTICS"
      CLOCK_AND_STATS_WITH_NOTE = "CLOCK_AND_STATS_WITH_NOTE"
+     CLOCK_AND_STATS_WITH_NOTES = "CLOCK_AND_STATS_WITH_NOTES"
+     CLOCK_AND_STATS_WITH_NOTES_ALT = "CLOCK_AND_STATS_WITH_NOTES_ALT"
      COMMAND = "COMMAND"
      COMMAND_RESPONSE = "COMMAND_RESPONSE"
      COMMON_ORDER = "COMMON_ORDER"
@@ -8004,7 +8031,7 @@ class SegmentGroup(str, Enum):
 
 class MatchReason(str, Enum):
      """
-     392 - Match Reason
+     0392 - Match Reason
 
      DB  Match on Date of Birth
      NA  Match on Name (Alpha Match)
@@ -8021,7 +8048,7 @@ class MatchReason(str, Enum):
 
 class MatchAlgorithms(str, Enum):
      """
-     393 - Match Algorithms
+     0393 - Match Algorithms
 
      LINKSOFT_2.01  Proprietary algorithm for LinkSoft v2.01
      MATCHWARE_1.2  Proprietary algorithm for MatchWare v1.2
@@ -8034,7 +8061,7 @@ class MatchAlgorithms(str, Enum):
 
 class ResponseModality(str, Enum):
      """
-     394 - Response Modality
+     0394 - Response Modality
 
      R  Real Time
      T  Bolus (a series of responses sent at the same time without use of batch formatting)
@@ -8049,7 +8076,7 @@ class ResponseModality(str, Enum):
 
 class ModifyIndicator(str, Enum):
      """
-     395 - Modify Indicator
+     0395 - Modify Indicator
 
      N  New Subscription
      M  Modified Subscription
@@ -8062,10 +8089,11 @@ class ModifyIndicator(str, Enum):
 
 class CodingSystem(str, Enum):
      """
-     396 - Coding System
+     0396 - Coding System
 
+     General code  Active
      L  Local general code
-     HPC  CMS (formerly HCFA )Procedure Codes (HCPCS)
+     99zzz  Local general code where z is an alphanumeric character
      ACR  American College of Radiology finding codes
      ALPHAID2006  German Alpha-ID v2006
      ALPHAID2007  German Alpha-ID v2007
@@ -8127,7 +8155,7 @@ class CodingSystem(str, Enum):
      HI  Health Outcomes
      HL7nnnn  HL7 Defined Codes where nnnn is the HL7 table number
      HOT  Japanese Nationwide Medicine Code
-     99zzz  Local general code where z is an alphanumeric character
+     HPC  CMS (formerly HCFA )Procedure Codes (HCPCS)
      I10  ICD-10
      I10G2004  ICD 10 Germany 2004
      I10G2005  ICD 10 Germany 2005
@@ -8237,8 +8265,9 @@ class CodingSystem(str, Enum):
      """
 
 
+     General_code = "General code"
      L = "L"
-     HPC = "HPC"
+     _99zzz = "99zzz"
      ACR = "ACR"
      ALPHAID2006 = "ALPHAID2006"
      ALPHAID2007 = "ALPHAID2007"
@@ -8263,7 +8292,7 @@ class CodingSystem(str, Enum):
      CDCPHINVS = "CDCPHINVS"
      CDCREC = "CDCREC"
      CDS = "CDS"
-     CE_OBSOLETE = "CE (obsolete)"
+     CE_OBSOLETE = "CE_OBSOLETE"
      CLP = "CLP"
      CPTM = "CPTM"
      CST = "CST"
@@ -8300,7 +8329,7 @@ class CodingSystem(str, Enum):
      HI = "HI"
      HL7nnnn = "HL7nnnn"
      HOT = "HOT"
-     _99zzz = "99zzz"
+     HPC = "HPC"
      I10 = "I10"
      I10G2004 = "I10G2004"
      I10G2005 = "I10G2005"
@@ -8325,7 +8354,7 @@ class CodingSystem(str, Enum):
      ICDO3 = "ICDO3"
      ICS = "ICS"
      ICSD = "ICSD"
-     ISOnnnn_DEPRECATED = "ISOnnnn (deprecated)"
+     ISOnnnn_DEPRECATED = "ISOnnnn_DEPRECATED"
      ISO = "ISO"
      ISO3166_1 = "ISO3166_1"
      ISO3166_2 = "ISO3166_2"
@@ -8411,7 +8440,7 @@ class CodingSystem(str, Enum):
 
 class Sequencing(str, Enum):
      """
-     397 - Sequencing
+     0397 - Sequencing
 
      A  Ascending
      AN  Ascending, case insensitive
@@ -8430,7 +8459,7 @@ class Sequencing(str, Enum):
 
 class ContinuationStyleCode(str, Enum):
      """
-     398 - Continuation Style Code
+     0398 - Continuation Style Code
 
      F  Fragmentation
      I  Interactive Continuation
@@ -8945,9 +8974,10 @@ class CountryCode(str, Enum):
      ZWE	= "Zimbabwe"
 
 
+
 class GovernmentReimbursementProgram(str, Enum):
      """
-     401 - Government Reimbursement Program
+     0401 - Government Reimbursement Program
 
      MM  Medicare
      C  Medi-Cal
@@ -8960,7 +8990,7 @@ class GovernmentReimbursementProgram(str, Enum):
 
 class SchoolType(str, Enum):
      """
-     402 - School Type
+     0402 - School Type
 
      D  Dental
      G  Graduate
@@ -8977,7 +9007,7 @@ class SchoolType(str, Enum):
 
 class LanguageAbility(str, Enum):
      """
-     403 - Language Ability
+     0403 - Language Ability
 
      1  Read
      2  Write
@@ -8996,7 +9026,7 @@ class LanguageAbility(str, Enum):
 
 class LanguageProficiency(str, Enum):
      """
-     404 - Language Proficiency
+     0404 - Language Proficiency
 
      1  Excellent
      2  Good
@@ -9017,7 +9047,7 @@ class LanguageProficiency(str, Enum):
 
 class ParticipantOrganizationUnitType(str, Enum):
      """
-     406 - Participant Organization Unit Type
+     0406 - Participant Organization Unit Type
 
      H  Home
      O  Office
@@ -9038,9 +9068,9 @@ class ParticipantOrganizationUnitType(str, Enum):
      _5 = "5"
 
 
-class ApplicationChangeType(str, Enum):
+class Applicationchangetype(str, Enum):
      """
-     409 - Application Change Type
+     0409 - Application change type
 
      SU  Start up
      SD  Shut down
@@ -9055,7 +9085,7 @@ class ApplicationChangeType(str, Enum):
 
 class DRGTransferType(str, Enum):
      """
-     415 - DRG Transfer Type
+     0415 - DRG Transfer Type
 
      N  DRG Non Exempt
      E  DRG Exempt
@@ -9068,7 +9098,7 @@ class DRGTransferType(str, Enum):
 
 class ProcedureDRGType(str, Enum):
      """
-     416 - Procedure DRG Type
+     0416 - Procedure DRG Type
 
      1  1st non-Operative
      2  2nd non-Operative
@@ -9087,7 +9117,7 @@ class ProcedureDRGType(str, Enum):
 
 class TissueTypeCode(str, Enum):
      """
-     417 - Tissue Type Code
+     0417 - Tissue Type Code
 
      1  Insufficient Tissue
      2  Not abnormal
@@ -9122,7 +9152,7 @@ class TissueTypeCode(str, Enum):
 
 class ProcedurePriority(str, Enum):
      """
-     418 - Procedure Priority
+     0418 - Procedure Priority
 
      0  the admitting procedure
      1  the primary procedure
@@ -9138,7 +9168,7 @@ class ProcedurePriority(str, Enum):
 
 class SeverityofIllnessCode(str, Enum):
      """
-     421 - Severity of Illness Code
+     0421 - Severity of Illness Code
 
      MI  Mild
      MO  Moderate
@@ -9153,7 +9183,7 @@ class SeverityofIllnessCode(str, Enum):
 
 class TriageCode(str, Enum):
      """
-     422 - Triage Code
+     0422 - Triage Code
 
      1  Non-acute
      2  Acute
@@ -9174,7 +9204,7 @@ class TriageCode(str, Enum):
 
 class CaseCategoryCode(str, Enum):
      """
-     423 - Case Category Code
+     0423 - Case Category Code
 
      D  Doctor's Office Closed
      """
@@ -9185,7 +9215,7 @@ class CaseCategoryCode(str, Enum):
 
 class GestationCategoryCode(str, Enum):
      """
-     424 - Gestation Category Code
+     0424 - Gestation Category Code
 
      1  Premature / Pre-term
      2  Full Term
@@ -9200,7 +9230,7 @@ class GestationCategoryCode(str, Enum):
 
 class NewbornCode(str, Enum):
      """
-     425 - Newborn Code
+     0425 - Newborn Code
 
      5  Born at home
      3  Born en route
@@ -9219,7 +9249,7 @@ class NewbornCode(str, Enum):
 
 class BloodProductCode(str, Enum):
      """
-     426 - Blood Product Code
+     0426 - Blood Product Code
 
      CRYO  Cryoprecipitated AHF
      CRYOP  Pooled Cryoprecipitate
@@ -9258,7 +9288,7 @@ class BloodProductCode(str, Enum):
 
 class RiskManagementIncidentCode(str, Enum):
      """
-     427 - Risk Management Incident Code
+     0427 - Risk Management Incident Code
 
      B  Body fluid exposure
      C  Contaminated Substance
@@ -9295,7 +9325,7 @@ class RiskManagementIncidentCode(str, Enum):
 
 class IncidentTypeCode(str, Enum):
      """
-     428 - Incident Type Code
+     0428 - Incident Type Code
 
      P  Preventable
      U  User Error
@@ -9310,7 +9340,7 @@ class IncidentTypeCode(str, Enum):
 
 class ProductionClassCode(str, Enum):
      """
-     429 - Production Class Code
+     0429 - Production Class Code
 
      BR  Breeding/genetic stock
      DA  Dairy
@@ -9343,7 +9373,7 @@ class ProductionClassCode(str, Enum):
 
 class ModeofArrivalCode(str, Enum):
      """
-     430 - Mode of Arrival Code
+     0430 - Mode of Arrival Code
 
      A  Ambulance
      C  Car
@@ -9366,7 +9396,7 @@ class ModeofArrivalCode(str, Enum):
 
 class RecreationalDrugUseCode(str, Enum):
      """
-     431 - Recreational Drug Use Code
+     0431 - Recreational Drug Use Code
 
      A  Alcohol
      K  Kava
@@ -9389,7 +9419,7 @@ class RecreationalDrugUseCode(str, Enum):
 
 class AdmissionLevelofCareCode(str, Enum):
      """
-     432 - Admission Level of Care Code
+     0432 - Admission Level of Care Code
 
      AC  Acute
      CH  Chronic
@@ -9410,7 +9440,7 @@ class AdmissionLevelofCareCode(str, Enum):
 
 class PrecautionCode(str, Enum):
      """
-     433 - Precaution Code
+     0433 - Precaution Code
 
      A  Aggressive
      B  Blind
@@ -9437,7 +9467,7 @@ class PrecautionCode(str, Enum):
 
 class PatientConditionCode(str, Enum):
      """
-     434 - Patient Condition Code
+     0434 - Patient Condition Code
 
      A  Satisfactory
      C  Critical
@@ -9458,7 +9488,7 @@ class PatientConditionCode(str, Enum):
 
 class AdvanceDirectiveCode(str, Enum):
      """
-     435 - Advance Directive Code
+     0435 - Advance Directive Code
 
      DNR  Do not resuscitate
      N  No directive
@@ -9471,7 +9501,7 @@ class AdvanceDirectiveCode(str, Enum):
 
 class SensitivitytoCausativeAgentCode(str, Enum):
      """
-     436 - Sensitivity to Causative Agent Code
+     0436 - Sensitivity to Causative Agent Code
 
      AD  Adverse Reaction (Not otherwise classified)
      AL  Allergy
@@ -9490,7 +9520,7 @@ class SensitivitytoCausativeAgentCode(str, Enum):
 
 class AlertDeviceCode(str, Enum):
      """
-     437 - Alert Device Code
+     0437 - Alert Device Code
 
      B  Bracelet
      N  Necklace
@@ -9505,7 +9535,7 @@ class AlertDeviceCode(str, Enum):
 
 class AllergyClinicalStatus(str, Enum):
      """
-     438 - Allergy Clinical Status
+     0438 - Allergy Clinical Status
 
      U  Unconfirmed
      P  Pending
@@ -9528,7 +9558,7 @@ class AllergyClinicalStatus(str, Enum):
 
 class DataTypes(str, Enum):
      """
-     440 - Data Types
+     0440 - Data Types
 
      AD  Address
      AUI  Authorization information
@@ -9727,7 +9757,7 @@ class DataTypes(str, Enum):
 
 class ImmunizationRegistryStatus(str, Enum):
      """
-     441 - Immunization Registry Status
+     0441 - Immunization Registry Status
 
      A  Active
      I  Inactive
@@ -9750,7 +9780,7 @@ class ImmunizationRegistryStatus(str, Enum):
 
 class LocationServiceCode(str, Enum):
      """
-     442 - Location Service Code
+     0442 - Location Service Code
 
      D  Diagnostic
      T  Therapeutic
@@ -9765,9 +9795,9 @@ class LocationServiceCode(str, Enum):
      E = "E"
 
 
-class ProviderrRole(str, Enum):
+class Provider_Role(str, Enum):
      """
-     443 - Provider Role
+     0443 - Provider Role
 
      AD  Admitting
      AP  Administering Provider
@@ -9822,7 +9852,7 @@ class ProviderrRole(str, Enum):
 
 class NameAssemblyOrder(str, Enum):
      """
-     444 - Name Assembly Order
+     0444 - Name Assembly Order
 
      G  Prefix Given Middle Family Suffix
      F  Prefix Family Middle Given Suffix
@@ -9835,7 +9865,7 @@ class NameAssemblyOrder(str, Enum):
 
 class IdentityReliabilityCode(str, Enum):
      """
-     445 - Identity Reliability Code
+     0445 - Identity Reliability Code
 
      US  Unknown/Default Social Security Number
      UD  Unknown/Default Date of Birth
@@ -9850,9 +9880,9 @@ class IdentityReliabilityCode(str, Enum):
      AL = "AL"
 
 
-class EventtType(str, Enum):
+class Event_Type(str, Enum):
      """
-     450 - Event Type
+     0450 - Event Type
 
      LOG  Log Event
      SER  Service Event
@@ -9865,7 +9895,7 @@ class EventtType(str, Enum):
 
 class SubstanceIdentifier(str, Enum):
      """
-     451 - Substance Identifier
+     0451 - Substance Identifier
 
      ALL  Used for query of all inventory items
      """
@@ -9876,7 +9906,7 @@ class SubstanceIdentifier(str, Enum):
 
 class HealthCareProviderTypeCode(str, Enum):
      """
-     452 - Health Care Provider Type Code
+     0452 - Health Care Provider Type Code
 
      SUGGESTION  ANSI ASC X12 Health Care Provider Taxonomy, Level 1 - Type
      """
@@ -9887,7 +9917,7 @@ class HealthCareProviderTypeCode(str, Enum):
 
 class HealthCareProviderClassification(str, Enum):
      """
-     453 - Health Care Provider Classification
+     0453 - Health Care Provider Classification
 
      SUGGESTION  ANSI ASC X12 Health Care Provider Taxonomy, Level 2 -  Classification
      """
@@ -9898,7 +9928,7 @@ class HealthCareProviderClassification(str, Enum):
 
 class HealthCareProviderAreaofSpecialization(str, Enum):
      """
-     454 - Health Care Provider Area of Specialization
+     0454 - Health Care Provider Area of Specialization
 
      SUGGESTION  ANSI ASC X12 Health Care Provider Taxonomy, Level 3 - specialization
      """
@@ -9909,7 +9939,7 @@ class HealthCareProviderAreaofSpecialization(str, Enum):
 
 class OverallClaimDispositionCode(str, Enum):
      """
-     457 - Overall Claim Disposition Code
+     0457 - Overall Claim Disposition Code
 
      0  No edits present on claim
      1  Only edits present are for line item denial or rejection
@@ -9928,7 +9958,7 @@ class OverallClaimDispositionCode(str, Enum):
 
 class OCEEditCode(str, Enum):
      """
-     458 - OCE Edit Code
+     0458 - OCE Edit Code
 
      1  Invalid diagnosis code
      2  Diagnosis and age conflict
@@ -10022,7 +10052,7 @@ class OCEEditCode(str, Enum):
 
 class ReimbursementActionCode(str, Enum):
      """
-     459 - Reimbursement Action Code
+     0459 - Reimbursement Action Code
 
      0  OCE line item denial or rejection is not ignored
      1  OCE line item denial or rejection is ignored
@@ -10039,7 +10069,7 @@ class ReimbursementActionCode(str, Enum):
 
 class DenialorRejectionCode(str, Enum):
      """
-     460 - Denial or Rejection Code
+     0460 - Denial or Rejection Code
 
      0  Line item not denied or rejected
      1  Line item denied or rejected
@@ -10054,7 +10084,7 @@ class DenialorRejectionCode(str, Enum):
 
 class Name_AddressRepresentation(str, Enum):
      """
-     465 - Name-Address Representation
+     0465 - Name-Address Representation
 
      I  Ideographic (i.e., Kanji)
      A  Alphabetic (i.e., Default or some single-byte)
@@ -10069,7 +10099,7 @@ class Name_AddressRepresentation(str, Enum):
 
 class AmbulatoryPaymentClassificationCode(str, Enum):
      """
-     466 - Ambulatory Payment Classification Code
+     0466 - Ambulatory Payment Classification Code
 
      031  Dental procedures
      163  Excision/biopsy
@@ -10085,7 +10115,7 @@ class AmbulatoryPaymentClassificationCode(str, Enum):
 
 class ModifierEditCode(str, Enum):
      """
-     467 - Modifier Edit Code
+     0467 - Modifier Edit Code
 
      0  Modifier does NOT exist
      1  Modifier present, no errors
@@ -10106,7 +10136,7 @@ class ModifierEditCode(str, Enum):
 
 class PaymentAdjustmentCode(str, Enum):
      """
-     468 - Payment Adjustment Code
+     0468 - Payment Adjustment Code
 
      1  No payment adjustment
      2  Designated current drug or biological payment adjustment applies to APC (status indicator G)
@@ -10125,7 +10155,7 @@ class PaymentAdjustmentCode(str, Enum):
 
 class PackagingStatusCode(str, Enum):
      """
-     469 - Packaging Status Code
+     0469 - Packaging Status Code
 
      0  Not packaged
      1  Packaged service (status indicator N, or no HCPCS code and certain revenue codes)
@@ -10140,7 +10170,7 @@ class PackagingStatusCode(str, Enum):
 
 class ReimbursementTypeCode(str, Enum):
      """
-     470 - Reimbursement Type Code
+     0470 - Reimbursement Type Code
 
      OPPS  Outpatient Prospective Payment System
      Pckg  Packaged APC
@@ -10169,7 +10199,7 @@ class ReimbursementTypeCode(str, Enum):
 
 class TQConjunctionID(str, Enum):
      """
-     472 - TQ Conjunction ID
+     0472 - TQ Conjunction ID
 
      S  Synchronous
      A  Asynchronous
@@ -10184,7 +10214,7 @@ class TQConjunctionID(str, Enum):
 
 class FormularyStatus(str, Enum):
      """
-     473 - Formulary Status
+     0473 - Formulary Status
 
      G  This observation/service is on the formulary, and has guidelines
      N  This observation/service is not on the formulary
@@ -10201,7 +10231,7 @@ class FormularyStatus(str, Enum):
 
 class PractitionerOrganizationUnitType(str, Enum):
      """
-     474 - Practitioner Organization Unit Type
+     0474 - Practitioner Organization Unit Type
 
      D  Department
      F  Facility
@@ -10220,7 +10250,7 @@ class PractitionerOrganizationUnitType(str, Enum):
 
 class ChargeTypeReason(str, Enum):
      """
-     475 - Charge Type Reason
+     0475 - Charge Type Reason
 
      01  Allergy
      02  Intolerance
@@ -10239,7 +10269,7 @@ class ChargeTypeReason(str, Enum):
 
 class ControlledSubstanceSchedule(str, Enum):
      """
-     477 - Controlled Substance Schedule
+     0477 - Controlled Substance Schedule
 
      I  Schedule I
      II  Schedule II
@@ -10258,9 +10288,9 @@ class ControlledSubstanceSchedule(str, Enum):
      VI = "VI"
 
 
-class FormularySstatus(str, Enum):
+class Formulary_Status(str, Enum):
      """
-     478 - Formulary Status
+     0478 - Formulary Status
 
      Y  Pharmaceutical substance is in the formulary
      N  Pharmaceutical substance is NOT in the formulary
@@ -10277,7 +10307,7 @@ class FormularySstatus(str, Enum):
 
 class PharmacyOrderTypes(str, Enum):
      """
-     480 - Pharmacy Order Types
+     0480 - Pharmacy Order Types
 
      M  Medication
      S  IV Large Volume Solutions
@@ -10292,7 +10322,7 @@ class PharmacyOrderTypes(str, Enum):
 
 class OrderType(str, Enum):
      """
-     482 - Order Type
+     0482 - Order Type
 
      I  Inpatient Order
      O  Outpatient Order
@@ -10305,7 +10335,7 @@ class OrderType(str, Enum):
 
 class AuthorizationMode(str, Enum):
      """
-     483 - Authorization Mode
+     0483 - Authorization Mode
 
      EL  Electronic
      EM  E-mail
@@ -10334,7 +10364,7 @@ class AuthorizationMode(str, Enum):
 
 class DispenseType(str, Enum):
      """
-     484 - Dispense Type
+     0484 - Dispense Type
 
      B  Trial Quantity Balance
      C  Compassionate Fill
@@ -10361,7 +10391,7 @@ class DispenseType(str, Enum):
 
 class ExtendedPriorityCodes(str, Enum):
      """
-     485 - Extended Priority Codes
+     0485 - Extended Priority Codes
 
      S  Stat
      A  ASAP
@@ -10396,7 +10426,7 @@ class ExtendedPriorityCodes(str, Enum):
 
 class SpecimenType(str, Enum):
      """
-     487 - Specimen Type
+     0487 - Specimen Type
 
      ABS  Abscess
      PELVA  Abscess, Pelvic
@@ -10947,7 +10977,7 @@ class SpecimenType(str, Enum):
 
 class SpecimenCollectionMethod(str, Enum):
      """
-     488 - Specimen Collection Method
+     0488 - Specimen Collection Method
 
      FNA  Aspiration, Fine Needle
      PNA  Arterial puncture
@@ -11040,7 +11070,7 @@ class SpecimenCollectionMethod(str, Enum):
 
 class RiskCodes(str, Enum):
      """
-     489 - Risk Codes
+     0489 - Risk Codes
 
      BIO  Biological
      COR  Corrosive
@@ -11071,7 +11101,7 @@ class RiskCodes(str, Enum):
 
 class SpecimenRejectReason(str, Enum):
      """
-     490 - Specimen Reject Reason
+     0490 - Specimen Reject Reason
 
      EX  Expired
      QS  Quantity not sufficient
@@ -11108,7 +11138,7 @@ class SpecimenRejectReason(str, Enum):
 
 class SpecimenQuality(str, Enum):
      """
-     491 - Specimen Quality
+     0491 - Specimen Quality
 
      E  Excellent
      G  Good
@@ -11125,7 +11155,7 @@ class SpecimenQuality(str, Enum):
 
 class SpecimenAppropriateness(str, Enum):
      """
-     492 - Specimen Appropriateness
+     0492 - Specimen Appropriateness
 
      P  Preferred
      A  Appropriate
@@ -11142,7 +11172,7 @@ class SpecimenAppropriateness(str, Enum):
 
 class SpecimenCondition(str, Enum):
      """
-     493 - Specimen Condition
+     0493 - Specimen Condition
 
      AUT  Autolyzed
      CLOT  Clotted
@@ -11169,7 +11199,7 @@ class SpecimenCondition(str, Enum):
 
 class SpecimenChildRole(str, Enum):
      """
-     494 - Specimen Child Role
+     0494 - Specimen Child Role
 
      A  Aliquot
      C  Component
@@ -11184,7 +11214,7 @@ class SpecimenChildRole(str, Enum):
 
 class BodySiteModifier(str, Enum):
      """
-     495 - Body Site Modifier
+     0495 - Body Site Modifier
 
      ANT  Anterior
      BIL  Bilateral
@@ -11225,7 +11255,7 @@ class BodySiteModifier(str, Enum):
 
 class ConsentType(str, Enum):
      """
-     496 - Consent Type
+     0496 - Consent Type
 
      001  Release of Information/MR / Authorization to Disclosure Protected Health Information
      002  Medical Procedure (invasive)
@@ -11508,7 +11538,7 @@ class ConsentType(str, Enum):
 
 class ConsentMode(str, Enum):
      """
-     497 - Consent Mode
+     0497 - Consent Mode
 
      V  Verbal
      W  Written
@@ -11523,7 +11553,7 @@ class ConsentMode(str, Enum):
 
 class ConsentStatus(str, Enum):
      """
-     498 - Consent Status
+     0498 - Consent Status
 
      A  Active - Consent has been granted
      L  Limited - Consent has been granted with limitations
@@ -11544,7 +11574,7 @@ class ConsentStatus(str, Enum):
 
 class ConsentBypassReason(str, Enum):
      """
-     499 - Consent Bypass Reason
+     0499 - Consent Bypass Reason
 
      E  Emergency
      PJ  Professional Judgment
@@ -11557,7 +11587,7 @@ class ConsentBypassReason(str, Enum):
 
 class ConsentDisclosureLevel(str, Enum):
      """
-     500 - Consent Disclosure Level
+     0500 - Consent Disclosure Level
 
      F  Full Disclosure
      P  Partial Disclosure
@@ -11572,7 +11602,7 @@ class ConsentDisclosureLevel(str, Enum):
 
 class ConsentNon_DisclosureReason(str, Enum):
      """
-     501 - Consent Non-Disclosure Reason
+     0501 - Consent Non-Disclosure Reason
 
      E  Emergency
      RX  Rx Private
@@ -11587,7 +11617,7 @@ class ConsentNon_DisclosureReason(str, Enum):
 
 class Non_SubjectConsenterReason(str, Enum):
      """
-     502 - Non-Subject Consenter Reason
+     0502 - Non-Subject Consenter Reason
 
      MIN  Subject is a minor
      NC  Subject is not competent to consent
@@ -11602,7 +11632,7 @@ class Non_SubjectConsenterReason(str, Enum):
 
 class Sequence_ResultsFlag(str, Enum):
      """
-     503 - Sequence-Results Flag
+     0503 - Sequence-Results Flag
 
      S  Sequential
      C  Cyclical
@@ -11617,7 +11647,7 @@ class Sequence_ResultsFlag(str, Enum):
 
 class SequenceConditionCode(str, Enum):
      """
-     504 - Sequence Condition Code
+     0504 - Sequence Condition Code
 
      EE  End related service request(s), end current service request.
      ES  End related service request(s), start current service request.
@@ -11634,7 +11664,7 @@ class SequenceConditionCode(str, Enum):
 
 class CyclicEntry_ExitIndicator(str, Enum):
      """
-     505 - Cyclic Entry-Exit Indicator
+     0505 - Cyclic Entry-Exit Indicator
 
      *  The first service request in a cyclic group
      #  The last service request in a cyclic group.
@@ -11647,7 +11677,7 @@ class CyclicEntry_ExitIndicator(str, Enum):
 
 class ServiceRequestRelationship(str, Enum):
      """
-     506 - Service Request Relationship
+     0506 - Service Request Relationship
 
      N  Nurse prerogative
      C  Compound
@@ -11666,20 +11696,26 @@ class ServiceRequestRelationship(str, Enum):
 
 class ObservationResultHandling(str, Enum):
      """
-     507 - Observation Result Handling
+     0507 - Observation Result Handling
 
      F  Film-with-patient
      N  Notify provider when ready
+     A  Alert provider when abnormal
+     CC  Copies Requested
+     BCC  Blind Copy
      """
 
 
      F = "F"
      N = "N"
+     A = "A"
+     CC = "CC"
+     BCC = "BCC"
 
 
 class BloodProductProcessingRequirements(str, Enum):
      """
-     508 - Blood Product Processing Requirements
+     0508 - Blood Product Processing Requirements
 
      LR  Leukoreduced
      IR  Irradiated
@@ -11710,7 +11746,7 @@ class BloodProductProcessingRequirements(str, Enum):
 
 class BloodProductDispenseStatus(str, Enum):
      """
-     510 - Blood Product Dispense Status
+     0510 - Blood Product Dispense Status
 
      RI  Received into inventory (for specified patient)
      RD  Reserved and ready to dispense
@@ -11741,7 +11777,7 @@ class BloodProductDispenseStatus(str, Enum):
 
 class BPObservationStatusCodesInterpretation(str, Enum):
      """
-     511 - BP Observation Status Codes Interpretation
+     0511 - BP Observation Status Codes Interpretation
 
      C  Record coming over is a correction and thus replaces a final status
      D  Deletes the BPX record
@@ -11762,7 +11798,7 @@ class BPObservationStatusCodesInterpretation(str, Enum):
 
 class BloodProductTransfusion_DispositionStatus(str, Enum):
      """
-     513 - Blood Product Transfusion-Disposition Status
+     0513 - Blood Product Transfusion-Disposition Status
 
      RA  Returned unused/no longer needed
      RL  Returned unused/keep linked to patient for possible use later
@@ -11781,7 +11817,7 @@ class BloodProductTransfusion_DispositionStatus(str, Enum):
 
 class TransfusionAdverseReaction(str, Enum):
      """
-     514 - Transfusion Adverse Reaction
+     0514 - Transfusion Adverse Reaction
 
      ABOINC  ABO Incompatible Transfusion Reaction
      ACUTHEHTR  Acute Hemolytic Transfusion Reaction
@@ -11828,7 +11864,7 @@ class TransfusionAdverseReaction(str, Enum):
 
 class ErrorSeverity(str, Enum):
      """
-     516 - Error Severity
+     0516 - Error Severity
 
      W  Warning
      I  Information
@@ -11845,7 +11881,7 @@ class ErrorSeverity(str, Enum):
 
 class InformPersonCode(str, Enum):
      """
-     517 - Inform Person Code
+     0517 - Inform Person Code
 
      PAT  Inform patient
      NPAT  Do NOT inform patient
@@ -11862,7 +11898,7 @@ class InformPersonCode(str, Enum):
 
 class OverrideType(str, Enum):
      """
-     518 - Override Type
+     0518 - Override Type
 
      EXTN  Extension Override
      INLV  Interval Override
@@ -11877,7 +11913,7 @@ class OverrideType(str, Enum):
 
 class MessageWaitingPriority(str, Enum):
      """
-     520 - Message Waiting Priority
+     0520 - Message Waiting Priority
 
      H  High
      M  Medium
@@ -11892,7 +11928,7 @@ class MessageWaitingPriority(str, Enum):
 
 class ComputationType(str, Enum):
      """
-     523 - Computation Type
+     0523 - Computation Type
 
      %  Indicates a percent change
      a  Absolute Change
@@ -11905,7 +11941,7 @@ class ComputationType(str, Enum):
 
 class CalendarAlignment(str, Enum):
      """
-     527 - Calendar Alignment
+     0527 - Calendar Alignment
 
      MY  month of the year
      WY  week of the year
@@ -11930,7 +11966,7 @@ class CalendarAlignment(str, Enum):
 
 class EventRelatedPeriod(str, Enum):
      """
-     528 - Event Related Period
+     0528 - Event Related Period
 
      HS  the hour of sleep (e.g., H18-22)
      AC  before meal (from lat. ante cibus)
@@ -11965,7 +12001,7 @@ class EventRelatedPeriod(str, Enum):
 
 class OrganizationAgencyDepartment(str, Enum):
      """
-     530 - Organization  Agency  Department
+     0530 - Organization  Agency  Department
 
      AE  American Express
      DEA  Drug Enforcement Agency
@@ -11986,7 +12022,7 @@ class OrganizationAgencyDepartment(str, Enum):
 
 class ExpandedYes_noIndicator(str, Enum):
      """
-     532 - Expanded Yes-no Indicator
+     0532 - Expanded Yes-no Indicator
 
      Y  Yes
      N  No
@@ -12013,7 +12049,7 @@ class ExpandedYes_noIndicator(str, Enum):
 
 class NotifyClergyCode(str, Enum):
      """
-     534 - Notify Clergy Code
+     0534 - Notify Clergy Code
 
      Y  Yes
      N  No
@@ -12032,7 +12068,7 @@ class NotifyClergyCode(str, Enum):
 
 class SignatureCode(str, Enum):
      """
-     535 - Signature Code
+     0535 - Signature Code
 
      C  Signed CMS-1500 claim form on file, e.g., authorization for release of any medical or other information necessary to process this claim and assignment of benefits.
      S  Signed authorization for release of any medical or other information necessary to process this claim on file.
@@ -12049,7 +12085,7 @@ class SignatureCode(str, Enum):
 
 class CertificateStatus(str, Enum):
      """
-     536 - Certificate Status
+     0536 - Certificate Status
 
      P  Provisional
      R  Revoked
@@ -12068,7 +12104,7 @@ class CertificateStatus(str, Enum):
 
 class InstitutionRelationshipType(str, Enum):
      """
-     538 - Institution Relationship Type
+     0538 - Institution Relationship Type
 
      EMP  Employee
      VOL  Volunteer
@@ -12085,7 +12121,7 @@ class InstitutionRelationshipType(str, Enum):
 
 class InactiveReasonCode(str, Enum):
      """
-     540 - Inactive Reason Code
+     0540 - Inactive Reason Code
 
      L  Leave of Absence
      T  Termination
@@ -12100,7 +12136,7 @@ class InactiveReasonCode(str, Enum):
 
 class ContainerCondition(str, Enum):
      """
-     544 - Container Condition
+     0544 - Container Condition
 
      XC37  Not Body temperature
      XAMB  Not Ambient temperature
@@ -12151,7 +12187,7 @@ class ContainerCondition(str, Enum):
 
 class JurisdictionalBreadth(str, Enum):
      """
-     547 - Jurisdictional Breadth
+     0547 - Jurisdictional Breadth
 
      C  County/Parish
      S  State/Province
@@ -12166,7 +12202,7 @@ class JurisdictionalBreadth(str, Enum):
 
 class SignatorysRelationshiptoSubject(str, Enum):
      """
-     548 - Signatory s Relationship to Subject
+     0548 - Signatory s Relationship to Subject
 
      1  Self
      2  Parent
@@ -12189,7 +12225,7 @@ class SignatorysRelationshiptoSubject(str, Enum):
 
 class BodyParts(str, Enum):
      """
-     550 - Body Parts
+     0550 - Body Parts
 
      JUGE  Jugular, External
      ADB  Abdomen
@@ -12266,7 +12302,7 @@ class BodyParts(str, Enum):
      CERVUT  Cervix/Uterus
      CHEEK  Cheek
      CHES  Chest
-     CHEST  Chest Tube
+     CHESTÂ   Chest Tube
      CHIN  Chin
      CIRCU  Circumcision Site
      CLAVI  Clavicle/Clavicular
@@ -12395,7 +12431,7 @@ class BodyParts(str, Enum):
      INTRO  Introitus
      ISCHI  Ischium
      JAW  Jaw
-     KIDN  Kidney
+     KIDNÂ   Kidney
      KNEE  Knee
      KNEEF  Knee Fluid
      KNEEJ  Knee Joint
@@ -12712,7 +12748,7 @@ class BodyParts(str, Enum):
      CERVUT = "CERVUT"
      CHEEK = "CHEEK"
      CHES = "CHES"
-     CHEST = "CHEST"
+     CHESTA_NBSP = "CHESTA_NBSP"
      CHIN = "CHIN"
      CIRCU = "CIRCU"
      CLAVI = "CLAVI"
@@ -12841,7 +12877,7 @@ class BodyParts(str, Enum):
      INTRO = "INTRO"
      ISCHI = "ISCHI"
      JAW = "JAW"
-     KIDN = "KIDN"
+     KIDNA_NBSP = "KIdNA_NBSP"
      KNEE = "KNEE"
      KNEEF = "KNEEF"
      KNEEJ = "KNEEJ"
@@ -13084,7 +13120,7 @@ class BodyParts(str, Enum):
 
 class InvoiceControlCode(str, Enum):
      """
-     553 - Invoice Control Code
+     0553 - Invoice Control Code
 
      OR  Original Invoice
      CN  Cancel Invoice
@@ -13127,7 +13163,7 @@ class InvoiceControlCode(str, Enum):
 
 class InvoiceReasonCodes(str, Enum):
      """
-     554 - Invoice Reason Codes
+     0554 - Invoice Reason Codes
 
      LATE  Late Invoice
      NORM  Normal submission
@@ -13142,7 +13178,7 @@ class InvoiceReasonCodes(str, Enum):
 
 class InvoiceType(str, Enum):
      """
-     555 - Invoice Type
+     0555 - Invoice Type
 
      FS  Fee for Service
      SS  By Session
@@ -13171,7 +13207,7 @@ class InvoiceType(str, Enum):
 
 class BenefitGroup(str, Enum):
      """
-     556 - Benefit Group
+     0556 - Benefit Group
 
      AMB  AMBULATORY CARE
      DENT  DENTAL
@@ -13184,7 +13220,7 @@ class BenefitGroup(str, Enum):
 
 class PayeeType(str, Enum):
      """
-     557 - Payee Type
+     0557 - Payee Type
 
      ORG  Payee Organization
      PERS  Person
@@ -13201,7 +13237,7 @@ class PayeeType(str, Enum):
 
 class PayeeRelationshiptoInvoice(str, Enum):
      """
-     558 - Payee Relationship to Invoice
+     0558 - Payee Relationship to Invoice
 
      PT  Patient
      FM  Family Member
@@ -13218,7 +13254,7 @@ class PayeeRelationshiptoInvoice(str, Enum):
 
 class Product_ServiceStatus(str, Enum):
      """
-     559 - Product-Service Status
+     0559 - Product-Service Status
 
      P  Processed
      D  Denied
@@ -13233,7 +13269,7 @@ class Product_ServiceStatus(str, Enum):
 
 class QuantityUnits(str, Enum):
      """
-     560 - Quantity Units
+     0560 - Quantity Units
 
      FL  Units
      HS  Hours
@@ -13252,7 +13288,7 @@ class QuantityUnits(str, Enum):
 
 class Product_ServicesClarificationCodes(str, Enum):
      """
-     561 - Product-Services Clarification Codes
+     0561 - Product-Services Clarification Codes
 
      DTCTR  Data Center Number
      SEQ  Sequence Number
@@ -13275,7 +13311,7 @@ class Product_ServicesClarificationCodes(str, Enum):
 
 class ProcessingConsiderationCodes(str, Enum):
      """
-     562 - Processing Consideration Codes
+     0562 - Processing Consideration Codes
 
      PAPER  Paper documentation to follow
      EFORM  Electronic form to follow
@@ -13296,7 +13332,7 @@ class ProcessingConsiderationCodes(str, Enum):
 
 class AdjustmentCategoryCode(str, Enum):
      """
-     564 - Adjustment Category Code
+     0564 - Adjustment Category Code
 
      EA  Edit/Adjudication Response
      IN  Information
@@ -13313,7 +13349,7 @@ class AdjustmentCategoryCode(str, Enum):
 
 class ProviderAdjustmentReasonCode(str, Enum):
      """
-     565 - Provider Adjustment Reason Code
+     0565 - Provider Adjustment Reason Code
 
      PST  Provincial Sales Tax
      GST  Goods and Services Tax
@@ -13332,7 +13368,7 @@ class ProviderAdjustmentReasonCode(str, Enum):
 
 class AdjustmentAction(str, Enum):
      """
-     569 - Adjustment Action
+     0569 - Adjustment Action
 
      EOB  Print on EOB
      PAT  Inform Patient
@@ -13347,7 +13383,7 @@ class AdjustmentAction(str, Enum):
 
 class PaymentMethodCode(str, Enum):
      """
-     570 - Payment Method Code
+     0570 - Payment Method Code
 
      CASH  Cash
      CCCA  Credit Card
@@ -13376,7 +13412,7 @@ class PaymentMethodCode(str, Enum):
 
 class InvoiceProcessingResultsStatus(str, Enum):
      """
-     571 - Invoice Processing Results Status
+     0571 - Invoice Processing Results Status
 
      ACK  Acknowledge
      REJECT  Reject
@@ -13401,7 +13437,7 @@ class InvoiceProcessingResultsStatus(str, Enum):
 
 class Taxstatus(str, Enum):
      """
-     572 - Tax status
+     0572 - Tax status
 
      RVAT  Registered in VAT register
      UVAT  Unregistered in VAT register
@@ -13414,7 +13450,7 @@ class Taxstatus(str, Enum):
 
 class UserAuthenticationCredentialTypeCode(str, Enum):
      """
-     615 - User Authentication Credential Type Code
+     0615 - User Authentication Credential Type Code
 
      KERB  Kerberos Service Ticket
      SAML  Authenticated User Identity Assertion
@@ -13427,7 +13463,7 @@ class UserAuthenticationCredentialTypeCode(str, Enum):
 
 class AddressExpirationReason(str, Enum):
      """
-     616 - Address Expiration Reason
+     0616 - Address Expiration Reason
 
      M  Moved
      E  Added in error
@@ -13444,7 +13480,7 @@ class AddressExpirationReason(str, Enum):
 
 class AddressUsage(str, Enum):
      """
-     617 - Address Usage
+     0617 - Address Usage
 
      M  Mailing
      V  Visit
@@ -13459,7 +13495,7 @@ class AddressUsage(str, Enum):
 
 class ProtectionCode(str, Enum):
      """
-     618 - Protection Code
+     0618 - Protection Code
 
      LI  Listed
      UL  Unlisted (Should not appear in directories)
@@ -13474,7 +13510,7 @@ class ProtectionCode(str, Enum):
 
 class ItemStatusCodes(str, Enum):
      """
-     625 - Item Status Codes
+     0625 - Item Status Codes
 
      1  Active
      2  Pending Inactive
@@ -13489,7 +13525,7 @@ class ItemStatusCodes(str, Enum):
 
 class ItemImportanceCodes(str, Enum):
      """
-     634 - Item Importance Codes
+     0634 - Item Importance Codes
 
      CRT  Critical
      """
@@ -13500,7 +13536,7 @@ class ItemImportanceCodes(str, Enum):
 
 class ReorderTheoryCodes(str, Enum):
      """
-     642 - Reorder Theory Codes
+     0642 - Reorder Theory Codes
 
      D  DOP/DOQ
      M  MIN/MAX
@@ -13515,7 +13551,7 @@ class ReorderTheoryCodes(str, Enum):
 
 class LaborCalculationType(str, Enum):
      """
-     651 - Labor Calculation Type
+     0651 - Labor Calculation Type
 
      TME  Time
      CST  Cost
@@ -13528,7 +13564,7 @@ class LaborCalculationType(str, Enum):
 
 class DateFormat(str, Enum):
      """
-     653 - Date Format
+     0653 - Date Format
 
      1  mm/dd/yy
      2  yy.mm.dd
@@ -13549,7 +13585,7 @@ class DateFormat(str, Enum):
 
 class DeviceType(str, Enum):
      """
-     657 - Device Type
+     0657 - Device Type
 
      1  EO Gas Sterilizer
      2  Steam Sterilizer
@@ -13564,7 +13600,7 @@ class DeviceType(str, Enum):
 
 class LotControl(str, Enum):
      """
-     659 - Lot Control
+     0659 - Lot Control
 
      1  OR Mode Without Operator
      2  OR Mode with Operator
@@ -13583,7 +13619,7 @@ class LotControl(str, Enum):
 
 class DeviceDataState(str, Enum):
      """
-     667 - Device Data State
+     0667 - Device Data State
 
      0  Real Time Values
      1  Historic Values
@@ -13596,7 +13632,7 @@ class DeviceDataState(str, Enum):
 
 class LoadStatus(str, Enum):
      """
-     669 - Load Status
+     0669 - Load Status
 
      LLD  Building a Load
      LCP  Load In Process
@@ -13613,7 +13649,7 @@ class LoadStatus(str, Enum):
 
 class DeviceStatus(str, Enum):
      """
-     682 - Device Status
+     0682 - Device Status
 
      0  Ready
      1  Not Ready
@@ -13626,7 +13662,7 @@ class DeviceStatus(str, Enum):
 
 class CycleType(str, Enum):
      """
-     702 - Cycle Type
+     0702 - Cycle Type
 
      FLS  Flash
      PRV  Prevac
@@ -13699,7 +13735,7 @@ class CycleType(str, Enum):
 
 class AccessRestrictionValue(str, Enum):
      """
-     717 - Access Restriction Value
+     0717 - Access Restriction Value
 
      ALL  All
      DEM  All demographic data
@@ -13734,7 +13770,7 @@ class AccessRestrictionValue(str, Enum):
 
 class AccessRestrictionReasonCode(str, Enum):
      """
-     719 - Access Restriction Reason Code
+     0719 - Access Restriction Reason Code
 
      PAT  Patient Request
      PHY  Physician Request
@@ -13757,7 +13793,7 @@ class AccessRestrictionReasonCode(str, Enum):
 
 class MoodCodes(str, Enum):
      """
-     725 - Mood Codes
+     0725 - Mood Codes
 
      INT  Intent
      APT  Appointment
@@ -13784,7 +13820,7 @@ class MoodCodes(str, Enum):
 
 class CCLValue(str, Enum):
      """
-     728 - CCL Value
+     0728 - CCL Value
 
      0  Nothing obvious
      1  Low
@@ -13803,7 +13839,7 @@ class CCLValue(str, Enum):
 
 class DRGDiagnosisDeterminationStatus(str, Enum):
      """
-     731 - DRG Diagnosis Determination Status
+     0731 - DRG Diagnosis Determination Status
 
      0  Valid code
      1  Invalid code
@@ -13822,7 +13858,7 @@ class DRGDiagnosisDeterminationStatus(str, Enum):
 
 class GrouperStatus(str, Enum):
      """
-     734 - Grouper Status
+     0734 - Grouper Status
 
      0  Normal grouping
      1  Invalid or missing primary diagnosis
@@ -13851,7 +13887,7 @@ class GrouperStatus(str, Enum):
 
 class StatusPatient(str, Enum):
      """
-     739 - Status Patient
+     0739 - Status Patient
 
      1  Normal length of stay
      2  Short length of stay
@@ -13866,7 +13902,7 @@ class StatusPatient(str, Enum):
 
 class DRGStatusFinancialCalculation(str, Enum):
      """
-     742 - DRG Status Financial Calculation
+     0742 - DRG Status Financial Calculation
 
      00  Effective weight calculated
      01  Hospital specific contract
@@ -13889,7 +13925,7 @@ class DRGStatusFinancialCalculation(str, Enum):
 
 class DRGGroupingStatus(str, Enum):
      """
-     749 - DRG Grouping Status
+     0749 - DRG Grouping Status
 
      0  Valid code; not used for grouping
      1  Valid code; used for grouping
@@ -13906,7 +13942,7 @@ class DRGGroupingStatus(str, Enum):
 
 class StatusWeightAtBirth(str, Enum):
      """
-     755 - Status Weight At Birth
+     0755 - Status Weight At Birth
 
      0  No weight reported at admission used for grouping
      1  Weight reported at admission used for grouping
@@ -13921,7 +13957,7 @@ class StatusWeightAtBirth(str, Enum):
 
 class StatusRespirationMinutes(str, Enum):
      """
-     757 - Status Respiration Minutes
+     0757 - Status Respiration Minutes
 
      0  Respiration minutes not used for grouping
      1  Listed respiration minutes used for grouping
@@ -13936,7 +13972,7 @@ class StatusRespirationMinutes(str, Enum):
 
 class StatusAdmission(str, Enum):
      """
-     759 - Status Admission
+     0759 - Status Admission
 
      0  Admission status is valid; used for grouping
      1  Admission status is valid; not used for grouping
@@ -13953,7 +13989,7 @@ class StatusAdmission(str, Enum):
 
 class DRGProcedureDeterminationStatus(str, Enum):
      """
-     761 - DRG Procedure Determination Status
+     0761 - DRG Procedure Determination Status
 
      0  Valid code
      1  Invalid code
@@ -13972,7 +14008,7 @@ class DRGProcedureDeterminationStatus(str, Enum):
 
 class DRGProcedureRelevance(str, Enum):
      """
-     763 - DRG Procedure Relevance
+     0763 - DRG Procedure Relevance
 
      0  Neither operation relevant nor non-operation relevant procedure
      1  Operation relevant procedure
@@ -13987,7 +14023,7 @@ class DRGProcedureRelevance(str, Enum):
 
 class ItemStatus(str, Enum):
      """
-     776 - Item Status
+     0776 - Item Status
 
      A  Active
      P  Pending Inactive
@@ -14002,7 +14038,7 @@ class ItemStatus(str, Enum):
 
 class ItemType(str, Enum):
      """
-     778 - Item Type
+     0778 - Item Type
 
      EQP  Equipment
      SUP  Supply
@@ -14021,7 +14057,7 @@ class ItemType(str, Enum):
 
 class ApprovingRegulatoryAgency(str, Enum):
      """
-     790 - Approving Regulatory Agency
+     0790 - Approving Regulatory Agency
 
      FDA  Food and Drug Administration
      AMA  American Medical Association
@@ -14034,7 +14070,7 @@ class ApprovingRegulatoryAgency(str, Enum):
 
 class RulingAct(str, Enum):
      """
-     793 - Ruling Act
+     0793 - Ruling Act
 
      SMDA  Safe Medical Devices Act
      """
@@ -14045,7 +14081,7 @@ class RulingAct(str, Enum):
 
 class SterilizationType(str, Enum):
      """
-     806 - Sterilization Type
+     0806 - Sterilization Type
 
      EOG  Ethylene Oxide Gas
      PCA  Peracetic acid
@@ -14060,7 +14096,7 @@ class SterilizationType(str, Enum):
 
 class Package(str, Enum):
      """
-     818 - Package
+     0818 - Package
 
      CS  Case
      BX  Box
@@ -14077,7 +14113,7 @@ class Package(str, Enum):
 
 class MIMETypes(str, Enum):
      """
-     834 - MIME Types
+     0834 - MIME Types
 
      application  Application data
      audio  Audio data
@@ -14100,7 +14136,7 @@ class MIMETypes(str, Enum):
 
 class ProblemSeverity(str, Enum):
      """
-     836 - Problem Severity
+     0836 - Problem Severity
 
      No Values Defined  
      """
@@ -14111,7 +14147,7 @@ class ProblemSeverity(str, Enum):
 
 class ProblemPerspective(str, Enum):
      """
-     838 - Problem Perspective
+     0838 - Problem Perspective
 
      No Values Defined  
      """
@@ -14122,7 +14158,7 @@ class ProblemPerspective(str, Enum):
 
 class TelecommunicationExpirationReason(str, Enum):
      """
-     868 - Telecommunication Expiration Reason
+     0868 - Telecommunication Expiration Reason
 
      M  Moved
      E  Added in error
@@ -14141,7 +14177,7 @@ class TelecommunicationExpirationReason(str, Enum):
 
 class SupplyRiskCodes(str, Enum):
      """
-     871 - Supply Risk Codes
+     0871 - Supply Risk Codes
 
      COR  Corrosive
      FLA  Flammable
@@ -14164,7 +14200,7 @@ class SupplyRiskCodes(str, Enum):
 
 class RoleExecutingPhysician(str, Enum):
      """
-     881 - Role Executing Physician
+     0881 - Role Executing Physician
 
      T  Technical Part
      P  Professional Part
@@ -14179,7 +14215,7 @@ class RoleExecutingPhysician(str, Enum):
 
 class MedicalRoleExecutingPhysician(str, Enum):
      """
-     882 - Medical Role Executing Physician
+     0882 - Medical Role Executing Physician
 
      E  Employed
      SE  Self-employed
@@ -14192,7 +14228,7 @@ class MedicalRoleExecutingPhysician(str, Enum):
 
 class Sideofbody(str, Enum):
      """
-     894 - Side of body
+     0894 - Side of body
 
      L  Left
      R  Right
@@ -14203,9 +14239,9 @@ class Sideofbody(str, Enum):
      R = "R"
 
 
-class PresentOnAdmission_Indicator(str, Enum):
+class PresentOnAdmissionIndicator(str, Enum):
      """
-     895 - Present On Admission (POA) Indicator
+     0895 - Present On Admission (POA) Indicator
 
      Y  Yes
      N  No
@@ -14224,7 +14260,7 @@ class PresentOnAdmission_Indicator(str, Enum):
 
 class SecurityCheckScheme(str, Enum):
      """
-     904 - Security Check Scheme
+     0904 - Security Check Scheme
 
      BCV  Bank Card Validation Number
      CCS  Credit Card Security code
@@ -14239,7 +14275,7 @@ class SecurityCheckScheme(str, Enum):
 
 class ShipmentStatus(str, Enum):
      """
-     905 - Shipment Status
+     0905 - Shipment Status
 
      ONH  On Hold
      INV  Inventoried
@@ -14260,7 +14296,7 @@ class ShipmentStatus(str, Enum):
 
 class ActPriority(str, Enum):
      """
-     906 - ActPriority
+     0906 - ActPriority
 
      A  ASAP - As soon as possible, next highest priority after stat
      CR  Callback results - filler should contact the placer as soon as results are available, even for preliminary results
@@ -14299,7 +14335,7 @@ class ActPriority(str, Enum):
 
 class Confidentiality(str, Enum):
      """
-     907 - Confidentiality
+     0907 - Confidentiality
 
      B  Business - Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related inf
      D  Clinician - Only clinicians may see this item, billing and administration persons can not access this item without special permission.
@@ -14336,7 +14372,7 @@ class Confidentiality(str, Enum):
 
 class PatientResultsReleaseCategorizationScheme(str, Enum):
      """
-     909 - Patient Results Release Categorization Scheme
+     0909 - Patient Results Release Categorization Scheme
 
      STBD  Share To Be Determined -Category to be determined
      SIMM  Share Immediately -Share result with patient immediately
@@ -14355,9 +14391,20 @@ class PatientResultsReleaseCategorizationScheme(str, Enum):
      SWTH = "SWTH"
 
 
+class AcquisitionModality(str, Enum):
+     """
+     0910 - Acquisition Modality
+
+       Acquisition Modality codes, Context Group 29, Digital Imaging and Communications in Medicine (DICOM) - Part 16: Content Mapping Resource (PS3.16), available free at http://dicom.nema.org
+     """
+
+
+     NEL = "NEL"
+
+
 class Participation(str, Enum):
      """
-     912 - Participation
+     0912 - Participation
 
      AD  Admitting Provider
      AI  Assistant/Alternate Interpreter
@@ -14794,3 +14841,20 @@ class MonetaryDenominationCode(str, Enum):
      ZAR	= 'ZAR'
      ZMW	= 'ZMW'
      ZWL	= 'ZWL'
+
+
+class RelevantClincialInformation(str, Enum):
+     """
+     0916 - Relevant Clincial Information
+
+     F  Patient was fasting prior to the procedure.
+     NF  The patient indicated they did not fast prior to the procedure.
+     NG  Not Given - Patient was not asked at the time of the procedure.
+     FNA  Fasting not asked of the patient at time of procedure.
+     """
+
+
+     F = "F"
+     NF = "NF"
+     NG = "NG"
+     FNA = "FNA"
