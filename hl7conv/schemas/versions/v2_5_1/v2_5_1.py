@@ -1,20 +1,24 @@
 from pydantic import BaseModel, Field, validator
 
-from hl7conv.schemas.versions.v2_5_1.enums import ValueType
+from hl7conv.schemas.versions.v2_5_1.enums import (
+    Abnormalflags,
+    NatureofAbnormalTesting,
+    Observationresultstatuscodesinterpretation,
+    ValueType,
+)
 from hl7conv.schemas.versions.v2_5_1.primitive_validators import si_validator
-from hl7conv.schemas.versions.v2_5_1.types import CodedElement
-from hl7conv.schemas.versions.v2_5_1.enums import Abnormalflags
-from hl7conv.schemas.versions.v2_5_1.enums import NatureofAbnormalTesting
-from hl7conv.schemas.versions.v2_5_1.enums import Observationresultstatuscodesinterpretation
-from hl7conv.schemas.versions.v2_5_1.types import TimeStamp
-from hl7conv.schemas.versions.v2_5_1.types import ExtendedCompositeIDNumberandNameforPersons
-from hl7conv.schemas.versions.v2_5_1.types import EntityIdentifier
-from hl7conv.schemas.versions.v2_5_1.types import ExtendedCompositeNameAndIdentificationNumberForOrganizations
-from hl7conv.schemas.versions.v2_5_1.types import ExtendedAddress
+from hl7conv.schemas.versions.v2_5_1.types import (
+    CodedElement,
+    EntityIdentifier,
+    ExtendedAddress,
+    ExtendedCompositeIDNumberandNameforPersons,
+    ExtendedCompositeNameAndIdentificationNumberForOrganizations,
+    TimeStamp,
+)
 
 
 class OBX(BaseModel):
-    obx_1: int = Field(None, alias="1")
+    obx_1: int = Field(None, alias="1", max_length=4)
     obx_2: ValueType = Field(..., alias="2")
     obx_3: CodedElement = Field(..., alias="3")
     obx_4: str = Field(None, alias="4")

@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class Sex(str, Enum):
      """
      0001 - Sex

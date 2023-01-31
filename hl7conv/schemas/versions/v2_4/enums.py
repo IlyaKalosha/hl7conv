@@ -1,7 +1,6 @@
 from enum import Enum
 
 
-
 class Administrativesex(str, Enum):
      """
      001 - Administrative sex

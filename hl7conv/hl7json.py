@@ -1,5 +1,6 @@
 from util import split_segments
 
+
 class Hl7Json:
     def __init__(
         self,

@@ -1,16 +1,18 @@
-from pydantic import Field, BaseModel
+from pydantic import BaseModel, Field
 
-from hl7conv.schemas.versions.v2_5_1.enums import Precision
-from hl7conv.schemas.versions.v2_5_1.enums import Degreeorlicenseorcertificate
-from hl7conv.schemas.versions.v2_5_1.enums import Checkdigitscheme
-from hl7conv.schemas.versions.v2_5_1.enums import Identifiertype
-from hl7conv.schemas.versions.v2_5_1.enums import Name_addressrepresentation
-from hl7conv.schemas.versions.v2_5_1.enums import Nameassemblyorder
-from hl7conv.schemas.versions.v2_5_1.enums import Codingsystem
-from hl7conv.schemas.versions.v2_5_1.enums import UniversalIDtype
-from hl7conv.schemas.versions.v2_5_1.enums import Organizationalnametype
-from hl7conv.schemas.versions.v2_5_1.enums import CountryCode
-from hl7conv.schemas.versions.v2_5_1.enums import Addresstype
+from hl7conv.schemas.versions.v2_5_1.enums import (
+    Addresstype,
+    Checkdigitscheme,
+    Codingsystem,
+    CountryCode,
+    Degreeorlicenseorcertificate,
+    Identifiertype,
+    Name_addressrepresentation,
+    Nameassemblyorder,
+    Organizationalnametype,
+    Precision,
+    UniversalIDtype,
+)
 
 
 class CodedElement(BaseModel):
