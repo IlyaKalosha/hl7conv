@@ -2379,11 +2379,11 @@ class DischargeDisposition(str, Enum):
      _07 = "07"
      _08 = "08"
      _09 = "09"
-     _10_____19 = "10 ... 19"
+     _10_19 = "10 ... 19"
      _20 = "20"
-     _21_____29 = "21 ... 29"
+     _21_29 = "21 ... 29"
      _30 = "30"
-     _31_____39 = "31 ... 39"
+     _31_39 = "31 ... 39"
      _40 = "40"
      _41 = "41"
      _42 = "42"
@@ -2865,7 +2865,7 @@ class MilitaryRankorGrade(str, Enum):
      W3 = "W3"
      O7 = "O7"
      E9 = "E9"
-     E1____E9 = "E1... E9"
+     E1_E9 = "E1... E9"
      E2 = "E2"
      E3 = "E3"
      E4 = "E4"
@@ -2874,8 +2874,8 @@ class MilitaryRankorGrade(str, Enum):
      E8 = "E8"
      E1 = "E1"
      E7 = "E7"
-     O1_____O9 = "O1 ... O9"
-     W1_____W4 = "W1 ... W4"
+     O1_O9 = "O1 ... O9"
+     W1_W4 = "W1 ... W4"
 
 
 class MilitaryStatus(str, Enum):
@@ -7341,7 +7341,7 @@ class DiagnosisPriority(str, Enum):
 
      _0 = "0"
      _1 = "1"
-     _2____ = "2 ..."
+     _2_ = "2 ..."
 
 
 class Degreeorlicenseorcertificate(str, Enum):
@@ -8195,7 +8195,7 @@ class Codingsystem(str, Enum):
      """
 
 
-     _99zzz___L = "99zzz or L"
+     _99zzz_L = "99zzz or L"
      ACR = "ACR"
      ART = "ART"
      ANS_ = "ANS+"
