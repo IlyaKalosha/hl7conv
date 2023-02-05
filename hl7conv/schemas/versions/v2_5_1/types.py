@@ -36,9 +36,13 @@ class CodedElement(BaseModel):
 
 
 class ParentResultLink(BaseModel):
-    prl_1: CodedElement = Field(..., alias="1", description="Parent Observation Identifier")
+    prl_1: CodedElement = Field(
+        ..., alias="1", description="Parent Observation Identifier"
+    )
     prl_2: str = Field(None, alias="2", description="Parent Observation Sub-identifier")
-    prl_3: str = Field(None, alias="3", description="Parent Observation Value Descriptor")
+    prl_3: str = Field(
+        None, alias="3", description="Parent Observation Value Descriptor"
+    )
 
 
 class Money(BaseModel):
@@ -69,8 +73,12 @@ class EntityIdentifier(BaseModel):
 
 
 class EntityIdentifierPair(BaseModel):
-    eip_1: EntityIdentifier = Field(None, alias="1", description="Placer Assigned Identifier")
-    eip_2: EntityIdentifier = Field(None, alias="2", description="Filler Assigned Identifier")
+    eip_1: EntityIdentifier = Field(
+        None, alias="1", description="Placer Assigned Identifier"
+    )
+    eip_2: EntityIdentifier = Field(
+        None, alias="2", description="Filler Assigned Identifier"
+    )
 
 
 class CodedWithExceptions(BaseModel):
@@ -90,12 +98,16 @@ class CodedWithExceptions(BaseModel):
 
 
 class SpecimenSource(BaseModel):
-    sps_1: CodedWithExceptions = Field(None, alias="1", description="Specimen Source Name Or Code")
+    sps_1: CodedWithExceptions = Field(
+        None, alias="1", description="Specimen Source Name Or Code"
+    )
     sps_2: Additive_Preservative = Field(None, alias="2", description="Additives")
     sps_3: str = Field(None, alias="3", description="Specimen Collection Method")
     sps_4: Bodysite = Field(None, alias="4", description="Body Site")
     sps_5: BodySiteModifier = Field(None, alias="5", description="Site Modifier")
-    sps_6: CodedWithExceptions = Field(None, alias="6", description="Collection Method Modifier Code")
+    sps_6: CodedWithExceptions = Field(
+        None, alias="6", description="Collection Method Modifier Code"
+    )
     sps_7: SpecimenRole = Field(None, alias="7", description="Specimen Role")
 
 
@@ -105,17 +117,29 @@ class TimeStamp(BaseModel):
 
 
 class OrderSequenceDefinition(BaseModel):
-    osd_1: Sequencecondition = Field(..., alias="1", description="Sequence/Results Flag")
-    osd_2: str = Field(..., alias="2", description="Placer Order Number: Entity Identifier")
+    osd_1: Sequencecondition = Field(
+        ..., alias="1", description="Sequence/Results Flag"
+    )
+    osd_2: str = Field(
+        ..., alias="2", description="Placer Order Number: Entity Identifier"
+    )
     osd_3: str = Field(None, alias="3", description="Placer Order Number: Namespace Id")
-    osd_4: str = Field(..., alias="4", description="Filler Order Number: Entity Identifier")
+    osd_4: str = Field(
+        ..., alias="4", description="Filler Order Number: Entity Identifier"
+    )
     osd_5: str = Field(None, alias="5", description="Filler Order Number: Namespace Id")
     osd_6: str = Field(None, alias="6", description="Sequence Condition Value")
     osd_7: float = Field(None, alias="7", description="Maximum Number Of Repeats")
     osd_8: str = Field(..., alias="8", description="Placer Order Number: Universal Id")
-    osd_9: UniversalIDtype = Field(None, alias="9", description="Placer Order Number: Universal Id Type")
-    osd_10: str = Field(..., alias="10", description="Filler Order Number: Universal Id")
-    osd_11: UniversalIDtype = Field(None, alias="11", description="Filler Order Number: Universal Id Type")
+    osd_9: UniversalIDtype = Field(
+        None, alias="9", description="Placer Order Number: Universal Id Type"
+    )
+    osd_10: str = Field(
+        ..., alias="10", description="Filler Order Number: Universal Id"
+    )
+    osd_11: UniversalIDtype = Field(
+        None, alias="11", description="Filler Order Number: Universal Id Type"
+    )
 
 
 class TimingQuantity(BaseModel):
@@ -128,7 +152,9 @@ class TimingQuantity(BaseModel):
     tq_7: str = Field(None, alias="7", description="Condition")
     tq_8: str = Field(None, alias="8", description="Text")
     tq_9: TQconjunctionID = Field(None, alias="9", description="Conjunction")
-    tq_10: OrderSequenceDefinition = Field(None, alias="10", description="Order Sequencing")
+    tq_10: OrderSequenceDefinition = Field(
+        None, alias="10", description="Order Sequencing"
+    )
     tq_11: CodedElement = Field(None, alias="11", description="Occurrence Duration")
     tq_12: float = Field(None, alias="12", description="Total Occurrences")
 
@@ -148,18 +174,30 @@ class CompositeIDNumberAndNameSimplified(BaseModel):
     cnn_1: str = Field(None, alias="1", description="Id Number")
     cnn_2: str = Field(None, alias="2", description="Family Name")
     cnn_3: str = Field(None, alias="3", description="Given Name")
-    cnn_4: str = Field(None, alias="4", description="Second And Further Given Names Or Initials Thereof")
+    cnn_4: str = Field(
+        None,
+        alias="4",
+        description="Second And Further Given Names Or Initials Thereof",
+    )
     cnn_5: str = Field(None, alias="5", description="Suffix")
     cnn_6: str = Field(None, alias="6", description="Prefix")
     cnn_7: Degreeorlicenseorcertificate = Field(None, alias="7", description="Degree")
     cnn_8: str = Field(None, alias="8", description="Source Table")
-    cnn_9: str = Field(None, alias="9", description="Assigning Authority - Namespace Id")
-    cnn_10: str = Field(None, alias="10", description="Assigning Authority- Universal Id")
-    cnn_11: UniversalIDtype = Field(None, alias="11", description="Assigning Authority - Universal Id Type")
+    cnn_9: str = Field(
+        None, alias="9", description="Assigning Authority - Namespace Id"
+    )
+    cnn_10: str = Field(
+        None, alias="10", description="Assigning Authority- Universal Id"
+    )
+    cnn_11: UniversalIDtype = Field(
+        None, alias="11", description="Assigning Authority - Universal Id Type"
+    )
 
 
 class NameWithDateAndLocation(BaseModel):
-    ndl_1: CompositeIDNumberAndNameSimplified = Field(None, alias="1", description="Name")
+    ndl_1: CompositeIDNumberAndNameSimplified = Field(
+        None, alias="1", description="Name"
+    )
     ndl_2: TimeStamp = Field(None, alias="2", description="Start Date/Time")
     ndl_3: TimeStamp = Field(None, alias="3", description="End Date/Time")
     ndl_4: str = Field(None, alias="4", description="Point Of Care")
@@ -167,7 +205,9 @@ class NameWithDateAndLocation(BaseModel):
     ndl_6: str = Field(None, alias="6", description="Bed")
     ndl_7: HierarchicDesignator = Field(None, alias="7", description="Facility")
     ndl_8: str = Field(None, alias="8", description="Location Status")
-    ndl_9: Personlocationtype = Field(None, alias="9", description="Patient Location Type")
+    ndl_9: Personlocationtype = Field(
+        None, alias="9", description="Patient Location Type"
+    )
     ndl_10: str = Field(None, alias="10", description="Building")
     ndl_11: str = Field(None, alias="11", description="Floor")
 
