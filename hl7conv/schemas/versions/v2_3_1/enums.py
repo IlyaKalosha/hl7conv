@@ -662,7 +662,8 @@ class Conditioncode(str, Enum):
     74  Home
     75  Home - 100% reimbursement
     76  Back-up in facility dialysis
-    77  Provider accepts or is obligated/required due to a contractual arrangement or law to accept payment by a primary payer as payment in full
+    77  Provider accepts or is obligated/required due to a contractual arrangement or
+    law to accept payment by a primary payer as payment in full
     78  New coverage not implemented by HMO
     79  Corf services provided off-site
     80  Pregnant
@@ -1459,18 +1460,13 @@ class Observationresultstatuscodesinterpretation(str, Enum):
     """
     0085 - Observation result status codes interpretation
 
-    C  Record coming over is a correction and thus replaces a final result
-    D  Deletes the OBX record
-    F  Final results; Can only be changed with a corrected result.
-    I  Specimen in lab; results pending
-    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.
-    O  Order detail description only (no result)
-    P  Preliminary results
-    R  Results entered -- not verified
-    S  Partial results
-    X  Results cannot be obtained for this observation
-    U  Results status change to final without retransmitting results already sent as preliminary.  E.g., radiology changes status from preliminary to final
-    W  Post original as wrong, e.g., transmitted for wrong patient
+    C  Record coming over is a correction and thus replaces a final result D  Deletes the OBX record F  Final
+    results; Can only be changed with a corrected result. I  Specimen in lab; results pending N  Not asked; used to
+    affirmatively document that the observation identified in the OBX was not sought when the universal service ID in
+    OBR-4 implies that it would be sought. O  Order detail description only (no result) P  Preliminary results R
+    Results entered -- not verified S  Partial results X  Results cannot be obtained for this observation U  Results
+    status change to final without retransmitting results already sent as preliminary.  E.g., radiology changes
+    status from preliminary to final W  Post original as wrong, e.g., transmitted for wrong patient
     """
 
     C = "C"
@@ -1673,48 +1669,29 @@ class Dischargedisposition(str, Enum):
     """
     0112 - Discharge disposition
 
-    01  Discharged to home or self care (routine discharge)
-    02  Discharged/transferred to another short term general hospital for inpatient care
-    03  Discharged/transferred to skilled nursing facility (SNF)
-    04  Discharged/transferred to an intermediate care facility (ICF)
-    05  Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution
-    06  Discharged/transferred to home under care of organized home health service organization
-    07  Left against medical advice or discontinued care
-    08  Discharged/transferred to home under care of Home IV provider
-    09  Admitted as an inpatient to this hospital
-    10  Discharge to be defined at state level, if necessary
-    11  Discharge to be defined at state level, if necessary
-    12  Discharge to be defined at state level, if necessary
-    13  Discharge to be defined at state level, if necessary
-    14  Discharge to be defined at state level, if necessary
-    15  Discharge to be defined at state level, if necessary
-    16  Discharge to be defined at state level, if necessary
-    17  Discharge to be defined at state level, if necessary
-    18  Discharge to be defined at state level, if necessary
-    19  Discharge to be defined at state level, if necessary
-    20  Expired
-    21  Expired to be defined at state level, if necessary
-    22  Expired to be defined at state level, if necessary
-    23  Expired to be defined at state level, if necessary
-    24  Expired to be defined at state level, if necessary
-    25  Expired to be defined at state level, if necessary
-    26  Expired to be defined at state level, if necessary
-    27  Expired to be defined at state level, if necessary
-    28  Expired to be defined at state level, if necessary
-    29  Expired to be defined at state level, if necessary
-    30  Still patient or expected to return for outpatient services
-    31  Still patient to be defined at state level, if necessary
-    32  Still patient to be defined at state level, if necessary
-    33  Still patient to be defined at state level, if necessary
-    34  Still patient to be defined at state level, if necessary
-    35  Still patient to be defined at state level, if necessary
-    36  Still patient to be defined at state level, if necessary
-    37  Still patient to be defined at state level, if necessary
-    38  Still patient to be defined at state level, if necessary
-    39  Still patient to be defined at state level, if necessary
-    40  Expired at home
-    41  Expired in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice
-    42  Expired - place unknown
+    01  Discharged to home or self care (routine discharge) 02  Discharged/transferred to another short term general
+    hospital for inpatient care 03  Discharged/transferred to skilled nursing facility (SNF) 04
+    Discharged/transferred to an intermediate care facility (ICF) 05  Discharged/transferred to another type of
+    institution for inpatient care or referred for outpatient services to another institution 06
+    Discharged/transferred to home under care of organized home health service organization 07  Left against medical
+    advice or discontinued care 08  Discharged/transferred to home under care of Home IV provider 09  Admitted as an
+    inpatient to this hospital 10  Discharge to be defined at state level, if necessary 11  Discharge to be defined
+    at state level, if necessary 12  Discharge to be defined at state level, if necessary 13  Discharge to be defined
+    at state level, if necessary 14  Discharge to be defined at state level, if necessary 15  Discharge to be defined
+    at state level, if necessary 16  Discharge to be defined at state level, if necessary 17  Discharge to be defined
+    at state level, if necessary 18  Discharge to be defined at state level, if necessary 19  Discharge to be defined
+    at state level, if necessary 20  Expired 21  Expired to be defined at state level, if necessary 22  Expired to be
+    defined at state level, if necessary 23  Expired to be defined at state level, if necessary 24  Expired to be
+    defined at state level, if necessary 25  Expired to be defined at state level, if necessary 26  Expired to be
+    defined at state level, if necessary 27  Expired to be defined at state level, if necessary 28  Expired to be
+    defined at state level, if necessary 29  Expired to be defined at state level, if necessary 30  Still patient or
+    expected to return for outpatient services 31  Still patient to be defined at state level, if necessary 32  Still
+    patient to be defined at state level, if necessary 33  Still patient to be defined at state level, if necessary
+    34  Still patient to be defined at state level, if necessary 35  Still patient to be defined at state level,
+    if necessary 36  Still patient to be defined at state level, if necessary 37  Still patient to be defined at
+    state level, if necessary 38  Still patient to be defined at state level, if necessary 39  Still patient to be
+    defined at state level, if necessary 40  Expired at home 41  Expired in a medical facility; e.g., hospital, SNF,
+    ICF, or free standing hospice 42  Expired - place unknown
     """
 
     _01 = "01"
@@ -2369,68 +2346,25 @@ class Valuecode(str, Enum):
     """
     0153 - Value code
 
-    01  Most common semi-private rate
-    02  Hospital has no semi-private rooms
-    04  Inpatient professional component charges which are combined billed
-    05  Professional component included in charges and also billed separate to carrier
-    06  Medicare blood deductible
-    08  Medicare life time reserve amount in the first calendar year
-    09  Medicare co-insurance amount in the first calendar year
-    10  Lifetime reserve amount in the second calendar year
-    11  Co-insurance amount in the second calendar year
-    12  Working aged beneficiary/spouse with employer group health plan
-    13  ESRD beneficiary in a Medicare coordination period with an employer group health plan
-    14  No Fault including auto/other
-    15  Workers Compensation
-    16  PHS, or other federal agency
-    17  Payer code
-    21  Catastrophic
-    22  Surplus
-    23  Recurring monthly incode
-    24  Medicaid rate code
-    30  Pre-admission testing
-    31  Patient liability amount
-    37  Pints of blood furnished
-    38  Blood deductible pints
-    39  Pints of blood replaced
-    40  New coverage not implemented by HMO (for inpatient service only)
-    41  Black lung
-    42  VA
-    43  Disabled beneficiary under age 64 with LGHP
-    44  Amount provider agreed to accept from primary payer when this amount is less than charges but higher than payment received,, then a Medicare secondary payment is due
-    45  Accident hour
-    46  Number of grace days
-    47  Any liability insurance
-    48  Hemoglobin reading
-    49  Hematocrit reading
-    50  Physical therapy visits
-    51  Occupational therapy visits
-    52  Speech therapy visits
-    53  Cardiac rehab visits
-    56  Skilled nurse - home visit hours
-    57  Home health aide - home visit hours
-    58  Arterial blood gas
-    59  Oxygen saturation
-    60  HHA branch MSA
-    67  Peritoneal dialysis
-    68  EPO-drug
-    70  Payer codes
-    72  Payer codes
-    70 ... 72  Payer codes
-    71  Payer codes
-    75  Payer codes
-    75 ... 79  Payer codes
-    76  Payer codes
-    77  Payer codes
-    78  Payer codes
-    79  Payer codes
-    80  Psychiatric visits
-    81  Visits subject to co-payment
-    A1  Deductible payer A
-    A2  Coinsurance payer A
-    A3  Estimated responsibility payer A
-    X0  Service excluded on primary policy
-    X4  Supplemental coverage
+    01  Most common semi-private rate 02  Hospital has no semi-private rooms 04  Inpatient professional component
+    charges which are combined billed 05  Professional component included in charges and also billed separate to
+    carrier 06  Medicare blood deductible 08  Medicare life time reserve amount in the first calendar year 09
+    Medicare co-insurance amount in the first calendar year 10  Lifetime reserve amount in the second calendar year
+    11  Co-insurance amount in the second calendar year 12  Working aged beneficiary/spouse with employer group
+    health plan 13  ESRD beneficiary in a Medicare coordination period with an employer group health plan 14  No
+    Fault including auto/other 15  Workers Compensation 16  PHS, or other federal agency 17  Payer code 21
+    Catastrophic 22  Surplus 23  Recurring monthly incode 24  Medicaid rate code 30  Pre-admission testing 31
+    Patient liability amount 37  Pints of blood furnished 38  Blood deductible pints 39  Pints of blood replaced 40
+    New coverage not implemented by HMO (for inpatient service only) 41  Black lung 42  VA 43  Disabled beneficiary
+    under age 64 with LGHP 44  Amount provider agreed to accept from primary payer when this amount is less than
+    charges but higher than payment received,, then a Medicare secondary payment is due 45  Accident hour 46  Number
+    of grace days 47  Any liability insurance 48  Hemoglobin reading 49  Hematocrit reading 50  Physical therapy
+    visits 51  Occupational therapy visits 52  Speech therapy visits 53  Cardiac rehab visits 56  Skilled nurse -
+    home visit hours 57  Home health aide - home visit hours 58  Arterial blood gas 59  Oxygen saturation 60  HHA
+    branch MSA 67  Peritoneal dialysis 68  EPO-drug 70  Payer codes 72  Payer codes 70 ... 72  Payer codes 71  Payer
+    codes 75  Payer codes 75 ... 79  Payer codes 76  Payer codes 77  Payer codes 78  Payer codes 79  Payer codes 80
+    Psychiatric visits 81  Visits subject to co-payment A1  Deductible payer A A2  Coinsurance payer A A3  Estimated
+    responsibility payer A X0  Service excluded on primary policy X4  Supplemental coverage
     """
 
     _01 = "01"
@@ -2557,10 +2491,8 @@ class Date_timeselectionqualifier(str, Enum):
     """
     0158 - Date-time selection qualifier
 
-    1ST  First value within range
-    ALL  All values within the range
-    LST  Last value within the range
-    REV  All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)
+    1ST  First value within range ALL  All values within the range LST  Last value within the range REV  All values
+    within the range returned in reverse chronological order (This is the default if not otherwise specified.)
     """
 
     _1ST = "1ST"
@@ -3003,11 +2935,13 @@ class Natureoftest_observation(str, Enum):
     """
     0174 - Nature of test-observation
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatine clearance), usually done at different times and/or on different specimens
-    A  Atomic test/observation (test code or treatment code)
-    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output)
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen F  Functional procedure that may consist of one or more
+    interrelated measures (e.g., glucose tolerance test, creatine clearance), usually done at different times and/or
+    on different specimens A  Atomic test/observation (test code or treatment code) S  Superset--a set of batteries
+    or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA,
+    electrolytes) C  Single observation calculated via a rule or formula from other independent observations (e.g.,
+    Alveolar--arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -3089,10 +3023,10 @@ class Responselevel(str, Enum):
     """
     0179 - Response level
 
-    NE  Never.  No application-level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
-    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
+    NE  Never.  No application-level response needed ER  Error/Reject conditions only.  Only MFA segments denoting
+    errors must be returned via the application-level acknowledgment for this message AL  Always. All MFA segments (
+    whether denoting errors or not) must be returned via the application-level acknowledgment message SU  Success.
+    Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
     """
 
     NE = "NE"
@@ -3179,19 +3113,11 @@ class Addresstype(str, Enum):
     """
     0190 - Address type
 
-    C  Current Or Temporary
-    P  Permanent
-    M  Mailing
-    B  Firm/Business
-    O  Office
-    H  Home
-    N  Birth (nee) (birth address, not otherwise specified)
-    BDL  Birth delivery location (address where birth occurred)
-    BR  Residence  at birth (home address at time of birth)
-    F  Country Of Origin
-    L  Legal Address
-    RH  Registry home.  Refers to the information system, typically managed by a public health agency, that  stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
-    BA  Bad address
+    C  Current Or Temporary P  Permanent M  Mailing B  Firm/Business O  Office H  Home N  Birth (nee) (birth address,
+    not otherwise specified) BDL  Birth delivery location (address where birth occurred) BR  Residence  at birth (
+    home address at time of birth) F  Country Of Origin L  Legal Address RH  Registry home.  Refers to the
+    information system, typically managed by a public health agency, that  stores patient information such as
+    immunization histories or cancer data, regardless of where the patient obtains services. BA  Bad address
     """
 
     C = "C"
@@ -3541,20 +3467,17 @@ class Alternatecharactersets(str, Enum):
     """
     0211 - Alternate character sets
 
-    ASCII  The printable 7-bit ASCII character set . (This is the default if this field is omitted)
-    8859/1  The printable characters from the ISO 8859/1 Character set
-    8859/2  The printable characters from the ISO 8859/2 Character set
-    8859/3  The printable characters from the ISO 8859/3 Character set
-    8859/4  The printable characters from the ISO 8859/4 Character set
-    8859/5  The printable characters from the ISO 8859/5 Character set
-    8859/6  The printable characters from the ISO 8859/6 Character set
-    8859/7  The printable characters from the ISO 8859/7 Character set
-    8859/8  The printable characters from the ISO 8859/8 Character set
-    8859/9  The printable characters from the ISO 8859/9 Character set
-    ISO IR14  Code for Information Exchange (one byte)(JIS X 0201-1976),  Note that the code contains a  space, i.e. "ISO IR14".
-    ISO IR87  Code for the Japanese Graphic Character set for information interchange (JIS X 0208-1990), Note that the code contains a space, i.e. "ISO IR87".
-    ISO IR159  Code of the supplementary Japanese Graphic Character set for information interchange (JIS X  0212-1990), Note that the code contains a space, i.e. "ISO IR159".
-    UNICODE  The world wide character standard from ISO/IEC 10646-1-1993
+    ASCII  The printable 7-bit ASCII character set . (This is the default if this field is omitted) 8859/1  The
+    printable characters from the ISO 8859/1 Character set 8859/2  The printable characters from the ISO 8859/2
+    Character set 8859/3  The printable characters from the ISO 8859/3 Character set 8859/4  The printable characters
+    from the ISO 8859/4 Character set 8859/5  The printable characters from the ISO 8859/5 Character set 8859/6  The
+    printable characters from the ISO 8859/6 Character set 8859/7  The printable characters from the ISO 8859/7
+    Character set 8859/8  The printable characters from the ISO 8859/8 Character set 8859/9  The printable characters
+    from the ISO 8859/9 Character set ISO IR14  Code for Information Exchange (one byte)(JIS X 0201-1976),
+    Note that the code contains a  space, i.e. "ISO IR14". ISO IR87  Code for the Japanese Graphic Character set for
+    information interchange (JIS X 0208-1990), Note that the code contains a space, i.e. "ISO IR87". ISO IR159  Code
+    of the supplementary Japanese Graphic Character set for information interchange (JIS X  0212-1990), Note that the
+    code contains a space, i.e. "ISO IR159". UNICODE  The world wide character standard from ISO/IEC 10646-1-1993
     """
 
     ASCII = "ASCII"
@@ -3657,48 +3580,22 @@ class Manufacturersofvaccines(str, Enum):
     """
     0227 - Manufacturers of vaccines (code=MVX)
 
-    AB  Abbott Laboratories
-    AD  Adams Laboratories
-    ALP  Alpha Therapeutic Corporation
-    AR  Armour (Inactive  use CEN)
-    AVI  Aviron
-    BA  Baxter Healthcare Corporation
-    BAY  Bayer Corporation (includes Miles, Inc. and Cutter Laboratories)
-    BP  Berna Products (Inactive  use BPC)
-    BPC  Berna Products Corporation (includes Swiss Serum and Vaccine Institute Berna)
-    CEN  Centeon L.L.C. (includes Armour Pharmaceutical Company)
-    CHI  Chiron Corporation
-    CON  Connaught (inactive  use PMC)
-    EVN  Evans Medical Limited
-    GRE  Greer Laboratories, Inc.
-    IAG  Immuno International AG
-    IM  Merieux (inactive  Use PMC)
-    IUS  Immuno-US, Inc.
-    JPN  The Research Foundation for Microbial Diseases of Osaka University (BIKEN)
-    KGC  Korea Green Cross Corporation
-    LED  Lederle (inactive  use WAL)
-    MA  Massachusetts Public Health Biologic Laboratories)
-    MED  Medimmune, Inc.
-    MIL  Miles (inactive  use BAY)
-    MIP  Michigan Biologic Products Institute
-    MSD  Merck & Co., Inc.
-    NAB  NABI (formerly North American Biologicals, Inc.)
-    NYB  New York Blood Center
-    NAV  North American Vaccine, Inc.
-    NOV  Novartis Pharmaceutical Corporation
-    OTC  Organon Teknika Corporation
-    ORT  Ortho Diagnostic Systems, Inc.
-    PD  Parkdale Pharmaceuticals (formerly Parke-Davis)
-    PMC  Pasteur Merieux Connaught (includes Connaught Laboratories and Pasteur Merieux)
-    PRX  Praxis Biologics (inactive  use WAL)
-    SCL  Sclavo, Inc.
-    SI  Swiss Serum and Vaccine Inst. (inactive  use BPC)
-    SKB  SmithKline Beecham
-    USA  United States Army Medical Research and Materiel Command
-    WA  Wyeth-Ayerst (inactive  use WAL)
-    WAL  Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics)
-    OTH  Other
-    UNK  Unknown manufacturer
+    AB  Abbott Laboratories AD  Adams Laboratories ALP  Alpha Therapeutic Corporation AR  Armour (Inactive  use CEN)
+    AVI  Aviron BA  Baxter Healthcare Corporation BAY  Bayer Corporation (includes Miles, Inc. and Cutter
+    Laboratories) BP  Berna Products (Inactive  use BPC) BPC  Berna Products Corporation (includes Swiss Serum and
+    Vaccine Institute Berna) CEN  Centeon L.L.C. (includes Armour Pharmaceutical Company) CHI  Chiron Corporation CON
+     Connaught (inactive  use PMC) EVN  Evans Medical Limited GRE  Greer Laboratories, Inc. IAG  Immuno
+     International AG IM  Merieux (inactive  Use PMC) IUS  Immuno-US, Inc. JPN  The Research Foundation for
+     Microbial Diseases of Osaka University (BIKEN) KGC  Korea Green Cross Corporation LED  Lederle (inactive  use
+     WAL) MA  Massachusetts Public Health Biologic Laboratories) MED  Medimmune, Inc. MIL  Miles (inactive  use BAY)
+     MIP  Michigan Biologic Products Institute MSD  Merck & Co., Inc. NAB  NABI (formerly North American Biologicals,
+     Inc.) NYB  New York Blood Center NAV  North American Vaccine, Inc. NOV  Novartis Pharmaceutical Corporation OTC
+     Organon Teknika Corporation ORT  Ortho Diagnostic Systems, Inc. PD  Parkdale Pharmaceuticals (formerly
+     Parke-Davis) PMC  Pasteur Merieux Connaught (includes Connaught Laboratories and Pasteur Merieux) PRX  Praxis
+     Biologics (inactive  use WAL) SCL  Sclavo, Inc. SI  Swiss Serum and Vaccine Inst. (inactive  use BPC) SKB
+     SmithKline Beecham USA  United States Army Medical Research and Materiel Command WA  Wyeth-Ayerst (inactive 
+     use WAL) WAL  Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories,
+     Lederle Laboratories, and Praxis Biologics) OTH  Other UNK  Unknown manufacturer
     """
 
     AB = "AB"
@@ -4385,32 +4282,11 @@ class Durationcategories(str, Enum):
     """
     0255 - Duration categories
 
-    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
-    *  Life of the "unit."  Used for blood products.
-    30M  30 minutes
-    1H  1 hour
-    2H  2 hours
-    2.5H  2 1/2 hours
-    3H  3 hours
-    4H  4 hours
-    5H  5 hours
-    6H  6 hours
-    7H  7 hours
-    8H  8 hours
-    12H  12 hours
-    24H  24 hours
-    2D  2 days
-    3D  3 days
-    4D  4 days
-    5D  5 days
-    6D  6 days
-    1W  1 week
-    2W  2 weeks
-    3W  3 weeks
-    4W  4 weeks
-    1L  1 months (30 days)
-    2L  2 months
-    3L  3 months
+    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine
+    measurements. *  Life of the "unit."  Used for blood products. 30M  30 minutes 1H  1 hour 2H  2 hours 2.5H  2 1/2
+    hours 3H  3 hours 4H  4 hours 5H  5 hours 6H  6 hours 7H  7 hours 8H  8 hours 12H  12 hours 24H  24 hours 2D  2
+    days 3D  3 days 4D  4 days 5D  5 days 6D  6 days 1W  1 week 2W  2 weeks 3W  3 weeks 4W  4 weeks 1L  1 months (30
+    days) 2L  2 months 3L  3 months
     """
 
     PT = "PT"
@@ -4951,9 +4827,9 @@ class Appointmenttypecodes(str, Enum):
     """
     0277 - Appointment type codes
 
-    Normal  Routine schedule request type - default if not valued
-    Tentative  A request for a tentative (e.g., penciled in) appointment
-    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    Normal  Routine schedule request type - default if not valued Tentative  A request for a tentative (e.g.,
+    penciled in) appointment Complete  A request to add a completed appointment, used to maintain records of
+    completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     N_mal = "Normal"
@@ -4965,16 +4841,14 @@ class Fillerstatuscodes(str, Enum):
     """
     0278 - Filler status codes
 
-    Pending  Appointment has not yet been confirmed
-    Waitlist  Appointment has been placed on a waiting list for a particular slot, or set of slots
-    Booked  The indicated appointment is booked
-    Started  The indicated appointment has begun and is currently in progress
-    Complete  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
-    Cancelled  T7he indicated appointment was stopped from occurring (canceled prior to starting)
-    Discontinued  The indicated appointment was discontinued (DCed while in progress, discontinued parent appointment, or discontinued child appointment)
-    Deleted  The indicated appointment was deleted from the filler application
-    Blocked  The indicated time slot(s) is(are) blocked
-    Overbook  The appointment has been confirmed; however it is confirmed in an overbooked state
+    Pending  Appointment has not yet been confirmed Waitlist  Appointment has been placed on a waiting list for a
+    particular slot, or set of slots Booked  The indicated appointment is booked Started  The indicated appointment
+    has begun and is currently in progress Complete  The indicated appointment has completed normally (was not
+    discontinued, canceled, or deleted) Cancelled  T7he indicated appointment was stopped from occurring (canceled
+    prior to starting) Discontinued  The indicated appointment was discontinued (DCed while in progress,
+    discontinued parent appointment, or discontinued child appointment) Deleted  The indicated appointment was
+    deleted from the filler application Blocked  The indicated time slot(s) is(are) blocked Overbook  The appointment
+    has been confirmed; however it is confirmed in an overbooked state
     """
 
     Pending = "Pending"
@@ -4993,10 +4867,9 @@ class Allowsubstitutioncodes(str, Enum):
     """
     0279 - Allow substitution codes
 
-    No  Substitution of this resource is not allowed
-    Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
-    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
-    Yes  Substitution of this resource is allowed
+    No  Substitution of this resource is not allowed Confirm  Contact the Placer Contact Person prior to making any
+    substitutions of this resource Notify  Notify the Placer Contact Person, through normal institutional procedures,
+    that a substitution of this resource has been made Yes  Substitution of this resource is allowed
     """
 
     No = "No"
@@ -5495,15 +5368,20 @@ class Timeselectioncriteriaparameterclasscodes(str, Enum):
     """
     0294 - Time selection criteria parameter class codes
 
-    PREFSTART  The preferred start time for the appointment request, service or resource.   Any legal time specification in the format HHMM, using 24-hour clock notation
-    PREFEND  The preferred end time for the appointment request, service or resource.  Any legal time specification in the format HHMM, using 24-hour clock notation
-    MON  An indicator that Monday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred
-    TUE  An indicator that Tuesday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred
-    WED  An indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK = Preferred appointment day NO = Day is not preferred
-    THU  An indicator that Thursday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred
-    FRI  An indicator that Friday is or is not preferred for the day on which the appointment will occur.  OK =  Preferred appointment day NO = Day is not preferred
-    SAT  An indicator that Saturday is or is not preferred for the day on which the appointment will occur.  OK =  Preferred appointment day NO = Day is not preferred
-    SUN  An indicator that Sunday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred
+    PREFSTART  The preferred start time for the appointment request, service or resource.   Any legal time
+    specification in the format HHMM, using 24-hour clock notation PREFEND  The preferred end time for the
+    appointment request, service or resource.  Any legal time specification in the format HHMM, using 24-hour clock
+    notation MON  An indicator that Monday is or is not preferred for the day on which the appointment will occur. OK
+    = Preferred appointment day NO = Day is not preferred TUE  An indicator that Tuesday is or is not preferred for
+    the day on which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred WED An
+    indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK = Preferred
+    appointment day NO = Day is not preferred THU  An indicator that Thursday is or is not preferred for the day on
+    which the appointment will occur.  OK = Preferred appointment day NO = Day is not preferred FRI  An indicator
+    that Friday is or is not preferred for the day on which the appointment will occur.  OK =  Preferred appointment
+    day NO = Day is not preferred SAT  An indicator that Saturday is or is not preferred for the day on which the
+    appointment will occur.  OK =  Preferred appointment day NO = Day is not preferred SUN  An indicator that Sunday
+    is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day NO = Day
+    is not preferred
     """
 
     PREFSTART = "PREFSTART"
@@ -5521,8 +5399,9 @@ class CPRangeType(str, Enum):
     """
     0298 - CP Range Type
 
-    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval
+    has not occurred/been consumed
     """
 
     P = "P"
@@ -5533,9 +5412,10 @@ class Encoding(str, Enum):
     """
     0299 - Encoding
 
-    A  no encoding - data are displayable ASCII characters.
-    Hex  hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521.  Four consecutive ASCII characters represent three consecutive octets of binary data.  Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper a
+    A  no encoding - data are displayable ASCII characters. Hex  hexadecimal encoding - consecutive pairs of
+    hexadecimal digits represent consecutive single octets. Base64  encoding as defined by MIME (Multipurpose
+    Internet Mail Extensions) standard RFC 1521.  Four consecutive ASCII characters represent three consecutive
+    octets of binary data.  Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper a
     """
 
     A = "A"
@@ -5547,18 +5427,14 @@ class UniversalIDtype(str, Enum):
     """
     0301 - Universal ID type
 
-    DNS  An Internet dotted name. Either in ASCII or as integers
-    GUID  Same as UUID.
-    HCD  The CEN Healthcare Coding Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.)
-    HL7  Reserved for future HL7 registration schemes
-    ISO  An International Standards Organization Object Identifier
-    N  These are reserved for locally defined coding schemes.
-    M  These are reserved for locally defined coding schemes.
-    L,M,N  These are reserved for locally defined coding schemes.
-    L  These are reserved for locally defined coding schemes.
-    Random  Usually a base64 encoded string of random bits.  The uniqueness depends on the length of the bits.  Mail systems often generate ASCII string  "unique names," from a  combination of random bits and system names.  Obviously, such identifiers will not be con
-    UUID  The DCE Universal Unique Identifier
-    x400  An X.400 MHS format identifier
+    DNS  An Internet dotted name. Either in ASCII or as integers GUID  Same as UUID. HCD  The CEN Healthcare Coding
+    Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.) HL7  Reserved for future HL7
+    registration schemes ISO  An International Standards Organization Object Identifier N  These are reserved for
+    locally defined coding schemes. M  These are reserved for locally defined coding schemes. L,M,N  These are
+    reserved for locally defined coding schemes. L  These are reserved for locally defined coding schemes. Random
+    Usually a base64 encoded string of random bits.  The uniqueness depends on the length of the bits.  Mail systems
+    often generate ASCII string  "unique names," from a  combination of random bits and system names.  Obviously,
+    such identifiers will not be con UUID  The DCE Universal Unique Identifier x400  An X.400 MHS format identifier
     x500  An X.500 directory name
     """
 
@@ -6479,9 +6355,12 @@ class Alternatecharactersethandlingscheme(str, Enum):
     """
     0356 - Alternate character set handling scheme
 
-    2.3  The character set switching mode specified in HL7 2.3, sections 2.8.28.6.1, and 2.9.2.  Note that the escape sequences used in this mode are "HL7 escapes sequences" as defined in HL7 2.3, sec.  2.9, and do not use the ASCII "esc" character,
-    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure  and Extension Technique". This standard specifies an escape sequence from basic one byte character set to specified other character set, and  vice versa.  The escape sequence expl
-    <null>  This is the default, indicating that there is no character set switching occurring in this message.
+    2.3  The character set switching mode specified in HL7 2.3, sections 2.8.28.6.1, and 2.9.2.  Note that the escape
+    sequences used in this mode are "HL7 escapes sequences" as defined in HL7 2.3, sec.  2.9, and do not use the
+    ASCII "esc" character, ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure
+    and Extension Technique". This standard specifies an escape sequence from basic one byte character set to
+    specified other character set, and  vice versa.  The escape sequence expl <null>  This is the default,
+    indicating that there is no character set switching occurring in this message.
     """
 
     _2_3 = "2.3"

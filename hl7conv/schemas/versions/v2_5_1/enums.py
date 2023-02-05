@@ -2047,18 +2047,13 @@ class Observationresultstatuscodesinterpretation(str, Enum):
     """
     0085 - Observation result status codes interpretation
 
-    C  Record coming over is a correction and thus replaces a final result
-    D  Deletes the OBX record
-    F  Final results; Can only be changed with a corrected result.
-    I  Specimen in lab; results pending
-    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.
-    O  Order detail description only (no result)
-    P  Preliminary results
-    R  Results entered -- not verified
-    S  Partial results
-    X  Results cannot be obtained for this observation
-    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes status from preliminary to final
-    W  Post original as wrong, e.g., transmitted for wrong patient
+    C  Record coming over is a correction and thus replaces a final result D  Deletes the OBX record F  Final
+    results; Can only be changed with a corrected result. I  Specimen in lab; results pending N  Not asked; used to
+    affirmatively document that the observation identified in the OBX was not sought when the universal service ID in
+    OBR-4 implies that it would be sought. O  Order detail description only (no result) P  Preliminary results R
+    Results entered -- not verified S  Partial results X  Results cannot be obtained for this observation U  Results
+    status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes
+    status from preliminary to final W  Post original as wrong, e.g., transmitted for wrong patient
     """
 
     C = "C"
@@ -2254,51 +2249,29 @@ class DischargeDisposition(str, Enum):
     """
     0112 - Discharge Disposition
 
-    16
-    25  Expired to be defined at state level, if necessary
-    24  Expired to be defined at state level, if necessary
-    23  Expired to be defined at state level, if necessary
-    21  Expired to be defined at state level, if necessary
-    19
-    26  Expired to be defined at state level, if necessary
-    17
-    22  Expired to be defined at state level, if necessary
-    15
-    14
-    13
-    12
-    11
-    10
-    18
-    36  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    39  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    37  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    27  Expired to be defined at state level, if necessary
-    35  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    34  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    33  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    32  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    28  Expired to be defined at state level, if necessary
-    38  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    31  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    29  Expired to be defined at state level, if necessary
-    01  Discharged to home or self care (routine discharge)
-    02  Discharged/transferred to another short term general hospital for inpatient care
-    03  Discharged/transferred to skilled nursing facility (SNF)
-    04  Discharged/transferred to an intermediate care facility (ICF)
-    05  Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution
-    06  Discharged/transferred to home under care of organized home health service organization
-    07  Left against medical advice or discontinued care
-    08  Discharged/transferred to home under care of Home IV provider
-    09  Admitted as an inpatient to this hospital
-    10 ... 19  Discharge to be defined at state level, if necessary
-    20  Expired (i.e. dead)
-    21 ... 29  Expired to be defined at state level, if necessary
-    30  Still patient or expected to return for outpatient services (i.e. still a patient)
-    31 ... 39  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-    40  Expired (i.e. died) at home
-    41  Expired (i.e. died) in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice
-    42  Expired (i.e. died)  - place unknown
+    16 25  Expired to be defined at state level, if necessary 24  Expired to be defined at state level, if necessary
+    23  Expired to be defined at state level, if necessary 21  Expired to be defined at state level, if necessary 19
+    26  Expired to be defined at state level, if necessary 17 22  Expired to be defined at state level, if necessary
+    15 14 13 12 11 10 18 36  Still patient to be defined at state level, if necessary  (i.e. still a patient) 39
+    Still patient to be defined at state level, if necessary  (i.e. still a patient) 37  Still patient to be defined
+    at state level, if necessary  (i.e. still a patient) 27  Expired to be defined at state level, if necessary 35
+    Still patient to be defined at state level, if necessary  (i.e. still a patient) 34  Still patient to be defined
+    at state level, if necessary  (i.e. still a patient) 33  Still patient to be defined at state level, if necessary
+     (i.e. still a patient) 32  Still patient to be defined at state level, if necessary  (i.e. still a patient) 28
+     Expired to be defined at state level, if necessary 38  Still patient to be defined at state level, if necessary
+     (i.e. still a patient) 31  Still patient to be defined at state level, if necessary  (i.e. still a patient) 29
+     Expired to be defined at state level, if necessary 01  Discharged to home or self care (routine discharge) 02
+     Discharged/transferred to another short term general hospital for inpatient care 03  Discharged/transferred to
+     skilled nursing facility (SNF) 04  Discharged/transferred to an intermediate care facility (ICF) 05
+     Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to
+     another institution 06  Discharged/transferred to home under care of organized home health service organization
+     07  Left against medical advice or discontinued care 08  Discharged/transferred to home under care of Home IV
+     provider 09  Admitted as an inpatient to this hospital 10 ... 19  Discharge to be defined at state level,
+     if necessary 20  Expired (i.e. dead) 21 ... 29  Expired to be defined at state level, if necessary 30  Still
+     patient or expected to return for outpatient services (i.e. still a patient) 31 ... 39  Still patient to be
+     defined at state level, if necessary  (i.e. still a patient) 40  Expired (i.e. died) at home 41  Expired (i.e.
+     died) in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice 42  Expired (i.e. died)  - place
+     unknown
     """
 
     _01 = "01"
@@ -3008,10 +2981,8 @@ class Dateortimeselectionqualifier(str, Enum):
     """
     0158 - Date or time selection qualifier
 
-    1ST  First value within range
-    ALL  All values within the range
-    LST  Last value within the range
-    REV  All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)
+    1ST  First value within range ALL  All values within the range LST  Last value within the range REV  All values
+    within the range returned in reverse chronological order (This is the default if not otherwise specified.)
     """
 
     _1ST = "1ST"
@@ -3454,11 +3425,14 @@ class NatureofServiceorTestorObservation(str, Enum):
     """
     0174 - Nature of Service or Test or Observation
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
-    A  Atomic service/test/observation (test code or treatment code)
-    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order multiple service/test/observation
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output)
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen F  Functional procedure that may consist of one or more
+    interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times
+    and/or on different specimens A  Atomic service/test/observation (test code or treatment code) S  Superset--a set
+    of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g.,
+    routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order multiple
+    service/test/observation C  Single observation calculated via a rule or formula from other independent
+    observations (e.g., Alveolar--arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -3546,10 +3520,10 @@ class Responselevel(str, Enum):
     """
     0179 - Response level
 
-    NE  Never.  No application-level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
-    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
+    NE  Never.  No application-level response needed ER  Error/Reject conditions only.  Only MFA segments denoting
+    errors must be returned via the application-level acknowledgment for this message AL  Always. All MFA segments (
+    whether denoting errors or not) must be returned via the application-level acknowledgment message SU  Success.
+    Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
     """
 
     NE = "NE"
@@ -3650,19 +3624,11 @@ class Addresstype(str, Enum):
     """
     0190 - Address type
 
-    BA  Bad address
-    N  Birth (nee) (birth address, not otherwise specified)
-    BDL  Birth delivery location (address where birth occurred)
-    F  Country Of Origin
-    C  Current Or Temporary
-    B  Firm/Business
-    H  Home
-    L  Legal Address
-    M  Mailing
-    O  Office
-    P  Permanent
-    RH  Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
-    BR  Residence at birth (home address at time of birth)
+    BA  Bad address N  Birth (nee) (birth address, not otherwise specified) BDL  Birth delivery location (address
+    where birth occurred) F  Country Of Origin C  Current Or Temporary B  Firm/Business H  Home L  Legal Address M
+    Mailing O  Office P  Permanent RH  Registry home. Refers to the information system, typically managed by a public
+    health agency, that stores patient information such as immunization histories or cancer data, regardless of where
+    the patient obtains services. BR  Residence at birth (home address at time of birth)
     """
 
     BA = "BA"
@@ -5040,32 +5006,11 @@ class Durationcategories(str, Enum):
     """
     0255 - Duration categories
 
-    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
-    *  (asterisk) Life of the "unit."  Used for blood products.
-    30M  30 minutes
-    1H  1 hour
-    2H  2 hours
-    2.5H  2 1/2 hours
-    3H  3 hours
-    4H  4 hours
-    5H  5 hours
-    6H  6 hours
-    7H  7 hours
-    8H  8 hours
-    12H  12 hours
-    24H  24 hours
-    2D  2 days
-    3D  3 days
-    4D  4 days
-    5D  5 days
-    6D  6 days
-    1W  1 week
-    2W  2 weeks
-    3W  3 weeks
-    4W  4 weeks
-    1L  1 months (30 days)
-    2L  2 months
-    3L  3 months
+    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine
+    measurements. *  (asterisk) Life of the "unit."  Used for blood products. 30M  30 minutes 1H  1 hour 2H  2 hours
+    2.5H  2 1/2 hours 3H  3 hours 4H  4 hours 5H  5 hours 6H  6 hours 7H  7 hours 8H  8 hours 12H  12 hours 24H  24
+    hours 2D  2 days 3D  3 days 4D  4 days 5D  5 days 6D  6 days 1W  1 week 2W  2 weeks 3W  3 weeks 4W  4 weeks 1L  1
+    months (30 days) 2L  2 months 3L  3 months
     """
 
     PT = "PT"
@@ -5606,9 +5551,9 @@ class AppointmentTypeCodes(str, Enum):
     """
     0277 - Appointment Type Codes
 
-    Normal  Routine schedule request type - default if not valued
-    Tentative  A request for a tentative (e.g., "penciled in") appointment
-    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    Normal  Routine schedule request type - default if not valued Tentative  A request for a tentative (e.g.,
+    "penciled in") appointment Complete  A request to add a completed appointment, used to maintain records of
+    completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     N_mal = "Normal"
@@ -5620,17 +5565,15 @@ class Fillerstatuscodes(str, Enum):
     """
     0278 - Filler status codes
 
-    Pending  Appointment has not yet been confirmed
-    Waitlist  Appointment has been placed on a waiting list for a particular slot, or set of slots
-    Booked  The indicated appointment is booked
-    Started  The indicated appointment has begun and is currently in progress
-    Complete  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
-    Cancelled  The indicated appointment was stopped from occurring (canceled prior to starting)
-    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent appointment, or discontinued child appointment)
-    Deleted  The indicated appointment was deleted from the filler application
-    Blocked  The indicated time slot(s) is(are) blocked
-    Overbook  The appointment has been confirmed; however it is confirmed in an overbooked state
-    Noshow  The patient did not show up for the appointment
+    Pending  Appointment has not yet been confirmed Waitlist  Appointment has been placed on a waiting list for a
+    particular slot, or set of slots Booked  The indicated appointment is booked Started  The indicated appointment
+    has begun and is currently in progress Complete  The indicated appointment has completed normally (was not
+    discontinued, canceled, or deleted) Cancelled  The indicated appointment was stopped from occurring (canceled
+    prior to starting) Discontinued  The indicated appointment was discontinued (DC'ed while in progress,
+    discontinued parent appointment, or discontinued child appointment) Deleted  The indicated appointment was
+    deleted from the filler application Blocked  The indicated time slot(s) is(are) blocked Overbook  The appointment
+    has been confirmed; however it is confirmed in an overbooked state Noshow  The patient did not show up for the
+    appointment
     """
 
     Pending = "Pending"
@@ -5650,10 +5593,9 @@ class AllowSubstitutionCodes(str, Enum):
     """
     0279 - Allow Substitution Codes
 
-    No  Substitution of this resource is not allowed
-    Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
-    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
-    Yes  Substitution of this resource is allowed
+    No  Substitution of this resource is not allowed Confirm  Contact the Placer Contact Person prior to making any
+    substitutions of this resource Notify  Notify the Placer Contact Person, through normal institutional procedures,
+    that a substitution of this resource has been made Yes  Substitution of this resource is allowed
     """
 
     No = "No"
@@ -6080,8 +6022,9 @@ class CPRangeType(str, Enum):
     """
     0298 - CP Range Type
 
-    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval
+    has not occurred/been consumed
     """
 
     P = "P"
@@ -6092,9 +6035,10 @@ class Encoding(str, Enum):
     """
     0299 - Encoding
 
-    A  No encoding - data are displayable ASCII characters.
-    Hex  Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and
+    A  No encoding - data are displayable ASCII characters. Hex  Hexadecimal encoding - consecutive pairs of
+    hexadecimal digits represent consecutive single octets. Base64  Encoding as defined by MIME (Multipurpose
+    Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets
+    of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and
     """
 
     A = "A"
@@ -6106,20 +6050,15 @@ class UniversalIDtype(str, Enum):
     """
     0301 - Universal ID type
 
-    DNS  An Internet dotted name. Either in ASCII or as integers
-    GUID  Same as UUID.
-    HCD  The CEN Healthcare Coding Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.)
-    HL7  Reserved for future HL7 registration schemes
-    ISO  An International Standards Organization Object Identifier
-    N  These are reserved for locally defined coding schemes.
-    M  These are reserved for locally defined coding schemes.
-    L,M,N  These are reserved for locally defined coding schemes.
-    L  These are reserved for locally defined coding schemes.
-    Random  Usually a base64 encoded string of random bits.The uniqueness depends on the length of the bits. Mail systems often generate ASCII string "unique names," from a combination of random bits and system names. Obviously, such identifiers will not be constr
-    URI  Uniform Resource Identifier
-    UUID  The DCE Universal Unique Identifier
-    x400  An X.400 MHS format identifier
-    x500  An X.500 directory name
+    DNS  An Internet dotted name. Either in ASCII or as integers GUID  Same as UUID. HCD  The CEN Healthcare Coding
+    Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.) HL7  Reserved for future HL7
+    registration schemes ISO  An International Standards Organization Object Identifier N  These are reserved for
+    locally defined coding schemes. M  These are reserved for locally defined coding schemes. L,M,N  These are
+    reserved for locally defined coding schemes. L  These are reserved for locally defined coding schemes. Random
+    Usually a base64 encoded string of random bits.The uniqueness depends on the length of the bits. Mail systems
+    often generate ASCII string "unique names," from a combination of random bits and system names. Obviously,
+    such identifiers will not be constr URI  Uniform Resource Identifier UUID  The DCE Universal Unique Identifier
+    x400  An X.400 MHS format identifier x500  An X.500 directory name
     """
 
     DNS = "DNS"
@@ -7075,9 +7014,10 @@ class Alternatecharactersethandlingscheme(str, Enum):
     """
     0356 - Alternate character set handling scheme
 
-    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension Technique". .
-    2.3  The character set switching mode specified in HL7 2.5, section 2.7.2, â??Escape sequences supporting multiple character setsâ? and section 2.A.46, "XPN - extended person name".
-    <null>  This is the default, indicating that there is no character set switching occurring in this message.
+    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension
+    Technique". . 2.3  The character set switching mode specified in HL7 2.5, section 2.7.2, â??Escape sequences
+    supporting multiple character setsâ? and section 2.A.46, "XPN - extended person name". <null>  This is the
+    default, indicating that there is no character set switching occurring in this message.
     """
 
     ISO_2022_1994 = "ISO 2022-1994"
@@ -9490,48 +9430,30 @@ class OCEEditCode(str, Enum):
     """
     0458 - OCE Edit Code
 
-    1  Invalid diagnosis code
-    2  Diagnosis and age conflict
-    3  Diagnosis and sex conflict
-    4  Medicare secondary payer alert
-    5  E-code as reason for visit
-    6  Invalid procedure code
-    7  Procedure and age conflict
-    8  Procedure and sex conflict
-    9  Nov-covered service
-    10  Non-covered  service submitted for verification of denial (condition code 21 from header information on claim)
-    11  Non-covered service submitted for FI review (condition code 20 from header information on claim)
-    12  Questionable covered service
-    13  Additional payment for service not provided by Medicare
-    14  Code indicates a site of service not included in OPPS
-    15  Service unit out of range for procedure
-    16  Multiple bilateral procedures without modifier 50 (see Appendix A)
-    17  Multiple bilateral procedures with modifier 50 (see Appendix A)
-    18  Inpatient procedure
-    19  Mutually exclusive procedure that is not allowed even if appropriate modifier present
-    20  Component of a comprehensive procedure that is not allowed even if appropriate modifier present
-    21  Medical visit on same day as a type "T" or "S" procedure without modifier 25 (see Appendix B)
-    22  Invalid modifier
-    23  Invalid date
-    24  Date out of OCE range
-    25  Invalid age
-    26  Invalid sex
-    27  Only incidental services reported
-    28  Code not recognized by Medicare; alternate code for same service available
-    29  Partial hospitalization service for non-mental health diagnosis
-    30  Insufficient services on day of partial hospitalization
-    31  Partial hospitalization on same day as ECT or type "T" procedure
-    32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at least one of the days
-    33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health services
-    34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial hospitalization criteria
-    35  Only activity therapy and/or occupational therapy services provided
-    36  Extensive mental health services provided on day of ECT or significant procedure
-    37  Terminated bilateral procedure or terminated procedure with units greater than one
-    38  Inconsistency between implanted device and implantation procedure
-    39  Mutually exclusive procedure that would be allowed if appropriate modifier were present
-    40  Component of a comprehensive procedure that would be allowed if appropriate modifier were present
-    41  Invalid revenue code
-    42  Multiple medical visits on same day with same revenue code without condition code G0 (see Appendix B)
+    1  Invalid diagnosis code 2  Diagnosis and age conflict 3  Diagnosis and sex conflict 4  Medicare secondary payer
+    alert 5  E-code as reason for visit 6  Invalid procedure code 7  Procedure and age conflict 8  Procedure and sex
+    conflict 9  Nov-covered service 10  Non-covered  service submitted for verification of denial (condition code 21
+    from header information on claim) 11  Non-covered service submitted for FI review (condition code 20 from header
+    information on claim) 12  Questionable covered service 13  Additional payment for service not provided by
+    Medicare 14  Code indicates a site of service not included in OPPS 15  Service unit out of range for procedure 16
+     Multiple bilateral procedures without modifier 50 (see Appendix A) 17  Multiple bilateral procedures with
+     modifier 50 (see Appendix A) 18  Inpatient procedure 19  Mutually exclusive procedure that is not allowed even
+     if appropriate modifier present 20  Component of a comprehensive procedure that is not allowed even if
+     appropriate modifier present 21  Medical visit on same day as a type "T" or "S" procedure without modifier 25 (
+     see Appendix B) 22  Invalid modifier 23  Invalid date 24  Date out of OCE range 25  Invalid age 26  Invalid sex
+     27  Only incidental services reported 28  Code not recognized by Medicare; alternate code for same service
+     available 29  Partial hospitalization service for non-mental health diagnosis 30  Insufficient services on day
+     of partial hospitalization 31  Partial hospitalization on same day as ECT or type "T" procedure 32  Partial
+     hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at
+     least one of the days 33  Partial hospitalization claim spans more than 3 days with insufficient number of days
+     having mental health services 34  Partial hospitalization claim spans more than 3 days with insufficient number
+     of days meeting partial hospitalization criteria 35  Only activity therapy and/or occupational therapy services
+     provided 36  Extensive mental health services provided on day of ECT or significant procedure 37  Terminated
+     bilateral procedure or terminated procedure with units greater than one 38  Inconsistency between implanted
+     device and implantation procedure 39  Mutually exclusive procedure that would be allowed if appropriate modifier
+     were present 40  Component of a comprehensive procedure that would be allowed if appropriate modifier were
+     present 41  Invalid revenue code 42  Multiple medical visits on same day with same revenue code without
+     condition code G0 (see Appendix B)
     """
 
     _1 = "1"
@@ -11538,7 +11460,8 @@ class SignatureCode(str, Enum):
     """
     0535 - Signature Code
 
-    C  Signed CMS-1500 claim form on file, e.g. authorization for release of any medical or other information necessary to process this claim and assignment of benefits.
+    C  Signed CMS-1500 claim form on file, e.g. authorization for release of any medical or other
+    information necessary to process this claim and assignment of benefits.
     S  Signed authorization for release of any medical or other information necessary to process this claim on file.
     M  Signed authorization for assignment of benefits on file.
     P  Signature generated by provider because the patient was not physically present for services.

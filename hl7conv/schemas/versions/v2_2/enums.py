@@ -2049,11 +2049,13 @@ class NATUREOFTEST_OBSERVATION(str, Enum):
     """
     174 - NATURE OF TEST-OBSERVATION
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatine clearance), usually done at different times and/or on different specimens
-    A  Atomic test/observation (test code or treatment code)
-    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output)
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen F  Functional procedure that may consist of one or more
+    interrelated measures (e.g., glucose tolerance test, creatine clearance), usually done at different times and/or
+    on different specimens A  Atomic test/observation (test code or treatment code) S  Superset--a set of batteries
+    or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA,
+    electrolytes) C  Single observation calculated via a rule or formula from other independent observations (e.g.,
+    Alveolar--arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -2133,10 +2135,10 @@ class ResponseLevel(str, Enum):
     """
     179 - Response Level
 
-    NE  Never. no application level response needed
-    ER  Error/Reject conditions only. Only MFA segments denoting errors must be returned via the application level acknowledgement for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application level acknowledgement message
-    SU  Success. Only MFA segments denoting success must be returned via the application level acknowledgement for this message
+    NE  Never. no application level response needed ER  Error/Reject conditions only. Only MFA segments denoting
+    errors must be returned via the application level acknowledgement for this message AL  Always. All MFA segments (
+    whether denoting errors or not) must be returned via the application level acknowledgement message SU  Success.
+    Only MFA segments denoting success must be returned via the application level acknowledgement for this message
     """
 
     NE = "NE"

@@ -2052,13 +2052,15 @@ class Observationresultstatuscodesinterpretation(str, Enum):
     D  Deletes the OBX record
     F  Final results; Can only be changed with a corrected result.
     I  Specimen in lab; results pending
-    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.
+    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the
+    universal service ID in OBR-4 implies that it would be sought.
     O  Order detail description only (no result)
     P  Preliminary results
     R  Results entered -- not verified
     S  Partial results.   Deprecated. Retained only for backward compatibility as of V2.6.
     X  Results cannot be obtained for this observation
-    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes status from preliminary to final
+    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g.,
+    radiology changes status from preliminary to final
     W  Post original as wrong, e.g., transmitted for wrong patient
     """
 
@@ -2289,7 +2291,8 @@ class DischargeDisposition(str, Enum):
     02  Discharged/transferred to another short term general hospital for inpatient care
     03  Discharged/transferred to skilled nursing facility (SNF)
     04  Discharged/transferred to an intermediate care facility (ICF)
-    05  Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution
+    05  Discharged/transferred to another type of institution for inpatient care or referred for outpatient services
+    to another institution
     06  Discharged/transferred to home under care of organized home health service organization
     07  Left against medical advice or discontinued care
     08  Discharged/transferred to home under care of Home IV provider
@@ -3054,7 +3057,8 @@ class Date_timeselectionqualifier(str, Enum):
     1ST  First value within range
     ALL  All values within the range
     LST  Last value within the range
-    REV  All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)
+    REV  All values within the range returned in reverse chronological order (This is the default if not otherwise
+    specified.)
     """
 
     _1ST = "1ST"
@@ -3497,11 +3501,16 @@ class NatureofService_Test_Observation(str, Enum):
     """
     174 - Nature of Service-Test-Observation
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen
+    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test,
+    creatinine clearance), usually done at different times and/or on different specimens
     A  Atomic service/test/observation (test code or treatment code)
-    S  Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order multiple service/test/observation b
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar-arterial ratio, cardiac output)
+    S  Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries
+    (e.g., routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order
+    multiple service/test/observation b
+    C  Single observation calculated via a rule or formula from other independent observations (e.g.,
+    Alveolar-arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -3590,9 +3599,12 @@ class Responselevel(str, Enum):
     179 - Response level
 
     NE  Never.  No application-level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
-    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
+    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level
+    acknowledgment for this message
+    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level
+    acknowledgment message
+    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for
+    this message
     """
 
     NE = "NE"
@@ -3705,7 +3717,8 @@ class Addresstype(str, Enum):
     M  Mailing
     O  Office/Business
     P  Permanent
-    RH  Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
+    RH  Registry home. Refers to the information system, typically managed by a public health agency, that stores
+    patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
     BR  Residence at birth (home address at time of birth)
     S  Service Location
     SH  Shipping Address
@@ -5147,7 +5160,8 @@ class Durationcategories(str, Enum):
     """
     255 - Duration categories
 
-    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
+    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine
+    measurements.
     *  (asterisk) Life of the "unit."  Used for blood products.
     30M  30 minutes
     1H  1 hour
@@ -5715,7 +5729,8 @@ class AppointmentTypeCodes(str, Enum):
 
     Normal  Routine schedule request type - default if not valued
     Tentative  A request for a tentative (e.g., "penciled in") appointment
-    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did
+    not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     N_mal = "Normal"
@@ -5733,7 +5748,8 @@ class Fillerstatuscodes(str, Enum):
     Started  The indicated appointment has begun and is currently in progress
     Complete  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
     Cancelled  The indicated appointment was stopped from occurring (canceled prior to starting)
-    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent appointment, or discontinued child appointment)
+    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent
+    appointment, or discontinued child appointment)
     Deleted  The indicated appointment was deleted from the filler application
     Blocked  The indicated time slot(s) is(are) blocked
     Overbook  The appointment has been confirmed; however it is confirmed in an overbooked state
@@ -5759,7 +5775,8 @@ class AllowSubstitutionCodes(str, Enum):
 
     No  Substitution of this resource is not allowed
     Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
-    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
+    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this
+    resource has been made
     Yes  Substitution of this resource is allowed
     """
 
@@ -6214,8 +6231,10 @@ class CPRangeType(str, Enum):
     """
     298 - CP Range Type
 
-    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed
+    F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not
+    occurred/been consumed
     """
 
     P = "P"
@@ -6228,7 +6247,9 @@ class Encoding(str, Enum):
 
     A  No encoding - data are displayable ASCII characters.
     Hex  Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and
+    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive
+    ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of
+    US-ASCII, consisting of both the upper and
     """
 
     A = "A"
@@ -6249,7 +6270,9 @@ class UniversalIDtype(str, Enum):
     M  These are reserved for locally defined coding schemes.
     L,M,N  These are reserved for locally defined coding schemes.
     L  These are reserved for locally defined coding schemes.
-    Random  Usually a base64 encoded string of random bits.The uniqueness depends on the length of the bits. Mail systems often generate ASCII string "unique names," from a combination of random bits and system names. Obviously, such identifiers will not be constr
+    Random  Usually a base64 encoded string of random bits.The uniqueness depends on the length of the bits. Mail
+    systems often generate ASCII string "unique names," from a combination of random bits and system names.
+    Obviously, such identifiers will not be constr
     URI  Uniform Resource Identifier
     UUID  The DCE Universal Unique Identifier
     x400  An X.400 MHS format identifier
@@ -7221,8 +7244,10 @@ class Alternatecharactersethandlingscheme(str, Enum):
     """
     356 - Alternate character set handling scheme
 
-    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension Technique". .
-    2.3  The character set switching mode specified in HL7 2.5, section 2.7.2, "Escape sequences supporting multiple character sets" and section 2.A.46, "XPN - extended person name".
+    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension
+    Technique". .
+    2.3  The character set switching mode specified in HL7 2.5, section 2.7.2, "Escape sequences supporting multiple
+    character sets" and section 2.A.46, "XPN - extended person name".
     <null>  This is the default, indicating that there is no character set switching occurring in this message.
     """
 
@@ -9991,7 +10016,8 @@ class OCEEditCode(str, Enum):
          7  Procedure and age conflict
          8  Procedure and sex conflict
          9  Nov-covered service
-         10  Non-covered  service submitted for verification of denial (condition code 21 from header information on claim)
+         10  Non-covered  service submitted for verification of denial (condition code 21 from header information on
+         claim)
          11  Non-covered service submitted for FI review (condition code 20 from header information on claim)
          12  Questionable covered service
          13  Additional payment for service not provided by Medicare
@@ -10013,9 +10039,12 @@ class OCEEditCode(str, Enum):
          29  Partial hospitalization service for non-mental health diagnosis
          30  Insufficient services on day of partial hospitalization
          31  Partial hospitalization on same day as ECT or type "T" procedure
-         32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at least one of the days
-         33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health services
-         34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial hospitalization criteria
+         32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant
+         procedure on at least one of the days
+         33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental
+         health services
+         34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial
+         hospitalization criteria
          35  Only activity therapy and/or occupational therapy services provided
          36  Extensive mental health services provided on day of ECT or significant procedure
          37  Terminated bilateral procedure or terminated procedure with units greater than one
@@ -10093,7 +10122,8 @@ class DenialorRejectionCode(str, Enum):
 
     0  Line item not denied or rejected
     1  Line item denied or rejected
-    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has been denied or rejected.
+    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has
+    been denied or rejected.
     """
 
     _0 = "0"
@@ -11494,7 +11524,8 @@ class SignatureCode(str, Enum):
     """
     535 - Signature Code
 
-    C  Signed CMS-1500 claim form on file, e.g., authorization for release of any medical or other information necessary to process this claim and assignment of benefits.
+    C  Signed CMS-1500 claim form on file, e.g., authorization for release of any medical or other information
+    necessary to process this claim and assignment of benefits.
     S  Signed authorization for release of any medical or other information necessary to process this claim on file.
     M  Signed authorization for assignment of benefits on file.
     P  Signature generated by provider because the patient was not physically present for services.

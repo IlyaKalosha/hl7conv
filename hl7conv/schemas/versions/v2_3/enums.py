@@ -1263,15 +1263,11 @@ class ObservationResultStatusCodesInterpretation(str, Enum):
     """
     085 - Observation Result Status Codes Interpretation
 
-    X  Results cannot be obtained for this observation
-    U  Results status change to Final.  Results did not change (don't transmit test).  E.g., radiology changes status from preliminary to final
-    S  Partial results
-    R  Results entered -- not verified
-    P  Preliminary results
-    I  Specimen in lab; results pending
-    F  Final results;  Can only be changed with a corrected result.
-    D  Deletes the OBX record
-    C  Record coming over is a correction and thus replaces a final result
+    X  Results cannot be obtained for this observation U  Results status change to Final.  Results did not change (
+    don't transmit test).  E.g., radiology changes status from preliminary to final S  Partial results R  Results
+    entered -- not verified P  Preliminary results I  Specimen in lab; results pending F  Final results;  Can only be
+    changed with a corrected result. D  Deletes the OBX record C  Record coming over is a correction and thus
+    replaces a final result
     """
 
     X = "X"
@@ -2459,11 +2455,13 @@ class NatureofTest_Observation(str, Enum):
     """
     174 - Nature of Test-Observation
 
-    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatine clearance), usually done at different times and/or on different specimens
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output)
-    A  Atomic test/observation (test code or treatment code)
+    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate
+    batteries (e.g., routines = CBC, UA, electrolytes) P  Profile or battery consisting of many independent atomic
+    observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen F  Functional procedure
+    that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatine clearance),
+    usually done at different times and/or on different specimens C  Single observation calculated via a rule or
+    formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output) A  Atomic
+    test/observation (test code or treatment code)
     """
 
     S = "S"
@@ -2553,10 +2551,11 @@ class ResponseLevel(str, Enum):
     """
     179 - Response Level
 
-    SU  Success.  Only MFA segments denoting success must be returned via the application level acknowledgement for this message
-    NE  Never.  no application level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application level acknowledgement for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application level acknowledgement message
+    SU  Success.  Only MFA segments denoting success must be returned via the application level acknowledgement for
+    this message NE  Never.  no application level response needed ER  Error/Reject conditions only.  Only MFA
+    segments denoting errors must be returned via the application level acknowledgement for this message AL  Always.
+    All MFA segments (whether denoting errors or not) must be returned via the application level acknowledgement
+    message
     """
 
     SU = "SU"
@@ -4323,9 +4322,9 @@ class AppointmentTypeCodes(str, Enum):
     """
     277 - Appointment Type Codes
 
-    TENTATIVE  A request for a tentative (e.g., penciled in) appointment
-    NORMAL  Routine schedule request type - default if not valued
-    COMPLETE  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    TENTATIVE  A request for a tentative (e.g., penciled in) appointment NORMAL  Routine schedule request type -
+    default if not valued COMPLETE  A request to add a completed appointment, used to maintain records of completed
+    appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     TENTATIVE = "TENTATIVE"
@@ -4337,16 +4336,14 @@ class FillerStatusCodes(str, Enum):
     """
     278 - Filler Status Codes
 
-    WAITLIST  Appointment has been placed on a waiting list for a paricular slot, or set of slots
-    STARTED  The indicated appointment has begun and is currently in progress
-    PENDING  Appointment has not yet been confirmed
-    OVERBOOK  The appointment has been confirmed; however it is confirmed in an overbooked state
-    Discontinued  The indicated appointment was discontinued (DCed while in progress, discontinued parent appointment, or discontinued child appointment)
-    DELETED  The indicated appointment was deleted from the filler application
-    COMPLETE  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
-    CANCELLED  The indicated appointment was stopped from occurring (cancelled prior to starting)
-    BOOKED  The indicated appointment is booked
-    BLOCKED  The indicated time slot(s) is(are) blocked.
+    WAITLIST  Appointment has been placed on a waiting list for a paricular slot, or set of slots STARTED  The
+    indicated appointment has begun and is currently in progress PENDING  Appointment has not yet been confirmed
+    OVERBOOK  The appointment has been confirmed; however it is confirmed in an overbooked state Discontinued  The
+    indicated appointment was discontinued (DCed while in progress, discontinued parent appointment, or discontinued
+    child appointment) DELETED  The indicated appointment was deleted from the filler application COMPLETE  The
+    indicated appointment has completed normally (was not discontinued, canceled, or deleted) CANCELLED  The
+    indicated appointment was stopped from occurring (cancelled prior to starting) BOOKED  The indicated appointment
+    is booked BLOCKED  The indicated time slot(s) is(are) blocked.
     """
 
     WAITLIST = "WAITLIST"
@@ -4365,10 +4362,9 @@ class AllowSubstitutionCodes(str, Enum):
     """
     279 - Allow Substitution Codes
 
-    YES  Substitution of this resource is allowed
-    NOTIFY  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
-    NO  Substitution of this resource is not allowed
-    CONFIRM  Contact the Placer Contact Person prior to making any substitutions of this resource
+    YES  Substitution of this resource is allowed NOTIFY  Notify the Placer Contact Person, through normal
+    institutional procedures, that a substitution of this resource has been made NO  Substitution of this resource is
+    not allowed CONFIRM  Contact the Placer Contact Person prior to making any substitutions of this resource
     """
 
     YES = "YES"
@@ -4783,15 +4779,20 @@ class TimeSelectionCriteriaParameterClassCodes(str, Enum):
     """
     294 - Time Selection Criteria Parameter Class Codes
 
-    WED  An indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK = Preferred appointment dayNO = Day is not preferred
-    TUE  An indicator that Tuesday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
-    THU  An indicator that Thursday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
-    SUN  An indicator that Sunday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
-    SAT  An indicator that Saturday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
-    PREFSTART  The preferred start time for the appointment request, service or resource.   Any legal time specification in the format HHMM, using 24-hour clock notation
-    PREFEND  The preferred start time for the appointment request, service or resource.  Any legal time specification in the format HHMM, using 24-hour clock notation
-    MON  An indicator that Monday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
-    FRI  An indicator that Friday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred
+    WED  An indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK =
+    Preferred appointment dayNO = Day is not preferred TUE  An indicator that Tuesday is or is not preferred for the
+    day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred THU  An
+    indicator that Thursday is or is not preferred for the day on which the appointment will occur.  OK = Preferred
+    appointment dayNO = Day is not preferred SUN  An indicator that Sunday is or is not preferred for the day on
+    which the appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred SAT  An indicator that
+    Saturday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment
+    dayNO = Day is not preferred PREFSTART  The preferred start time for the appointment request, service or
+    resource.   Any legal time specification in the format HHMM, using 24-hour clock notation PREFEND  The preferred
+    start time for the appointment request, service or resource.  Any legal time specification in the format HHMM,
+    using 24-hour clock notation MON  An indicator that Monday is or is not preferred for the day on which the
+    appointment will occur.  OK = Preferred appointment dayNO = Day is not preferred FRI  An indicator that Friday is
+    or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment dayNO = Day is
+    not preferred
     """
 
     WED = "WED"
@@ -4809,8 +4810,9 @@ class CPRangeType(str, Enum):
     """
     298 - CP Range Type
 
-    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval
+    has not occurred/been consumed
     """
 
     P = "P"
@@ -4821,9 +4823,10 @@ class Encoding(str, Enum):
     """
     299 - Encoding
 
-    A  no encoding - data are displayable ASCII characters.
-    Hex  hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521.  Four consecutive ASCII characters represent three consecutive octets of binary data.
+    A  no encoding - data are displayable ASCII characters. Hex  hexadecimal encoding - consecutive pairs of
+    hexadecimal digits represent consecutive single octets. Base64  encoding as defined by MIME (Multipurpose
+    Internet Mail Extensions) standard RFC 1521.  Four consecutive ASCII characters represent three consecutive
+    octets of binary data.
     """
 
     A = "A"

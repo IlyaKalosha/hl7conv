@@ -1799,20 +1799,25 @@ class ObservationResultStatusCodesInterpretation(str, Enum):
     """
     085 - Observation Result Status Codes Interpretation
 
-    A  Amended based on adjustments provided by the Placer (Physician) regarding patient demographics (such as age and/or gender or other patient specific information
-    B  Appended Report - Final results reviewed and further information provided for clarity without change to the original result values.
+    A  Amended based on adjustments provided by the Placer (Physician) regarding patient demographics (such as age
+    and/or gender or other patient specific information
+    B  Appended Report - Final results reviewed and further information provided for clarity without change to the
+    original result values.
     C  Record coming over is a correction and thus replaces a final result
     D  Deletes the OBX record
     F  Final results
     I  Specimen in lab; results pending
-    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.
+    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the
+    universal service ID in OBR-4 implies that it would be sought.
     O  Order detail description only (no result)
     P  Preliminary results
     R  Results entered -- not verified
     S  Partial results.   Deprecated. Retained only for backward compatibility as of V2.6.
-    V  Verified - Final results reviewed and confirmed to be correct, no change to result value, normal range or abnormal flag
+    V  Verified - Final results reviewed and confirmed to be correct, no change to result value, normal range or
+    abnormal flag
     X  Results cannot be obtained for this observation
-    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes status from preliminary to final
+    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g.,
+    radiology changes status from preliminary to final
     W  Post original as wrong, e.g., transmitted for wrong patient
     """
 
@@ -3066,11 +3071,16 @@ class NatureofService_Test_Observation(str, Enum):
     """
     174 - Nature of Service-Test-Observation
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen
+    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test,
+    creatinine clearance), usually done at different times and/or on different specimens
     A  Atomic service/test/observation (test code or treatment code)
-    S  Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order multiple service/test/observation b
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar-arterial ratio, cardiac output)
+    S  Superset-a set of batteries or procedures ordered under a single code unit but processed as separate batteries
+    (e.g., routines = CBC, UA, electrolytes)This set indicates that the code being described is used to order
+    multiple service/test/observation b
+    C  Single observation calculated via a rule or formula from other independent observations (e.g.,
+    Alveolar-arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -3159,9 +3169,12 @@ class ResponseLevel(str, Enum):
     179 - Response Level
 
     NE  Never.  No application-level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-    AL  Always.  All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
-    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
+    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level
+    acknowledgment for this message
+    AL  Always.  All MFA segments (whether denoting errors or not) must be returned via the application-level
+    acknowledgment message
+    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for
+    this message
     """
 
     NE = "NE"
@@ -3274,7 +3287,8 @@ class AddressType(str, Enum):
     M  Mailing
     O  Office/Business
     P  Permanent
-    RH  Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
+    RH  Registry home. Refers to the information system, typically managed by a public health agency, that stores
+    patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
     BR  Residence at birth (home address at time of birth)
     S  Service Location
     SH  Shipping Address
@@ -4734,7 +4748,8 @@ class DurationCategories(str, Enum):
     """
     255 - Duration Categories
 
-    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
+    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine
+    measurements.
     *  (asterisk) Life of the "unit."  Used for blood products.
     30M  30 minutes
     1H  1 hour
@@ -5302,7 +5317,8 @@ class AppointmentTypeCodes(str, Enum):
 
     Normal  Routine schedule request type - default if not valued
     Tentative  A request for a tentative (e.g., "penciled in") appointment
-    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did
+    not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     N_mal = "Normal"
@@ -5320,7 +5336,8 @@ class Fillerstatuscodes(str, Enum):
     Started  The indicated appointment has begun and is currently in progress
     Complete  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
     Cancelled  The indicated appointment was stopped from occurring (canceled prior to starting)
-    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent appointment, or discontinued child appointment)
+    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent
+    appointment, or discontinued child appointment)
     Deleted  The indicated appointment was deleted from the filler application
     Blocked  The indicated time slot(s) is(are) blocked
     Overbook  The appointment has been confirmed; however it is confirmed in an overbooked state
@@ -5346,7 +5363,8 @@ class AllowSubstitutionCodes(str, Enum):
 
     No  Substitution of this resource is not allowed
     Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
-    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
+    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this
+    resource has been made
     Yes  Substitution of this resource is allowed
     """
 
@@ -5800,8 +5818,10 @@ class CPRangeType(str, Enum):
     """
     298 - CP Range Type
 
-    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate. Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed
+    F  Flat-rate. Apply the entire price to this interval, do not pro-rate the price if the full interval has not
+    occurred/been consumed
     """
 
     P = "P"
@@ -5814,7 +5834,9 @@ class Encoding(str, Enum):
 
     A  No encoding - data are displayable ASCII characters.
     Hex  Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper and
+    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521. Four consecutive
+    ASCII characters represent three consecutive octets of binary data. Base64 utilizes a 65-character subset of
+    US-ASCII, consisting of both the upper and
     """
 
     A = "A"
@@ -5826,21 +5848,29 @@ class UniversalIDType(str, Enum):
     """
     301 - Universal ID Type
 
-    DNS  An Internet host name, in accordance with RFC 1035; or an IP address. Either in ASCII or as integers, with periods between components ("dotted" notation).
-    EUI64  IEEE 64-bit Extended Unique Identifier is comprised of a  24-bit company identifier and a 40-bit instance identifier.  The value shall be formatted as 16 ASCII HEX digits, for example, "AABBCC1122334455".  The 24-bit company identifier, formally known as
-    CLIA  Clinical Laboratory Improvement Amendments. Allows for the ability to designate organization identifier as a "CLIA" assigned number (for labs)
-    CLIP  Clinical laboratory Improvement Program. Allows for the ability to designate organization identifier as a "CLIP" assigned number (for labs).Â  Used by US Department of Defense.
+    DNS  An Internet host name, in accordance with RFC 1035; or an IP address. Either in ASCII or as integers,
+    with periods between components ("dotted" notation).
+    EUI64  IEEE 64-bit Extended Unique Identifier is comprised of a  24-bit company identifier and a 40-bit instance
+    identifier.  The value shall be formatted as 16 ASCII HEX digits, for example, "AABBCC1122334455".  The 24-bit
+    company identifier, formally known as
+    CLIA  Clinical Laboratory Improvement Amendments. Allows for the ability to designate organization identifier as
+    a "CLIA" assigned number (for labs)
+    CLIP  Clinical laboratory Improvement Program. Allows for the ability to designate organization identifier as a
+    "CLIP" assigned number (for labs).Â  Used by US Department of Defense.
     GUID  Same as UUID.
     HCD  The CEN Healthcare Coding Scheme Designator
     HL7  HL7 registration schemes
-    ISO  An International Standards Organization Object Identifier (OID), in accordance with ISO/IEC 8824.  Formatted as decimal digits separated by periods; recommended limit of 64 characters
+    ISO  An International Standards Organization Object Identifier (OID), in accordance with ISO/IEC 8824.  Formatted
+    as decimal digits separated by periods; recommended limit of 64 characters
     L,M,N  These are reserved for locally defined coding schemes.
     M  These are reserved for locally defined coding schemes.
     N  These are reserved for locally defined coding schemes.
     L  These are reserved for locally defined coding schemes.
-    Random  Usually a base64 encoded string of random bits.Note: Random IDs are typically used for instance identifiers, rather than an identifier of an Assigning Authority that issues instance identifiers
+    Random  Usually a base64 encoded string of random bits.Note: Random IDs are typically used for instance
+    identifiers, rather than an identifier of an Assigning Authority that issues instance identifiers
     URI  Uniform Resource Identifier
-    UUID  The DCE Universal Unique Identifier, in accordance with RFC 4122. Recommended format is 32 hexadecimal digits separated by hyphens, in the digit grouping 8-4-4-4-12
+    UUID  The DCE Universal Unique Identifier, in accordance with RFC 4122. Recommended format is 32 hexadecimal
+    digits separated by hyphens, in the digit grouping 8-4-4-4-12
     x400  An X.400 MHS identifier. Recommended format is in accordance with RFC 1649
     x500  An X.500 directory name
     """
@@ -6880,8 +6910,10 @@ class AlternateCharacterSetHandlingScheme(str, Enum):
     """
     356 - Alternate Character Set Handling Scheme
 
-    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension Technique". .
-    2.3  The character set switching mode specified in HL7 2.5, section 2.7.2 and section 2.A.46, "XPN - extended person name".
+    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension
+    Technique". .
+    2.3  The character set switching mode specified in HL7 2.5, section 2.7.2 and section 2.A.46, "XPN - extended
+    person name".
     <null>  This is the default, indicating that there is no character set switching occurring in this message.
     """
 
@@ -8087,7 +8119,8 @@ class CodingSystem(str, Enum):
     OPS2011  OPS Germany v2011
     PHINQUESTION  CDC Public Health Information Network (PHIN) Question
     PLR  CDC PHLIP Lab result codes that are not covered in SNOMED at the time of this implementation
-    PLT  CDC PHLIP Lab test codes, where LOINC concept is too broad or not yet available, especially as needed for ordering and or lab to lab reporting )
+    PLT  CDC PHLIP Lab test codes, where LOINC concept is too broad or not yet available, especially as needed for
+    ordering and or lab to lab reporting )
     POS  POS Codes
     RC  Read Classification
     RXNORM  RxNorm
@@ -9801,9 +9834,12 @@ class OCEEditCode(str, Enum):
     29  Partial hospitalization service for non-mental health diagnosis
     30  Insufficient services on day of partial hospitalization
     31  Partial hospitalization on same day as ECT or type "T" procedure
-    32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at least one of the days
-    33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health services
-    34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial hospitalization criteria
+    32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant
+    procedure on at least one of the days
+    33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health
+    services
+    34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial
+    hospitalization criteria
     35  Only activity therapy and/or occupational therapy services provided
     36  Extensive mental health services provided on day of ECT or significant procedure
     37  Terminated bilateral procedure or terminated procedure with units greater than one
@@ -9880,7 +9916,8 @@ class DenialorRejectionCode(str, Enum):
 
     0  Line item not denied or rejected
     1  Line item denied or rejected
-    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has been denied or rejected.
+    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has
+    been denied or rejected.
     """
 
     _0 = "0"
@@ -11819,7 +11856,8 @@ class SignatureCode(str, Enum):
     """
     535 - Signature Code
 
-    C  Signed CMS-1500 claim form on file, e.g., authorization for release of any medical or other information necessary to process this claim and assignment of benefits.
+    C  Signed CMS-1500 claim form on file, e.g., authorization for release of any medical or other information
+    necessary to process this claim and assignment of benefits.
     S  Signed authorization for release of any medical or other information necessary to process this claim on file.
     M  Signed authorization for assignment of benefits on file.
     P  Signature generated by provider because the patient was not physically present for services.
@@ -13980,18 +14018,23 @@ class ActPriority(str, Enum):
     906 - ActPriority
 
     A  ASAP - As soon as possible, next highest priority after stat
-    CR  Callback results - filler should contact the placer as soon as results are available, even for preliminary results
+    CR  Callback results - filler should contact the placer as soon as results are available, even for preliminary
+    results
     CS  Callback for scheduling - Filler should contact the placer (or target) to schedule the service.
     CSP  Callback placer for scheduling - filler should contact the placer to schedule the service
     CSR  Contact recipient for scheduling - Filler should contact the service recipient (target) to schedule the service
     EL  Elective - Beneficial to the patient but not essential for survival.
     EM  Emergency - An unforeseen combination of circumstances or the resulting state that calls for immediate action
-    P  Preop - Used to indicate that a service is to be performed prior to a scheduled surgery.  When ordering a service and using the pre-op priority, a check is done to see the amount of time that must be allowed for performance of the service.  When the order
-    PRN  As needed - An "as needed" order should be accompanied by a description of what constitutes a need.  This description is represented by an observation service predicate as a precondition.
+    P  Preop - Used to indicate that a service is to be performed prior to a scheduled surgery.  When ordering a
+    service and using the pre-op priority, a check is done to see the amount of time that must be allowed for
+    performance of the service.  When the order
+    PRN  As needed - An "as needed" order should be accompanied by a description of what constitutes a need.  This
+    description is represented by an observation service predicate as a precondition.
     R  Routine - Routine service, do at usual work hours
     RR  Rush reporting - A report should be prepared and sent as quickly as possible
     S  Stat - With highest priority (e.g. emergency).
-    T  Timing critical - It is critical to come as close as possible to the requested time (e.g. for a through antimicrobial level).
+    T  Timing critical - It is critical to come as close as possible to the requested time (e.g. for a through
+    antimicrobial level).
     UD  Use as directed - Drug is to be used as directed by the prescriber.
     UR  Urgent - Calls for prompt action
     """
@@ -14017,20 +14060,31 @@ class Confidentiality(str, Enum):
     """
     907 - Confidentiality
 
-    B  Business - Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related inf
-    D  Clinician - Only clinicians may see this item, billing and administration persons can not access this item without special permission.
-    I  Individual - Access only to individual persons who are mentioned explicitly as actors of this service and whose actor type warrants that access (cf. to actor typed code).
-    L  Low - No patient record item can be of low confidentiality.  However, some service objects are not patient related and therefore may have low confidentiality.
-    N  Normal - Normal confidentiality rules (according to good health care practice) apply, that is, only authorized individuals with a legitimate medical or business need may access this item.
+    B  Business - Since the service class can represent knowledge structures that may be considered a trade or
+    business secret, there is sometimes (though rarely) the need to flag those items as of business level
+    confidentiality.  However, no patient related inf
+    D  Clinician - Only clinicians may see this item, billing and administration persons can not access this item
+    without special permission.
+    I  Individual - Access only to individual persons who are mentioned explicitly as actors of this service and
+    whose actor type warrants that access (cf. to actor typed code).
+    L  Low - No patient record item can be of low confidentiality.  However, some service objects are not patient
+    related and therefore may have low confidentiality.
+    N  Normal - Normal confidentiality rules (according to good health care practice) apply, that is, only authorized
+    individuals with a legitimate medical or business need may access this item.
     R  Restricted - Restricted access, e.g. only to providers having a current care relationship to the patient.
     V  Very restricted - Very restricted access as declared by the Privacy Officer of the record holder.
     ETH  Substance abuse related - Alcohol/drug-abuse related item
     HIV  HIV Related - HIV and AIDS related item
     PSY  Psychiatry related - Psychiatry related item
     SDV  Sexual and domestic violence related - Sexual assault / domestic violence related item
-    C  Celebrity - Celebrities are people of public interest (VIP) including employees, whose information require special protection.
-    S  Sensitive - Information for which the patient seeks heightened confidentiality.  Sensitive information is not to be shared with family members.  Information reported by the patient about family members is sensitive by default.  Flag can be set or cleared
-    T  Taboo - Information not to be disclosed or discussed with patient except through physician assigned to patient in this case.  This is usually a temporary constraint only; example use is a new fatal diagnosis or finding, such as malignancy or HIV.
+    C  Celebrity - Celebrities are people of public interest (VIP) including employees, whose information require
+    special protection.
+    S  Sensitive - Information for which the patient seeks heightened confidentiality.  Sensitive information is not
+    to be shared with family members.  Information reported by the patient about family members is sensitive by
+    default.  Flag can be set or cleared
+    T  Taboo - Information not to be disclosed or discussed with patient except through physician assigned to patient
+    in this case.  This is usually a temporary constraint only; example use is a new fatal diagnosis or finding,
+    such as malignancy or HIV.
     """
 
     B = "B"
@@ -14055,9 +14109,14 @@ class PatientResultsReleaseCategorizationScheme(str, Enum):
 
     STBD  Share To Be Determined -Category to be determined
     SIMM  Share Immediately -Share result with patient immediately
-    SWNL  Share Within Normal Limits -Share result in reference/therapeutic range with patient immediatelyShare result out of reference/therapeutic ranges with patient after 1 or more business day as agreed to by the systems in play.
-    SID  Share In1 Day -Share result regardless of reference/therapeutic range after 1 or more business day as agreed to by the systems in play.
-    SIDC  Share in 1 Day Conditionally -Share result in reference ranges/therapeutic with patient after 1 or more business day as agreed to by the systems in play.Withhold result out of reference/therapeutic range until physician release
+    SWNL  Share Within Normal Limits -Share result in reference/therapeutic range with patient immediatelyShare
+    result out of reference/therapeutic ranges with patient after 1 or more business day as agreed to by the systems
+    in play.
+    SID  Share In1 Day -Share result regardless of reference/therapeutic range after 1 or more business day as agreed
+    to by the systems in play.
+    SIDC  Share in 1 Day Conditionally -Share result in reference ranges/therapeutic with patient after 1 or more
+    business day as agreed to by the systems in play.Withhold result out of reference/therapeutic range until
+    physician release
     SWTH  Share Withhold -Withhold result regardless of reference/therapeutic ranges
     """
 

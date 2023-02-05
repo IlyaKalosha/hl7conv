@@ -969,63 +969,27 @@ class Conditioncode(str, Enum):
     """
     043 - Condition code
 
-    01  Military service related
-    02  Condition is employment related
-    03  Patient covered by insurance not reflected here
-    04  HMO enrollee
-    05  Lien has been filed
-    06  ESRD patient in first 18 months of entitlement covered by employer group health insurance
-    07  Treatment of non-terminal condition for hospice patient
-    08  Beneficiary would not provide information concerning other insurance coverage
-    09  Neither patient nor spouse is employed
-    10  Patient and/or spouse is employed but no EGHP exists
-    11  Disabled beneficiary but no LGHP
-    13  Payer codes.
-    16  Payer codes.
-    14  Payer codes.
-    12 ... 16  Payer codes.
-    12  Payer codes.
-    15  Payer codes.
-    18  Maiden name retained
-    19  Child retains mother's name
-    20  Beneficiary requested billing
-    21  Billing for Denial Notice
-    26  VA eligible patient chooses to receive services in a Medicare certified facility
-    27  Patient referred to a sole community hospital for a diagnostic laboratory test
-    28  Patient and/or spouse's EGHP is secondary to Medicare
-    29  Disabled beneficiary and/or family member's LGHP is secondary to Medicare
-    31  Patient is student (full time-day)
-    32  Patient is student (cooperative/work study program)
-    33  Patient is student (full time-night)
-    34  Patient is student (Part time)
-    36  General care patient in a special unit
-    37  Ward accommodation as patient request
-    38  Semi-private room not available
-    39  Private room medically necessary
-    40  Same day transfer
-    41  Partial hospitalization
-    46  Non-availability statement on file
-    48  Psychiatric residential treatment centers for children and adolescents
-    55  SNF bed not available
-    56  Medical appropriateness
-    57  SNF readmission
-    60  Day outlier
-    61  Cost outlier
-    62  Payer code
-    66  Provider does not wish cost outlier payment
-    67  Beneficiary elects not to use life time reserve (LTR) days
-    68  Beneficiary elects to use life time reserve (LTR) days
-    70  Self-administered EPO
-    71  Full care in unit
-    72  Self-care in unit
-    73  Self-care training
-    74  Home
-    75  Home - 100% reimbursement
-    76  Back-up in facility dialysis
-    77  Provider accepts or is obligated/required due to a contractual arrangement or law to accept payment by a primary payer as payment in full
-    78  New coverage not implemented by HMO
-    79  Corf services provided off-site
-    80  Pregnant
+    01  Military service related 02  Condition is employment related 03  Patient covered by insurance not reflected
+    here 04  HMO enrollee 05  Lien has been filed 06  ESRD patient in first 18 months of entitlement covered by
+    employer group health insurance 07  Treatment of non-terminal condition for hospice patient 08  Beneficiary would
+    not provide information concerning other insurance coverage 09  Neither patient nor spouse is employed 10
+    Patient and/or spouse is employed but no EGHP exists 11  Disabled beneficiary but no LGHP 13  Payer codes. 16
+    Payer codes. 14  Payer codes. 12 ... 16  Payer codes. 12  Payer codes. 15  Payer codes. 18  Maiden name retained
+    19  Child retains mother's name 20  Beneficiary requested billing 21  Billing for Denial Notice 26  VA eligible
+    patient chooses to receive services in a Medicare certified facility 27  Patient referred to a sole community
+    hospital for a diagnostic laboratory test 28  Patient and/or spouse's EGHP is secondary to Medicare 29  Disabled
+    beneficiary and/or family member's LGHP is secondary to Medicare 31  Patient is student (full time-day) 32
+    Patient is student (cooperative/work study program) 33  Patient is student (full time-night) 34  Patient is
+    student (Part time) 36  General care patient in a special unit 37  Ward accommodation as patient request 38
+    Semi-private room not available 39  Private room medically necessary 40  Same day transfer 41  Partial
+    hospitalization 46  Non-availability statement on file 48  Psychiatric residential treatment centers for children
+    and adolescents 55  SNF bed not available 56  Medical appropriateness 57  SNF readmission 60  Day outlier 61
+    Cost outlier 62  Payer code 66  Provider does not wish cost outlier payment 67  Beneficiary elects not to use
+    life time reserve (LTR) days 68  Beneficiary elects to use life time reserve (LTR) days 70  Self-administered EPO
+    71  Full care in unit 72  Self-care in unit 73  Self-care training 74  Home 75  Home - 100% reimbursement 76
+    Back-up in facility dialysis 77  Provider accepts or is obligated/required due to a contractual arrangement or
+    law to accept payment by a primary payer as payment in full 78  New coverage not implemented by HMO 79  Corf
+    services provided off-site 80  Pregnant
     """
 
     _01 = "01"
@@ -2035,18 +1999,13 @@ class Observationresultstatuscodesinterpretation(str, Enum):
     """
     085 - Observation result status codes interpretation
 
-    C  Record coming over is a correction and thus replaces a final result
-    D  Deletes the OBX record
-    F  Final results; Can only be changed with a corrected result.
-    I  Specimen in lab; results pending
-    N  Not asked; used to affirmatively document that the observation identified in the OBX was not sought when the universal service ID in OBR-4 implies that it would be sought.
-    O  Order detail description only (no result)
-    P  Preliminary results
-    R  Results entered -- not verified
-    S  Partial results
-    X  Results cannot be obtained for this observation
-    U  Results status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes status from preliminary to final
-    W  Post original as wrong, e.g., transmitted for wrong patient
+    C  Record coming over is a correction and thus replaces a final result D  Deletes the OBX record F  Final
+    results; Can only be changed with a corrected result. I  Specimen in lab; results pending N  Not asked; used to
+    affirmatively document that the observation identified in the OBX was not sought when the universal service ID in
+    OBR-4 implies that it would be sought. O  Order detail description only (no result) P  Preliminary results R
+    Results entered -- not verified S  Partial results X  Results cannot be obtained for this observation U  Results
+    status change to final without retransmitting results already sent as 'preliminary.'  E.g., radiology changes
+    status from preliminary to final W  Post original as wrong, e.g., transmitted for wrong patient
     """
 
     C = "C"
@@ -2248,54 +2207,31 @@ class Reportpriority(str, Enum):
 
 class Dischargedisposition(str, Enum):
     """
-        112 - Discharge disposition
+    112 - Discharge disposition
 
-        16
-        25  Expired to be defined at state level, if necessary
-        24  Expired to be defined at state level, if necessary
-        23  Expired to be defined at state level, if necessary
-        21  Expired to be defined at state level, if necessary
-        19
-        26  Expired to be defined at state level, if necessary
-        17
-        22  Expired to be defined at state level, if necessary
-        15
-        14
-        13
-        12
-        11
-        10
-        18
-        36  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        39  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        37  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        27  Expired to be defined at state level, if necessary
-        35  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        34  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        33  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        32  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        28  Expired to be defined at state level, if necessary
-        38  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        31  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        29  Expired to be defined at state level, if necessary
-        01  Discharged to home or self care (routine discharge)
-        02  Discharged/transferred to another short term general hospital for inpatient care
-        03  Discharged/transferred to skilled nursing facility (SNF)
-        04  Discharged/transferred to an intermediate care facility (ICF)
-        05  Discharged/transferred to another type of institution for inpatient care or referred for outpatient services to another institution
-        06  Discharged/transferred to home under care of organized home health service organization
-        07  Left against medical advice or discontinued care
-        08  Discharged/transferred to home under care of Home IV provider
-        09  Admitted as an inpatient to this hospital
-        10
-    19  Discharge to be defined at state level, if necessary
-        20  Expired (i.e. dead)
-        21 ... 29  Expired to be defined at state level, if necessary
-        30  Still patient or expected to return for outpatient services (i.e. still a patient)
-        31 ... 39  Still patient to be defined at state level, if necessary  (i.e. still a patient)
-        40  Expired (i.e. died) at home
-        41  Expired (i.e. died) in a medical facility; e.g., hospital, SNF, ICF, or free standing hospice
-        42  Expired (i.e. died)  - place unknown
+    16 25  Expired to be defined at state level, if necessary 24  Expired to be defined at state level,
+    if necessary 23  Expired to be defined at state level, if necessary 21  Expired to be defined at state level,
+    if necessary 19 26  Expired to be defined at state level, if necessary 17 22  Expired to be defined at state
+    level, if necessary 15 14 13 12 11 10 18 36  Still patient to be defined at state level, if necessary  (i.e.
+    still a patient) 39  Still patient to be defined at state level, if necessary  (i.e. still a patient) 37
+    Still patient to be defined at state level, if necessary  (i.e. still a patient) 27  Expired to be defined at
+    state level, if necessary 35  Still patient to be defined at state level, if necessary  (i.e. still a
+    patient) 34  Still patient to be defined at state level, if necessary  (i.e. still a patient) 33  Still
+    patient to be defined at state level, if necessary  (i.e. still a patient) 32  Still patient to be defined at
+    state level, if necessary  (i.e. still a patient) 28  Expired to be defined at state level, if necessary 38
+    Still patient to be defined at state level, if necessary  (i.e. still a patient) 31  Still patient to be
+    defined at state level, if necessary  (i.e. still a patient) 29  Expired to be defined at state level,
+    if necessary 01  Discharged to home or self care (routine discharge) 02  Discharged/transferred to another
+    short term general hospital for inpatient care 03  Discharged/transferred to skilled nursing facility (SNF)
+    04  Discharged/transferred to an intermediate care facility (ICF) 05  Discharged/transferred to another type
+    of institution for inpatient care or referred for outpatient services to another institution 06
+    Discharged/transferred to home under care of organized home health service organization 07  Left against
+    medical advice or discontinued care 08  Discharged/transferred to home under care of Home IV provider 09
+    Admitted as an inpatient to this hospital 10 19  Discharge to be defined at state level, if necessary 20
+    Expired (i.e. dead) 21 ... 29  Expired to be defined at state level, if necessary 30  Still patient or
+    expected to return for outpatient services (i.e. still a patient) 31 ... 39  Still patient to be defined at
+    state level, if necessary  (i.e. still a patient) 40  Expired (i.e. died) at home 41  Expired (i.e. died) in
+    a medical facility; e.g., hospital, SNF, ICF, or free standing hospice 42  Expired (i.e. died)  - place unknown
     """
 
     _16 = "16"
@@ -3015,7 +2951,8 @@ class Valuecode(str, Enum):
     41  Black lung
     42  VA
     43  Disabled beneficiary under age 64 with LGHP
-    44  Amount provider agreed to accept from primary payer when this amount is less than charges but higher than payment received,, then a Medicare secondary payment is due
+    44  Amount provider agreed to accept from primary payer when this amount is
+    less than charges but higher than payment received,, then a Medicare secondary payment is due
     45  Accident hour
     46  Number of grace days
     47  Any liability insurance
@@ -3178,7 +3115,8 @@ class Date_timeselectionqualifier(str, Enum):
     1ST  First value within range
     ALL  All values within the range
     LST  Last value within the range
-    REV  All values within the range returned in reverse chronological order (This is the default if not otherwise specified.)
+    REV  All values within the range returned in reverse chronological order
+    (This is the default if not otherwise specified.)
     """
 
     _1ST = "1ST"
@@ -3712,9 +3650,12 @@ class Responselevel(str, Enum):
     179 - Response level
 
     NE  Never.  No application-level response needed
-    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned via the application-level acknowledgment for this message
-    AL  Always. All MFA segments (whether denoting errors or not) must be returned via the application-level acknowledgment message
-    SU  Success.  Only MFA segments denoting success must be returned via the application-level acknowledgment for this message
+    ER  Error/Reject conditions only.  Only MFA segments denoting errors must be returned
+    via the application-level acknowledgment for this message
+    AL  Always. All MFA segments (whether denoting errors or not) must be returned
+    via the application-level acknowledgment message
+    SU  Success.  Only MFA segments denoting success must be returned via the
+     application-level acknowledgment for this message
     """
 
     NE = "NE"
@@ -6581,11 +6522,14 @@ class Repeatpattern(str, Enum):
     Q<integer>D  every  days
     Q<integer>W  every  weeks
     Q<integer>L  every  months (Lunar cycle)
-    Q<integer>J<day#>  repeats on a particular day of the week, from the French jour (day).  If  is missing, the repeat rate is assumed to be 1.  Day numbers are counted from 1=Monday to 7=Sunday.  So Q2J2 means every second Tuesday; Q1J6 means every Saturday.
+    Q<integer>J<day#>  repeats on a particular day of the week, from the French jour (day).
+    If  is missing, the repeat rate is assumed to be 1.  Day numbers are counted from 1=Monday to 7=Sunday.
+    So Q2J2 means every second Tuesday; Q1J6 means every Saturday.
     BID  twice a day at institution-specified times (e.g., 9AM-4PM)
     TID  three times a day at institution-specified times (e.g., 9AM-4PM-9PM)
     QID  four times a day at institution-specified times (e.g., 9AM-11AM-4PM-9PM)
-    xID  "X" times per day at institution-specified times, where X is a numeral 5 or greater.  E.g., 5ID=five times per day; 8ID=8 times per day
+    xID  "X" times per day at institution-specified times, where X is a numeral 5 or greater.
+      E.g., 5ID=five times per day; 8ID=8 times per day
     QAM  in the morning at institution-specified time
     QSHIFT  during each of three eight-hour shifts at institution-specified times
     QOD  every other day (same as Q2D)
@@ -7367,8 +7311,12 @@ class Alternatecharactersethandlingscheme(str, Enum):
     """
     356 - Alternate character set handling scheme
 
-    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure and Extension Technique". This standard specifies an escape sequence from basic one byte character set to specified other character set, and vice versa.  The escape sequence explic
-    2.3  The character set switching mode specified in HL7 2.3, sections 2.8.28.6.1, and 2.9.2.  Note that the escape sequences used in this mode do not use the ASCII "esc" character. They are "HL7 escape sequences" as defined in HL7 2.3, sec.  2.9 as defined in I
+    ISO 2022-1994  This standard is titled "Information Technology - Character Code Structure
+    and Extension Technique". This standard specifies an escape sequence from basic one byte character
+    set to specified other character set, and vice versa.  The escape sequence explic
+    2.3  The character set switching mode specified in HL7 2.3, sections 2.8.28.6.1, and 2.9.2.  Note that the
+    escape sequences used in this mode do not use the ASCII "esc" character. They are "HL7 escape sequences"
+    as defined in HL7 2.3, sec.  2.9 as defined in I
     <null>  This is the default, indicating that there is no character set switching occurring in this message.
     """
 
@@ -9657,7 +9605,8 @@ class OCEeditcode(str, Enum):
          7  Procedure and age conflict
          8  Procedure and sex conflict
          9  Nov-covered service
-         10  Non-covered  service submitted for verification of denial (condition code 21 from header information on claim)
+         10  Non-covered  service submitted for verification of denial
+         (condition code 21 from header information on claim)
          11  Non-covered service submitted for FI review (condition code 20 from header information on claim)
          12  Questionable covered service
          13  Additional payment for service not provided by Medicare
@@ -9679,9 +9628,12 @@ class OCEeditcode(str, Enum):
          29  Partial hospitalization service for non-mental health diagnosis
          30  Insufficient services on day of partial hospitalization
          31  Partial hospitalization on same day as ECT or type "T" procedure
-         32  Partial hospitalization claim spans 3 or less days with in-sufficient services, or ECT or significant procedure on at least one of the days
-         33  Partial hospitalization claim spans more than 3 days with insufficient number of days having mental health services
-         34  Partial hospitalization claim spans more than 3 days with insufficient number of days meeting partial hospitalization criteria
+         32  Partial hospitalization claim spans 3 or less days with in-sufficient services,
+         or ECT or significant procedure on at least one of the days
+         33  Partial hospitalization claim spans more than 3 days with insufficient
+         number of days having mental health services
+         34  Partial hospitalization claim spans more than 3 days with insufficient
+          number of days meeting partial hospitalization criteria
          35  Only activity therapy and/or occupational therapy services provided
          36  Extensive mental health services provided on day of ECT or significant procedure
          37  Terminated bilateral procedure or terminated procedure with units greater than one
@@ -9759,7 +9711,8 @@ class Denialorrejectioncode(str, Enum):
 
     0  Line item not denied or rejected
     1  Line item denied or rejected
-    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has been denied or rejected.
+    2  Line item is on a multiple-day claim. The line item is not denied or
+     rejected, but occurs on a day that has been denied or rejected.
     """
 
     _0 = "0"
@@ -9880,9 +9833,15 @@ class TQConjunctionID(str, Enum):
     """
     472 - TQ Conjunction ID
 
-    S  Synchronous. Do the next specification after this one (unless otherwise constrained by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time). An "S" specification implies that the second timing sequence follows the first, e.g., when
-    A  Asynchronous: Do the next specification in parallel with this one (unless otherwise constrained by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time).  The conjunction of "A" specifies two parallel instructions, as are sometimes
-    C  This is an actuation time.  It will be followed by a completion time for the service.  This code allows one to distinguish between the time and priority at which a service should be actuated (e.g., blood should be drawn) and the time and priority at which
+    S  Synchronous. Do the next specification after this one (unless otherwise constrained
+    by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time). An "S"
+     specification implies that the second timing sequence follows the first, e.g., when
+    A  Asynchronous: Do the next specification in parallel with this one (unless otherwise constrained
+     by the following components: ORC-7^4-start date/time and ORC-7^5-end date/time).  The conjunction of
+      "A" specifies two parallel instructions, as are sometimes
+    C  This is an actuation time.  It will be followed by a completion time for the service.  This code allows one
+    to distinguish between the time and priority at which a service should be actuated (e.g., blood should be drawn)
+    and the time and priority at which
     """
 
     S = "S"
