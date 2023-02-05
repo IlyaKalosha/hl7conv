@@ -1,6 +1,6 @@
 #!/usr/bin/env make -f
 
-SOURCE_FILES=../hl7conv
+SOURCE_FILES=.\hl7conv
 
 lint:
 	@isort --check --diff --project=hl7conv ${SOURCE_FILES}
