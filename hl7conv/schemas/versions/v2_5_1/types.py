@@ -1,28 +1,28 @@
 from pydantic import BaseModel, Field
 
 from hl7conv.schemas.versions.v2_5_1.enums import (
+    Additive_Preservative,
     Addresstype,
+    Bodysite,
+    BodySiteModifier,
     Checkdigitscheme,
     Codingsystem,
     CountryCode,
     Degreeorlicenseorcertificate,
     Identifiertype,
+    MonetaryDenominationCode,
     Name_addressrepresentation,
     Nameassemblyorder,
     Organizationalnametype,
-    Precision,
     Personlocationtype,
-    UniversalIDtype,
-    Additive_Preservative,
-    Bodysite,
-    BodySiteModifier,
-    SpecimenRole,
-    Telecommunicationusecode,
-    Telecommunicationequipmenttype,
-    MonetaryDenominationCode,
+    Precision,
     Repeatpattern,
-    TQconjunctionID,
     Sequencecondition,
+    SpecimenRole,
+    Telecommunicationequipmenttype,
+    Telecommunicationusecode,
+    TQconjunctionID,
+    UniversalIDtype,
 )
 
 
