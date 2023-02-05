@@ -722,7 +722,7 @@ class ABNORMALFLAGS(str, Enum):
     D = "D"
     AA = "AA"
     A = "A"
-    _ = "<"
+    less_sign = "<"
 
 
 class NATUREOFABNORMALTESTING(str, Enum):
