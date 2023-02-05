@@ -8701,7 +8701,7 @@ class ProcedurePriority(str, Enum):
     _0 = "0"
     _1 = "1"
     _2 = "2"
-    NEL = ""
+    NEL = "NEL"
 
 
 class SeverityofIllnessCode(str, Enum):
@@ -9522,7 +9522,8 @@ class DenialorRejectionCode(str, Enum):
 
     0  Line item not denied or rejected
     1  Line item denied or rejected
-    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has been denied or rejected.
+    2  Line item is on a multiple-day claim. The line item is not denied or rejected, but occurs on a day that has
+    been denied or rejected.
     """
 
     _0 = "0"
