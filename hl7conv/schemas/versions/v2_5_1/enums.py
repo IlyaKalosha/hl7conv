@@ -2301,34 +2301,6 @@ class DischargeDisposition(str, Enum):
     42  Expired (i.e. died)  - place unknown
     """
 
-    _16 = "16"
-    _25 = "25"
-    _24 = "24"
-    _23 = "23"
-    _21 = "21"
-    _19 = "19"
-    _26 = "26"
-    _17 = "17"
-    _22 = "22"
-    _15 = "15"
-    _14 = "14"
-    _13 = "13"
-    _12 = "12"
-    _11 = "11"
-    _10 = "10"
-    _18 = "18"
-    _36 = "36"
-    _39 = "39"
-    _37 = "37"
-    _27 = "27"
-    _35 = "35"
-    _34 = "34"
-    _33 = "33"
-    _32 = "32"
-    _28 = "28"
-    _38 = "38"
-    _31 = "31"
-    _29 = "29"
     _01 = "01"
     _02 = "02"
     _03 = "03"
@@ -2338,11 +2310,36 @@ class DischargeDisposition(str, Enum):
     _07 = "07"
     _08 = "08"
     _09 = "09"
-    _10_19 = "10 ... 19"
+    _10 = "10"
+    _11 = "11"
+    _12 = "12"
+    _13 = "13"
+    _14 = "14"
+    _15 = "15"
+    _16 = "16"
+    _17 = "17"
+    _18 = "18"
+    _19 = "19"
     _20 = "20"
-    _21_29 = "21 ... 29"
+    _21 = "21"
+    _22 = "22"
+    _23 = "23"
+    _24 = "24"
+    _25 = "25"
+    _26 = "26"
+    _27 = "27"
+    _28 = "28"
+    _29 = "29"
     _30 = "30"
-    _31_39 = "31 ... 39"
+    _31 = "31"
+    _32 = "32"
+    _33 = "33"
+    _34 = "34"
+    _35 = "35"
+    _36 = "36"
+    _37 = "37"
+    _38 = "38"
+    _39 = "39"
     _40 = "40"
     _41 = "41"
     _42 = "42"
@@ -2793,31 +2790,28 @@ class MilitaryRankorGrade(str, Enum):
     W1 ... W4  Warrant Officers
     """
 
-    O3 = "O3"
-    O1 = "O1"
-    O2 = "O2"
-    W4 = "W4"
-    O4 = "O4"
-    O5 = "O5"
-    O6 = "O6"
-    O8 = "O8"
-    O9 = "O9"
-    W1 = "W1"
-    W2 = "W2"
-    W3 = "W3"
-    O7 = "O7"
-    E9 = "E9"
-    E1_E9 = "E1... E9"
+    E1 = "E1"
     E2 = "E2"
     E3 = "E3"
     E4 = "E4"
     E5 = "E5"
     E6 = "E6"
-    E8 = "E8"
-    E1 = "E1"
     E7 = "E7"
-    O1_O9 = "O1 ... O9"
-    W1_W4 = "W1 ... W4"
+    E8 = "E8"
+    E9 = "E9"
+    O1 = "O1"
+    O2 = "O2"
+    O3 = "O3"
+    O4 = "O4"
+    O5 = "O5"
+    O6 = "O6"
+    O7 = "O7"
+    O8 = "O8"
+    O9 = "O9"
+    W1 = "W1"
+    W2 = "W2"
+    W3 = "W3"
+    W4 = "W4"
 
 
 class MilitaryStatus(str, Enum):
@@ -7136,7 +7130,7 @@ class DiagnosisPriority(str, Enum):
 
     _0 = "0"
     _1 = "1"
-    _2_ = "2 ..."
+    _2 = "2"
 
 
 class Degreeorlicenseorcertificate(str, Enum):
@@ -10653,7 +10647,7 @@ class SpecimenAppropriateness(str, Enum):
     P  Preferred
     A  Appropriate
     I  Inappropriate
-    ??  Inappropriate due to ...
+    ??  Inappropriate due to
     """
 
     P = "P"
@@ -12530,3 +12524,370 @@ class BodyParts(str, Enum):
     VOC = "VOC"
     VULVA = "VULVA"
     WRIST = "WRIST"
+
+
+class MonetaryDenominationCode(str, Enum):
+    """
+    0913 - Monetary Denomination Code
+
+    AED	UAE Dirham
+    AFN	Afghani
+    ALL	Lek
+    AMD	Armenian Dram
+    ANG	Netherlands Antillean Guilder
+    AOA	Kwanza
+    ARS	Argentine Peso
+    AUD	Australian Dollar
+    AWG	Aruban Florin
+    AZN	Azerbaijan Manat
+    BAM	Convertible Mark
+    BBD	Barbados Dollar
+    BDT	Taka
+    BGN	Bulgarian Lev
+    BHD	Bahraini Dinar
+    BIF	Burundi Franc
+    BMD	Bermudian Dollar
+    BND	Brunei Dollar
+    BOB	Boliviano
+    BOV	Mvdol
+    BRL	Brazilian Real
+    BSD	Bahamian Dollar
+    BTN	Ngultrum
+    BWP	Pula
+    BYN	Belarusian Ruble
+    BZD	Belize Dollar
+    CAD	Canadian Dollar
+    CDF	Congolese Franc
+    CHE	WIR Euro
+    CHF	Swiss Franc
+    CHW	WIR Franc
+    CLF	Unidad de Fomento
+    CLP	Chilean Peso
+    CNY	Yuan Renminbi
+    COP	Colombian Peso
+    COU	Unidad de Valor Real
+    CRC	Costa Rican Colon
+    CUC	Peso Convertible
+    CUP	Cuban Peso
+    CVE	Cabo Verde Escudo
+    CZK	Czech Koruna
+    DJF	Djibouti Franc
+    DKK	Danish Krone
+    DOP	Dominican Peso
+    DZD	Algerian Dinar
+    EGP	Egyptian Pound
+    ERN	Nakfa
+    ETB	Ethiopian Birr
+    EUR	Euro
+    FJD	Fiji Dollar
+    FKP	Falkland Islands Pound
+    GBP	Pound Sterling
+    GEL	Lari
+    GHS	Ghana Cedi
+    GIP	Gibraltar Pound
+    GMD	Dalasi
+    GNF	Guinean Franc
+    GTQ	Quetzal
+    GYD	Guyana Dollar
+    HKD	Hong Kong Dollar
+    HNL	Lempira
+    HRK	Kuna
+    HTG	Gourde
+    HUF	Forint
+    IDR	Rupiah
+    ILS	New Israeli Sheqel
+    INR	Indian Rupee
+    IQD	Iraqi Dinar
+    IRR	Iranian Rial
+    ISK	Iceland Krona
+    JMD	Jamaican Dollar
+    JOD	Jordanian Dinar
+    JPY	Yen
+    KES	Kenyan Shilling
+    KGS	Som
+    KHR	Riel
+    KMF	Comorian Franc
+    KPW	North Korean Won
+    KRW	Won
+    KWD	Kuwaiti Dinar
+    KYD	Cayman Islands Dollar
+    KZT	Tenge
+    LAK	Lao Kip
+    LBP	Lebanese Pound
+    LKR	Sri Lanka Rupee
+    LRD	Liberian Dollar
+    LSL	Loti
+    LYD	Libyan Dinar
+    MAD	Moroccan Dirham
+    MDL	Moldovan Leu
+    MGA	Malagasy Ariary
+    MKD	Denar
+    MMK	Kyat
+    MNT	Tugrik
+    MOP	Pataca
+    MRU	Ouguiya
+    MUR	Mauritius Rupee
+    MVR	Rufiyaa
+    MWK	Malawi Kwacha
+    MXN	Mexican Peso
+    MXV	Mexican Unidad de Inversion (UDI)
+    MYR	Malaysian Ringgit
+    MZN	Mozambique Metical
+    NAD	Namibia Dollar
+    NGN	Naira
+    NIO	Cordoba Oro
+    NOK	Norwegian Krone
+    NPR	Nepalese Rupee
+    NZD	New Zealand Dollar
+    OMR	Rial Omani
+    PAB	Balboa
+    PEN	Sol
+    PGK	Kina
+    PHP	Philippine Peso
+    PKR	Pakistan Rupee
+    PLN	Zloty
+    PYG	Guarani
+    QAR	Qatari Rial
+    RON	Romanian Leu
+    RSD	Serbian Dinar
+    RUB	Russian Ruble
+    RWF	Rwanda Franc
+    SAR	Saudi Riyal
+    SBD	Solomon Islands Dollar
+    SCR	Seychelles Rupee
+    SDG	Sudanese Pound
+    SEK	Swedish Krona
+    SGD	Singapore Dollar
+    SHP	Saint Helena Pound
+    SLL	Leone
+    SOS	Somali Shilling
+    SRD	Surinam Dollar
+    SSP	South Sudanese Pound
+    STN	Dobra
+    SVC	El Salvador Colon
+    SYP	Syrian Pound
+    SZL	Lilangeni
+    THB	Baht
+    TJS	Somoni
+    TMT	Turkmenistan New Manat
+    TND	Tunisian Dinar
+    TOP	Pa’anga
+    TRY	Turkish Lira
+    TTD	Trinidad and Tobago Dollar
+    TWD	New Taiwan Dollar
+    TZS	Tanzanian Shilling
+    UAH	Hryvnia
+    UGX	Uganda Shilling
+    USD	US Dollar
+    USN	US Dollar (Next day)
+    UYI	Uruguay Peso en Unidades Indexadas (UI)
+    UYU	Peso Uruguayo
+    UYW	Unidad Previsional
+    UZS	Uzbekistan Sum
+    VES	Bolívar Soberano
+    VND	Dong
+    VUV	Vatu
+    WST	Tala
+    XAF	CFA Franc BEAC
+    XAG	Silver
+    XAU	Gold
+    XBA	Bond Markets Unit European Composite Unit (EURCO)
+    XBB	Bond Markets Unit European Monetary Unit (E.M.U.-6)
+    XBC	Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
+    XBD	Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
+    XCD	East Caribbean Dollar
+    XDR	SDR (Special Drawing Right)
+    XOF	CFA Franc BCEAO
+    XPD	Palladium
+    XPF	CFP Franc
+    XPT	Platinum
+    XSU	Sucre
+    XTS	Codes specifically reserved for testing purposes
+    XUA	ADB Unit of Account
+    XXX	The codes assigned for transactions where no currency is involved
+    YER	Yemeni Rial
+    ZAR	Rand
+    ZMW	Zambian Kwacha
+    ZWL	Zimbabwe Dollar
+    """
+
+    AED = "AED"
+    AFN = "AFN"
+    ALL = "ALL"
+    AMD = "AMD"
+    ANG = "ANG"
+    AOA = "AOA"
+    ARS = "ARS"
+    AUD = "AUD"
+    AWG = "AWG"
+    AZN = "AZN"
+    BAM = "BAM"
+    BBD = "BBD"
+    BDT = "BDT"
+    BGN = "BGN"
+    BHD = "BHD"
+    BIF = "BIF"
+    BMD = "BMD"
+    BND = "BND"
+    BOB = "BOB"
+    BOV = "BOV"
+    BRL = "BRL"
+    BSD = "BSD"
+    BTN = "BTN"
+    BWP = "BWP"
+    BYN = "BYN"
+    BZD = "BZD"
+    CAD = "CAD"
+    CDF = "CDF"
+    CHE = "CHE"
+    CHF = "CHF"
+    CHW = "CHW"
+    CLF = "CLF"
+    CLP = "CLP"
+    CNY = "CNY"
+    COP = "COP"
+    COU = "COU"
+    CRC = "CRC"
+    CUC = "CUC"
+    CUP = "CUP"
+    CVE = "CVE"
+    CZK = "CZK"
+    DJF = "DJF"
+    DKK = "DKK"
+    DOP = "DOP"
+    DZD = "DZD"
+    EGP = "EGP"
+    ERN = "ERN"
+    ETB = "ETB"
+    EUR = "EUR"
+    FJD = "FJD"
+    FKP = "FKP"
+    GBP = "GBP"
+    GEL = "GEL"
+    GHS = "GHS"
+    GIP = "GIP"
+    GMD = "GMD"
+    GNF = "GNF"
+    GTQ = "GTQ"
+    GYD = "GYD"
+    HKD = "HKD"
+    HNL = "HNL"
+    HRK = "HRK"
+    HTG = "HTG"
+    HUF = "HUF"
+    IDR = "IDR"
+    ILS = "ILS"
+    INR = "INR"
+    IQD = "IQD"
+    IRR = "IRR"
+    ISK = "ISK"
+    JMD = "JMD"
+    JOD = "JOD"
+    JPY = "JPY"
+    KES = "KES"
+    KGS = "KGS"
+    KHR = "KHR"
+    KMF = "KMF"
+    KPW = "KPW"
+    KRW = "KRW"
+    KWD = "KWD"
+    KYD = "KYD"
+    KZT = "KZT"
+    LAK = "LAK"
+    LBP = "LBP"
+    LKR = "LKR"
+    LRD = "LRD"
+    LSL = "LSL"
+    LYD = "LYD"
+    MAD = "MAD"
+    MDL = "MDL"
+    MGA = "MGA"
+    MKD = "MKD"
+    MMK = "MMK"
+    MNT = "MNT"
+    MOP = "MOP"
+    MRU = "MRU"
+    MUR = "MUR"
+    MVR = "MVR"
+    MWK = "MWK"
+    MXN = "MXN"
+    MXV = "MXV"
+    MYR = "MYR"
+    MZN = "MZN"
+    NAD = "NAD"
+    NGN = "NGN"
+    NIO = "NIO"
+    NOK = "NOK"
+    NPR = "NPR"
+    NZD = "NZD"
+    OMR = "OMR"
+    PAB = "PAB"
+    PEN = "PEN"
+    PGK = "PGK"
+    PHP = "PHP"
+    PKR = "PKR"
+    PLN = "PLN"
+    PYG = "PYG"
+    QAR = "QAR"
+    RON = "RON"
+    RSD = "RSD"
+    RUB = "RUB"
+    RWF = "RWF"
+    SAR = "SAR"
+    SBD = "SBD"
+    SCR = "SCR"
+    SDG = "SDG"
+    SEK = "SEK"
+    SGD = "SGD"
+    SHP = "SHP"
+    SLL = "SLL"
+    SOS = "SOS"
+    SRD = "SRD"
+    SSP = "SSP"
+    STN = "STN"
+    SVC = "SVC"
+    SYP = "SYP"
+    SZL = "SZL"
+    THB = "THB"
+    TJS = "TJS"
+    TMT = "TMT"
+    TND = "TND"
+    TOP = "TOP"
+    TRY = "TRY"
+    TTD = "TTD"
+    TWD = "TWD"
+    TZS = "TZS"
+    UAH = "UAH"
+    UGX = "UGX"
+    USD = "USD"
+    USN = "USN"
+    UYI = "UYI"
+    UYU = "UYU"
+    UYW = "UYW"
+    UZS = "UZS"
+    VES = "VES"
+    VND = "VND"
+    VUV = "VUV"
+    WST = "WST"
+    XAF = "XAF"
+    XAG = "XAG"
+    XAU = "XAU"
+    XBA = "XBA"
+    XBB = "XBB"
+    XBC = "XBC"
+    XBD = "XBD"
+    XCD = "XCD"
+    XDR = "XDR"
+    XOF = "XOF"
+    XPD = "XPD"
+    XPF = "XPF"
+    XPT = "XPT"
+    XSU = "XSU"
+    XTS = "XTS"
+    XUA = "XUA"
+    XXX = "XXX"
+    YER = "YER"
+    ZAR = "ZAR"
+    ZMW = "ZMW"
+    ZWL = "ZWL"
+
