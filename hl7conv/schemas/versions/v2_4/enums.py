@@ -3559,11 +3559,16 @@ class Natureofservice_test_observation(str, Enum):
     """
     174 - Nature of service-test-observation
 
-    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes), usually done at one instrument on one specimen
-    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test, creatinine clearance), usually done at different times and/or on different specimens
+    P  Profile or battery consisting of many independent atomic observations (e.g., SMA12, electrolytes),
+    usually done at one instrument on one specimen
+    F  Functional procedure that may consist of one or more interrelated measures (e.g., glucose tolerance test,
+    creatinine clearance), usually done at different times and/or on different specimens
     A  Atomic service/test/observation (test code or treatment code)
-    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate batteries (e.g., routines = CBC, UA, electrolytes); This set indicates that the code being described is used to order multiple service/test/observation b
-    C  Single observation calculated via a rule or formula from other independent observations (e.g., Alveolar--arterial ratio, cardiac output)
+    S  Superset--a set of batteries or procedures ordered under a single code unit but processed as separate
+    batteries (e.g., routines = CBC, UA, electrolytes); This set indicates that the code being described is used to
+    order multiple service/test/observation b
+    C  Single observation calculated via a rule or formula from other independent observations (e.g.,
+    Alveolar--arterial ratio, cardiac output)
     """
 
     P = "P"
@@ -3767,7 +3772,8 @@ class Addresstype(str, Enum):
     M  Mailing
     O  Office
     P  Permanent
-    RH  Registry home.  Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
+    RH  Registry home.  Refers to the information system, typically managed by a public health agency, that stores
+    patient information such as immunization histories or cancer data, regardless of where the patient obtains services.
     BR  Residence  at birth (home address at time of birth)
     """
 
@@ -4146,9 +4152,12 @@ class Alternatecharactersets(str, Enum):
     8859/7  The printable characters from the ISO 8859/7 Character set
     8859/8  The printable characters from the ISO 8859/8 Character set
     8859/9  The printable characters from the ISO 8859/9 Character set
-    ISO IR14  Code for Information Exchange (one byte)(JIS X 0201-1976).  Note that the code contains a space, i.e. "ISO IR14".
-    ISO IR87  Code for the Japanese Graphic Character set for information interchange (JIS X 0208-1990), Note that the code contains a space, i.e. "ISO IR87".
-    ISO IR159  Code of the supplementary Japanese Graphic Character set for information interchange (JIS X 0212-1990). Note that the code contains a space, i.e. "ISO IR159".
+    ISO IR14  Code for Information Exchange (one byte)(JIS X 0201-1976).  Note that the code contains a space,
+    i.e. "ISO IR14".
+    ISO IR87  Code for the Japanese Graphic Character set for information interchange (JIS X 0208-1990),
+    Note that the code contains a space, i.e. "ISO IR87".
+    ISO IR159  Code of the supplementary Japanese Graphic Character set for information interchange (JIS X
+    0212-1990). Note that the code contains a space, i.e. "ISO IR159".
     UNICODE  The world wide character standard from ISO/IEC 10646-1-19931
     """
 
@@ -4311,7 +4320,8 @@ class Manufacturersofvaccines(str, Enum):
     SKB  SmithKline Beecham
     USA  United States Army Medical Research and Materiel Command
     WA  Wyeth-Ayerst [Inactive-use WAL]
-    WAL  Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics)
+    WAL  Wyeth-Ayerst (includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories,
+    and Praxis Biologics)
     OTH  Other manufacturer
     UNK  Unknown manufacturer
     """
@@ -5000,7 +5010,8 @@ class Durationcategories(str, Enum):
     """
     255 - Duration categories
 
-    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine measurements.
+    PT  To identify measures at a point in time.  This is a synonym for "spot" or "random" as applied to urine
+    measurements.
     *  (asterisk) Life of the "unit."  Used for blood products.
     30M  30 minutes
     1H  1 hour
@@ -5568,7 +5579,8 @@ class Appointmenttypecodes(str, Enum):
 
     Normal  Routine schedule request type - default if not valued
     Tentative  A request for a tentative (e.g., "penciled in") appointment
-    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did not appear in the schedule (e.g., STAT, walk-in, etc.)
+    Complete  A request to add a completed appointment, used to maintain records of completed appointments that did
+    not appear in the schedule (e.g., STAT, walk-in, etc.)
     """
 
     N_mal = "Normal"
@@ -5586,7 +5598,8 @@ class Fillerstatuscodes(str, Enum):
     Started  The indicated appointment has begun and is currently in progress
     Complete  The indicated appointment has completed normally (was not discontinued, canceled, or deleted)
     Cancelled  The indicated appointment was stopped from occurring (canceled prior to starting)
-    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent appointment, or discontinued child appointment)
+    Discontinued  The indicated appointment was discontinued (DC'ed while in progress, discontinued parent
+    appointment, or discontinued child appointment)
     Deleted  The indicated appointment was deleted from the filler application
     Blocked  The indicated time slot(s) is(are) blocked
     Overbook  The appointment has been confirmed; however it is confirmed in an overbooked state
@@ -5610,7 +5623,8 @@ class Allowsubstitutioncodes(str, Enum):
 
     No  Substitution of this resource is not allowed
     Confirm  Contact the Placer Contact Person prior to making any substitutions of this resource
-    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this resource has been made
+    Notify  Notify the Placer Contact Person, through normal institutional procedures, that a substitution of this
+    resource has been made
     Yes  Substitution of this resource is allowed
     """
 
@@ -6132,15 +6146,24 @@ class Timeselectioncriteriaparameterclasscodes(str, Enum):
     """
     294 - Time selection criteria parameter class codes
 
-    Prefstart  The preferred start time for the appointment request, service or resource.   Any legal time specification in the format HHMM, using 24-hour clock notation
-    Prefend  The preferred end time for the appointment request, service or resource.  Any legal time specification in the format HHMM, using 24-hour clock notation
-    Mon  An indicator that Monday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
-    Tue  An indicator that Tuesday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
-    Wed  An indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK = Preferred appointment day; NO = Day is not preferred
-    Thu  An indicator that Thursday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
-    Fri  An indicator that Friday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
-    Sat  An indicator that Saturday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
-    Sun  An indicator that Sunday is or is not preferred for the day on which the appointment will occur.  OK = Preferred appointment day; NO = Day is not preferred
+    Prefstart  The preferred start time for the appointment request, service or resource.   Any legal time
+    specification in the format HHMM, using 24-hour clock notation
+    Prefend  The preferred end time for the appointment request, service or resource.  Any legal time specification
+    in the format HHMM, using 24-hour clock notation
+    Mon  An indicator that Monday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
+    Tue  An indicator that Tuesday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
+    Wed  An indicator that Wednesday is or is not preferred for the day on which the appointment will occur. OK =
+    Preferred appointment day; NO = Day is not preferred
+    Thu  An indicator that Thursday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
+    Fri  An indicator that Friday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
+    Sat  An indicator that Saturday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
+    Sun  An indicator that Sunday is or is not preferred for the day on which the appointment will occur.  OK =
+    Preferred appointment day; NO = Day is not preferred
     """
 
     Prefstart = "Prefstart"
@@ -6158,8 +6181,10 @@ class CPRangeType(str, Enum):
     """
     298 - CP Range Type
 
-    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been consumed
-    F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval has not occurred/been consumed
+    P  Pro-rate.  Apply this price to this interval, pro-rated by whatever portion of the interval has occurred/been
+    consumed
+    F  Flat-rate.  Apply the entire price to this interval, do not pro-rate the price if the full interval has not
+    occurred/been consumed
     """
 
     P = "P"
@@ -6172,7 +6197,9 @@ class Encoding(str, Enum):
 
     A  No encoding - data are displayable ASCII characters.
     Hex  Hexadecimal encoding - consecutive pairs of hexadecimal digits represent consecutive single octets.
-    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521.  Four consecutive ASCII characters represent three consecutive octets of binary data.  Base64 utilizes a 65-character subset of US-ASCII, consisting of both the upper a
+    Base64  Encoding as defined by MIME (Multipurpose Internet Mail Extensions) standard RFC 1521.  Four consecutive
+    ASCII characters represent three consecutive octets of binary data.  Base64 utilizes a 65-character subset of
+    US-ASCII, consisting of both the upper a
     """
 
     A = "A"
@@ -6193,7 +6220,9 @@ class UniversalIDtype(str, Enum):
     M  These are reserved for locally defined coding schemes.
     L,M,N  These are reserved for locally defined coding schemes.
     L  These are reserved for locally defined coding schemes.
-    Random  Usually a base64 encoded string of random bits.   The uniqueness depends on the length of the bits.  Mail systems often generate ASCII string  "unique names," from a combination of random bits and system names.  Obviously, such identifiers will not be con
+    Random  Usually a base64 encoded string of random bits.   The uniqueness depends on the length of the bits.  Mail
+    systems often generate ASCII string  "unique names," from a combination of random bits and system names.
+    Obviously, such identifiers will not be con
     UUID  The DCE Universal Unique Identifier
     x400  An X.400 MHS format identifier
     x500  An X.500 directory name
