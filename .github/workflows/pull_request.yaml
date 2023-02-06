@@ -19,4 +19,4 @@ jobs:
           poetry install
       - id: run-linters
         run: |
-          make lint
+          make lint -i
