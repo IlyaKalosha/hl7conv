@@ -5,10 +5,11 @@ description = "Converts hl7 and json formats in both ways"
 authors = ["Ilya Kalosha <kalosha.ilya@yandex.ru>"]
 repository = "https://github.com/IlyaKalosha/hl7conv"
 readme = "README.md"
-keywords = ["hl7", "convert"]
+keywords = ["hl7", "convert", "JSON"]
 
 [tool.poetry.dependencies]
-python = "^3.10.4"
+python = "3.10.4"
+pydantic = "1.10.2"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.4.0"

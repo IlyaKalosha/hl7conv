@@ -1,4 +1,4 @@
-from .util import split_segments
+from util import split_segments
 
 
 class Hl7Json:

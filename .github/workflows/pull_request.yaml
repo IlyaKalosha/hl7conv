@@ -1,0 +1,22 @@
+name: Pull Request Pipeline
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    name: Validation Checks
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.4'
+      - id: install-dependencies
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install
+      - id: run-linters
+        run: |
+          make lint
