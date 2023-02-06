@@ -1,4 +1,4 @@
-#!/usr/bin/env make -f
+#!/usr/bin/env make -f -i
 
 SOURCE_FILES=hl7conv
 
