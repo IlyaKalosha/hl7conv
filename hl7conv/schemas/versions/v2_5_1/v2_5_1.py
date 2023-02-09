@@ -2,12 +2,14 @@ from pydantic import BaseModel, Field, validator
 
 from hl7conv.schemas.versions.v2_5_1.enums import (
     Abnormalflags,
+    Commenttype,
     DiagnosticServiceSectionID,
     EscortRequired,
     NatureofAbnormalTesting,
     ObservationResultHandling,
     Observationresultstatuscodesinterpretation,
     ResultStatus,
+    Sourceofcomment,
     SpecimenActionCode,
     TransportArranged,
     TransportationMode,
@@ -272,4 +274,13 @@ class OBR(BaseModel):
 
 
 class NTE(BaseModel):
-    ...
+    nte_1: int = Field(None, alias="1", max_length=4, description="Set ID - NTE")
+    nte_2: Sourceofcomment = Field(
+        None, alias="2", max_length=8, description="Source of Comment"
+    )
+    nte_3: str = Field(None, alias="3", max_length=65536, description="Comment")
+    nte_4: Commenttype = Field(
+        None, alias="4", max_length=250, description="Comment Type"
+    )
+
+    _nte_1_val = validator("nte_1", allow_reuse=True)(si_validator)
