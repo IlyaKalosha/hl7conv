@@ -9,13 +9,18 @@ from hl7conv.schemas.versions.v2_5_1.enums import (
     Codingsystem,
     CountryCode,
     Degreeorlicenseorcertificate,
+    Eventtype,
     Identifiertype,
+    Messagestructure,
+    Messagetype,
     MonetaryDenominationCode,
     Name_addressrepresentation,
     Nameassemblyorder,
     Organizationalnametype,
     Personlocationtype,
     Precision,
+    ProcessingID,
+    Processingmode,
     Repeatpattern,
     Sequencecondition,
     SpecimenRole,
@@ -23,6 +28,7 @@ from hl7conv.schemas.versions.v2_5_1.enums import (
     Telecommunicationusecode,
     TQconjunctionID,
     UniversalIDtype,
+    VersionID,
 )
 
 
@@ -33,6 +39,12 @@ class CodedElement(BaseModel):
     ce_4: str = Field(None, alias="4", description="Alternate Identifier")
     ce_5: str = Field(None, alias="5", description="Alternate Text")
     ce_6: str = Field(None, alias="6", description="Name Of Alternate Coding System")
+
+
+class VersionIdentifier(BaseModel):
+    vid_1: VersionID = Field(None, alias="1", description="Version ID")
+    vid_2: CountryCode = Field(None, alias="2", description="Internationalization Code")
+    vid_3: CodedElement = Field(None, alias="3", description="International Version ID")
 
 
 class ParentResultLink(BaseModel):
@@ -79,6 +91,17 @@ class EntityIdentifierPair(BaseModel):
     eip_2: EntityIdentifier = Field(
         None, alias="2", description="Filler Assigned Identifier"
     )
+
+
+class MessageType(BaseModel):
+    msg_1: Messagetype = Field(..., alias="1", description="Message Code")
+    msg_2: Eventtype = Field(..., alias="2", description="Trigger Event")
+    msg_3: Messagestructure = Field(..., alias="3", description="Message Structure")
+
+
+class ProcessingType(BaseModel):
+    pt_1: ProcessingID = Field(None, alias="1", description="Processing ID")
+    pt_2: Processingmode = Field(None, alias="2", description="Processing Mode")
 
 
 class CodedWithExceptions(BaseModel):

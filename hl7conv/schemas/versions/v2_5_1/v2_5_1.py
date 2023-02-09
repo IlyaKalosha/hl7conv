@@ -2,6 +2,10 @@ from pydantic import BaseModel, Field, validator
 
 from hl7conv.schemas.versions.v2_5_1.enums import (
     Abnormalflags,
+    Acceptorapplicationacknowledgmentconditions,
+    Alternatecharactersethandlingscheme,
+    Alternatecharactersets,
+    CountryCode,
     DiagnosticServiceSectionID,
     EscortRequired,
     NatureofAbnormalTesting,
@@ -24,12 +28,16 @@ from hl7conv.schemas.versions.v2_5_1.types import (
     ExtendedCompositeIDNumberandNameforPersons,
     ExtendedCompositeNameAndIdentificationNumberForOrganizations,
     ExtendedTelecommunicationNumber,
+    HierarchicDesignator,
+    MessageType,
     MoneyAndCode,
     NameWithDateAndLocation,
     ParentResultLink,
+    ProcessingType,
     SpecimenSource,
     TimeStamp,
     TimingQuantity,
+    VersionIdentifier,
 )
 
 
@@ -272,4 +280,63 @@ class OBR(BaseModel):
 
 
 class MSH(BaseModel):
-    ...
+    msh_1: str = Field(..., alias="1", max_length=1, description="Field Separator")
+    msh_2: str = Field(..., alias="2", max_length=4, description="Encoding Characters")
+    msh_3: HierarchicDesignator = Field(
+        None, alias="3", max_length=227, description="Sending Application"
+    )
+    msh_4: HierarchicDesignator = Field(
+        None, alias="4", max_length=227, description="Sending Facility"
+    )
+    msh_5: HierarchicDesignator = Field(
+        None, alias="5", max_length=227, description="Receiving Application"
+    )
+    msh_6: HierarchicDesignator = Field(
+        None, alias="6", max_length=227, description="Receiving Facility"
+    )
+    msh_7: TimeStamp = Field(
+        ..., alias="7", max_length=26, description="Date/Time of Message"
+    )
+    msh_8: str = Field(None, alias="8", max_length=40, description="Security")
+    msh_9: MessageType = Field(
+        ..., alias="9", max_length=15, description="Message Type"
+    )
+    msh_10: str = Field(
+        ..., alias="10", max_length=20, description="Message Control ID"
+    )
+    msh_11: ProcessingType = Field(
+        ..., alias="11", max_length=3, description="Processing ID"
+    )
+    msh_12: VersionIdentifier = Field(
+        ..., alias="12", max_length=60, description="Version ID"
+    )
+    msh_13: float = Field(
+        None, alias="13", max_length=15, description="Sequence Number"
+    )
+    msh_14: str = Field(
+        None, alias="14", max_length=180, description="Continuation Pointer"
+    )
+    msh_15: Acceptorapplicationacknowledgmentconditions = Field(
+        None, alias="15", max_length=2, description="Accept Acknowledgment Type"
+    )
+    msh_16: Acceptorapplicationacknowledgmentconditions = Field(
+        None, alias="16", max_length=2, description="Application Acknowledgment Type"
+    )
+    msh_17: CountryCode = Field(
+        None, alias="17", max_length=3, description="Country Code"
+    )
+    msh_18: Alternatecharactersets = Field(
+        None, alias="18", max_length=16, description="Character Set"
+    )
+    msh_19: CodedElement = Field(
+        None, alias="19", max_length=250, description="Principal Language of Message"
+    )
+    msh_20: Alternatecharactersethandlingscheme = Field(
+        None,
+        alias="20",
+        max_length=20,
+        description="Alternate Character Set Handling Scheme",
+    )
+    msh_21: EntityIdentifier = Field(
+        None, alias="21", max_length=427, description="Message Profile Identifier"
+    )
