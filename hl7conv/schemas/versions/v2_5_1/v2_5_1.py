@@ -269,3 +269,7 @@ class OBR(BaseModel):
     )
 
     _obr_1_val = validator("obr_1", allow_reuse=True)(si_validator)
+
+
+class MSH(BaseModel):
+    ...
