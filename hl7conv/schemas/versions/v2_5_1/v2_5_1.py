@@ -293,6 +293,7 @@ class NTE(BaseModel):
 
     _nte_1_val = validator("nte_1", allow_reuse=True)(si_validator)
 
+
 class MSH(BaseModel):
     msh_1: str = Field(..., alias="1", max_length=1, description="Field Separator")
     msh_2: str = Field(..., alias="2", max_length=4, description="Encoding Characters")
@@ -354,4 +355,3 @@ class MSH(BaseModel):
     msh_21: EntityIdentifier = Field(
         None, alias="21", max_length=427, description="Message Profile Identifier"
     )
-
