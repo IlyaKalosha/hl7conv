@@ -3,34 +3,45 @@ from pydantic import BaseModel, Field, validator
 from hl7conv.schemas.versions.v2_5_1.enums import (
     Abnormalflags,
     Acceptorapplicationacknowledgmentconditions,
+    AdministrativeSex,
     Alternatecharactersethandlingscheme,
     Alternatecharactersets,
     Commenttype,
     CountryCode,
     DiagnosticServiceSectionID,
     EscortRequired,
+    EthnicGroup,
     Eventreason,
+    IdentityReliabilityCode,
+    MaritalStatus,
     NatureofAbnormalTesting,
     ObservationResultHandling,
     Observationresultstatuscodesinterpretation,
+    ProductionClassCode,
+    Race,
+    Religion,
     ResultStatus,
     Sourceofcomment,
     SpecimenActionCode,
     TransportArranged,
     TransportationMode,
     ValueType,
+    Yesornoindicator,
 )
 from hl7conv.schemas.versions.v2_5_1.primitive_validators import si_validator
 from hl7conv.schemas.versions.v2_5_1.types import (
     CodedElement,
     CodedWithExceptions,
     CompositeQuantityWithUnits,
+    DriverLicenseNumber,
     EntityIdentifier,
     EntityIdentifierPair,
     Eventtype,
     ExtendedAddress,
     ExtendedCompositeIDNumberandNameforPersons,
+    ExtendedCompositeIDWithCheckDigitCX,
     ExtendedCompositeNameAndIdentificationNumberForOrganizations,
+    ExtendedPersonName,
     ExtendedTelecommunicationNumber,
     HierarchicDesignator,
     MessageType,
@@ -381,3 +392,111 @@ class EVN(BaseModel):
     evn_7: HierarchicDesignator = Field(
         None, alias="7", max_length=241, description="Event Facility"
     )
+
+
+class PID(BaseModel):
+    pid_1: int = Field(None, alias="1", max_length=4, description="Set ID - PID")
+    pid_2: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None, alias="2", max_length=20, description="Patient ID"
+    )
+    pid_3: ExtendedCompositeIDWithCheckDigitCX = Field(
+        ..., alias="3", max_length=250, description="Patient Identifier List"
+    )
+    pid_4: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None, alias="4", max_length=20, description="Alternate Patient ID - PID"
+    )
+    pid_5: ExtendedPersonName = Field(
+        ..., alias="5", max_length=250, description="Patient Name"
+    )
+    pid_6: ExtendedPersonName = Field(
+        None, alias="6", max_length=250, description="Mother's Maiden Name"
+    )
+    pid_7: TimeStamp = Field(
+        None, alias="7", max_length=26, description="Date/Time of Birth"
+    )
+    pid_8: AdministrativeSex = Field(
+        None, alias="8", max_length=1, description="Administrative Sex"
+    )
+    pid_9: ExtendedPersonName = Field(
+        None, alias="9", max_length=250, description="Patient Alias"
+    )
+    pid_10: Race = Field(None, alias="10", max_length=250, description="Race")
+    pid_11: ExtendedAddress = Field(
+        None, alias="11", max_length=250, description="Patient Address"
+    )
+    pid_12: str = Field(None, alias="12", max_length=4, description="Country Code")
+    pid_13: ExtendedTelecommunicationNumber = Field(
+        None, alias="13", max_length=250, description="Phone Number - Home"
+    )
+    pid_14: ExtendedTelecommunicationNumber = Field(
+        None, alias="14", max_length=250, description="Phone Number - Business"
+    )
+    pid_15: CodedElement = Field(
+        None, alias="15", max_length=250, description="Primary Language"
+    )
+    pid_16: MaritalStatus = Field(
+        None, alias="16", max_length=250, description="Marital Status"
+    )
+    pid_17: Religion = Field(None, alias="17", max_length=250, description="Religion")
+    pid_18: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None, alias="18", max_length=250, description="Patient Account Number"
+    )
+    pid_19: str = Field(
+        None, alias="19", max_length=16, description="SSN Number - Patient"
+    )
+    pid_20: DriverLicenseNumber = Field(
+        None, alias="20", max_length=25, description="Driver's License Number - Patient"
+    )
+    pid_21: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None, alias="21", max_length=250, description="Mother's Identifier"
+    )
+    pid_22: EthnicGroup = Field(
+        None, alias="22", max_length=250, description="Ethnic Group"
+    )
+    pid_23: str = Field(None, alias="23", max_length=250, description="Birth Place")
+    pid_24: Yesornoindicator = Field(
+        None, alias="24", max_length=1, description="Multiple Birth Indicator"
+    )
+    pid_25: float = Field(None, alias="25", max_length=2, description="Birth Order")
+    pid_26: CodedElement = Field(
+        None, alias="26", max_length=250, description="Citizenship"
+    )
+    pid_27: CodedElement = Field(
+        None, alias="27", max_length=250, description="Veterans Military Status"
+    )
+    pid_28: CodedElement = Field(
+        None, alias="28", max_length=250, description="Nationality"
+    )
+    pid_29: TimeStamp = Field(
+        None, alias="29", max_length=26, description="Patient Death Date and Time"
+    )
+    pid_30: Yesornoindicator = Field(
+        None, alias="30", max_length=1, description="Patient Death Indicator"
+    )
+    pid_31: Yesornoindicator = Field(
+        None, alias="31", max_length=1, description="Identity Unknown Indicator"
+    )
+    pid_32: IdentityReliabilityCode = Field(
+        None, alias="32", max_length=20, description="Identiry Reliability Code"
+    )
+    pid_33: TimeStamp = Field(
+        None, alias="33", max_length=26, description="Last Update Date/Time"
+    )
+    pid_34: HierarchicDesignator = Field(
+        None, alias="34", max_length=241, description="Last Update Facility"
+    )
+    pid_35: CodedElement = Field(
+        None, alias="35", max_length=250, description="Species Code"
+    )
+    pid_36: CodedElement = Field(
+        None, alias="36", max_length=250, description="Breed Code"
+    )
+    pid_37: str = Field(None, alias="37", max_length=80, description="Strain")
+    pid_38: ProductionClassCode = Field(
+        None, alias="38", max_length=250, description="Production Class Code"
+    )
+    pid_39: CodedWithExceptions = Field(
+        None, alias="39", max_length=250, description="Tribal Citizenship"
+    )
+
+    _pid_1_val = validator("pid_1", allow_reuse=True)(si_validator)
