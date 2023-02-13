@@ -2,13 +2,14 @@ from pydantic import BaseModel, Field, validator
 
 from hl7conv.schemas.versions.v2_5_1.enums import (
     Abnormalflags,
-    Commenttype,
     Acceptorapplicationacknowledgmentconditions,
     Alternatecharactersethandlingscheme,
     Alternatecharactersets,
+    Commenttype,
     CountryCode,
     DiagnosticServiceSectionID,
     EscortRequired,
+    Eventreason,
     NatureofAbnormalTesting,
     ObservationResultHandling,
     Observationresultstatuscodesinterpretation,
@@ -26,6 +27,7 @@ from hl7conv.schemas.versions.v2_5_1.types import (
     CompositeQuantityWithUnits,
     EntityIdentifier,
     EntityIdentifierPair,
+    Eventtype,
     ExtendedAddress,
     ExtendedCompositeIDNumberandNameforPersons,
     ExtendedCompositeNameAndIdentificationNumberForOrganizations,
@@ -354,4 +356,28 @@ class MSH(BaseModel):
     )
     msh_21: EntityIdentifier = Field(
         None, alias="21", max_length=427, description="Message Profile Identifier"
+    )
+
+
+class EVN(BaseModel):
+    evn_1: Eventtype = Field(
+        None, alias="1", max_length="3", description="Event Type Code"
+    )
+    evn_2: TimeStamp = Field(
+        ..., alias="2", max_length="26", description="Recorded Date/Time"
+    )
+    evn_3: TimeStamp = Field(
+        None, alias="3", max_length="26", description="Date/Time Planned Event"
+    )
+    evn_4: Eventreason = Field(
+        None, alias="4", max_length="3", description="Event Reason Code"
+    )
+    evn_5: ExtendedCompositeIDNumberandNameforPersons = Field(
+        None, alias="5", max_length="250", description="Operator ID"
+    )
+    evn_6: TimeStamp = Field(
+        None, alias="6", max_length="26", description="Event Occurred"
+    )
+    evn_7: HierarchicDesignator = Field(
+        None, alias="7", max_length="241", description="Event Facility"
     )
