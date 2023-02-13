@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field, validator
 
 from hl7conv.schemas.versions.v2_5_1.enums import (
     Abnormalflags,
+    Commenttype,
     Acceptorapplicationacknowledgmentconditions,
     Alternatecharactersethandlingscheme,
     Alternatecharactersets,
@@ -12,6 +13,7 @@ from hl7conv.schemas.versions.v2_5_1.enums import (
     ObservationResultHandling,
     Observationresultstatuscodesinterpretation,
     ResultStatus,
+    Sourceofcomment,
     SpecimenActionCode,
     TransportArranged,
     TransportationMode,
@@ -279,6 +281,18 @@ class OBR(BaseModel):
     _obr_1_val = validator("obr_1", allow_reuse=True)(si_validator)
 
 
+class NTE(BaseModel):
+    nte_1: int = Field(None, alias="1", max_length=4, description="Set ID - NTE")
+    nte_2: Sourceofcomment = Field(
+        None, alias="2", max_length=8, description="Source of Comment"
+    )
+    nte_3: str = Field(None, alias="3", max_length=65536, description="Comment")
+    nte_4: Commenttype = Field(
+        None, alias="4", max_length=250, description="Comment Type"
+    )
+
+    _nte_1_val = validator("nte_1", allow_reuse=True)(si_validator)
+
 class MSH(BaseModel):
     msh_1: str = Field(..., alias="1", max_length=1, description="Field Separator")
     msh_2: str = Field(..., alias="2", max_length=4, description="Encoding Characters")
@@ -340,3 +354,4 @@ class MSH(BaseModel):
     msh_21: EntityIdentifier = Field(
         None, alias="21", max_length=427, description="Message Profile Identifier"
     )
+
