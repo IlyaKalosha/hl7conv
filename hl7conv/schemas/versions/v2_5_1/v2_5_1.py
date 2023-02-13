@@ -361,23 +361,23 @@ class MSH(BaseModel):
 
 class EVN(BaseModel):
     evn_1: Eventtype = Field(
-        None, alias="1", max_length="3", description="Event Type Code"
+        None, alias="1", max_length=3, description="Event Type Code"
     )
     evn_2: TimeStamp = Field(
-        ..., alias="2", max_length="26", description="Recorded Date/Time"
+        ..., alias="2", max_length=26, description="Recorded Date/Time"
     )
     evn_3: TimeStamp = Field(
-        None, alias="3", max_length="26", description="Date/Time Planned Event"
+        None, alias="3", max_length=26, description="Date/Time Planned Event"
     )
     evn_4: Eventreason = Field(
-        None, alias="4", max_length="3", description="Event Reason Code"
+        None, alias="4", max_length=3, description="Event Reason Code"
     )
     evn_5: ExtendedCompositeIDNumberandNameforPersons = Field(
-        None, alias="5", max_length="250", description="Operator ID"
+        None, alias="5", max_length=250, description="Operator ID"
     )
     evn_6: TimeStamp = Field(
-        None, alias="6", max_length="26", description="Event Occurred"
+        None, alias="6", max_length=26, description="Event Occurred"
     )
     evn_7: HierarchicDesignator = Field(
-        None, alias="7", max_length="241", description="Event Facility"
+        None, alias="7", max_length=241, description="Event Facility"
     )
