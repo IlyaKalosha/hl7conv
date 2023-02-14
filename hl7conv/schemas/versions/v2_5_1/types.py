@@ -16,6 +16,7 @@ from hl7conv.schemas.versions.v2_5_1.enums import (
     MonetaryDenominationCode,
     Name_addressrepresentation,
     Nameassemblyorder,
+    Nametype,
     Organizationalnametype,
     Personlocationtype,
     Precision,
@@ -193,6 +194,27 @@ class HierarchicDesignator(BaseModel):
     hd_3: str = Field(None, alias="3", description="Universal Id Type")
 
 
+class ExtendedCompositeIDWithCheckDigitCX(BaseModel):
+    cx_1: str = Field(..., alias="1", description="Id number")
+    cx_2: str = Field(None, alias="2", description="Check Digit")
+    cx_3: Checkdigitscheme = Field(None, alias="3", description="Check Digit Scheme")
+    cx_4: HierarchicDesignator = Field(
+        None, alias="4", description="Assigning Authority"
+    )
+    cx_5: Identifiertype = Field(None, alias="5", description="Identifier Type Code")
+    cx_6: HierarchicDesignator = Field(
+        None, alias="6", description="Assigning Facility"
+    )
+    cx_7: str = Field(None, alias="7", description="Effective Date")
+    cx_8: str = Field(None, alias="8", description="Expiration Date")
+    cx_9: CodedWithExceptions = Field(
+        None, alias="9", description="Assigning Jurisdiction"
+    )
+    cx_10: CodedWithExceptions = Field(
+        None, alias="10", description="Assigning Agency Or Department"
+    )
+
+
 class CompositeIDNumberAndNameSimplified(BaseModel):
     cnn_1: str = Field(None, alias="1", description="Id Number")
     cnn_2: str = Field(None, alias="2", description="Family Name")
@@ -348,3 +370,44 @@ class ExtendedCompositeIDNumberandNameforPersons(BaseModel):
     xcn_23: CodedWithExceptions = Field(
         None, alias="23", description="Assigning Agency Or Department"
     )
+
+
+class ExtendedPersonName(BaseModel):
+    xpn_1: FamilyName = Field(None, alias="1", description="Family Name")
+    xpn_2: str = Field(None, alias="2", description="Given Name")
+    xpn_3: str = Field(
+        None,
+        alias="3",
+        description="Second And Further Given Names Or Initials Thereof",
+    )
+    xpn_4: str = Field(None, alias="4", description="Suffix (e.g., Jr Or Lii)")
+    xpn_5: str = Field(None, alias="5", description="Prefix (e.g., Dr)")
+    xpn_6: Degreeorlicenseorcertificate = Field(
+        None, alias="6", description="Degree (e.g., Md)"
+    )
+    xpn_7: Nametype = Field(None, alias="7", description="Name Type Code")
+    xpn_8: Name_addressrepresentation = Field(
+        None, alias="8", description="Name Representation Code"
+    )
+    xpn_9: CodedElement = Field(None, alias="9", description="Name Context")
+    xpn_10: DateAndTimeRange = Field(
+        None, alias="10", description="Name Validity Range"
+    )
+    xpn_11: Nameassemblyorder = Field(
+        None, alias="11", description="Name Assembly Order"
+    )
+    xpn_12: TimeStamp = Field(None, alias="12", description="Effective Date")
+    xpn_13: TimeStamp = Field(None, alias="13", description="Expiration Date")
+    xpn_14: str = Field(None, alias="14", description="Professional Suffix")
+
+
+class DriverLicenseNumber(BaseModel):
+    dln_1: str = Field(..., alias="1", description="License Number")
+    dln_2: str = Field(None, alias="2", description="Issuing State, Province, Country")
+    dln_3: str = Field(None, alias="3", description="Expiration Date")
+
+
+class JobCodeAndClass(BaseModel):
+    jcc_1: str = Field(None, alias="1", description="Job Code")
+    jcc_2: str = Field(None, alias="2", description="Job Class")
+    jcc_3: str = Field(None, alias="3", description="Job Description Text")
