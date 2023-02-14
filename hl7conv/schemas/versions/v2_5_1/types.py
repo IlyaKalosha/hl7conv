@@ -405,3 +405,9 @@ class DriverLicenseNumber(BaseModel):
     dln_1: str = Field(..., alias="1", description="License Number")
     dln_2: str = Field(None, alias="2", description="Issuing State, Province, Country")
     dln_3: str = Field(None, alias="3", description="Expiration Date")
+
+
+class JobCodeAndClass(BaseModel):
+    jcc_1: str = Field(None, alias="1", description="Job Code")
+    jcc_2: str = Field(None, alias="2", description="Job Class")
+    jcc_3: str = Field(None, alias="3", description="Job Description Text")

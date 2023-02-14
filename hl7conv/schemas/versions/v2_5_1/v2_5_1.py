@@ -6,23 +6,31 @@ from hl7conv.schemas.versions.v2_5_1.enums import (
     AdministrativeSex,
     Alternatecharactersethandlingscheme,
     Alternatecharactersets,
+    AmbulatoryStatus,
     Commenttype,
+    ContactRole,
     CountryCode,
     DiagnosticServiceSectionID,
     EscortRequired,
     EthnicGroup,
     Eventreason,
     IdentityReliabilityCode,
+    JobStatus,
+    LivingArrangement,
+    LivingDependency,
     MaritalStatus,
     NatureofAbnormalTesting,
     ObservationResultHandling,
     Observationresultstatuscodesinterpretation,
     ProductionClassCode,
+    PublicityCode,
     Race,
+    Relationship,
     Religion,
     ResultStatus,
     Sourceofcomment,
     SpecimenActionCode,
+    StudentStatus,
     TransportArranged,
     TransportationMode,
     ValueType,
@@ -44,6 +52,7 @@ from hl7conv.schemas.versions.v2_5_1.types import (
     ExtendedPersonName,
     ExtendedTelecommunicationNumber,
     HierarchicDesignator,
+    JobCodeAndClass,
     MessageType,
     MoneyAndCode,
     NameWithDateAndLocation,
@@ -500,3 +509,127 @@ class PID(BaseModel):
     )
 
     _pid_1_val = validator("pid_1", allow_reuse=True)(si_validator)
+
+
+class NK1(BaseModel):
+    nk_1_1: int = Field(..., alias="1", max_length=4, description="Set ID - NK1")
+    nk_1_2: ExtendedPersonName = Field(
+        None, alias="2", max_length=250, description="NK Name"
+    )
+    nk_1_3: Relationship = Field(
+        None, alias="3", max_length=250, description="Relationship"
+    )
+    nk_1_4: ExtendedAddress = Field(
+        None, alias="4", max_length=250, description="Address"
+    )
+    nk_1_5: ExtendedTelecommunicationNumber = Field(
+        None, alias="5", max_length=250, description="Phone Number"
+    )
+    nk_1_6: ExtendedTelecommunicationNumber = Field(
+        None, alias="6", max_length=250, description="Business Phone Number"
+    )
+    nk_1_7: ContactRole = Field(
+        None, alias="7", max_length=250, description="Contact Role"
+    )
+    nk_1_8: str = Field(None, alias="8", max_length=8, description="Start Date")
+    nk_1_9: str = Field(None, alias="9", max_length=8, description="End Date")
+    nk_1_10: str = Field(
+        None,
+        alias="10",
+        max_length=60,
+        description="Next of Kin / Associated Parties Job Title",
+    )
+    nk_1_11: JobCodeAndClass = Field(
+        None,
+        alias="11",
+        max_length=80,
+        description="Next of Kin / Associated Parties Job Code/Class",
+    )
+    nk_1_12: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None,
+        alias="12",
+        max_length=250,
+        description="Next of Kin / Associated Parties Employee Number",
+    )
+    nk_1_13: ExtendedCompositeNameAndIdentificationNumberForOrganizations = Field(
+        None, alias="13", max_length=250, description="Organization Name - NK1"
+    )
+    nk_1_14: MaritalStatus = Field(
+        None, alias="14", max_length=250, description="Marital Status"
+    )
+    nk_1_15: AdministrativeSex = Field(
+        None, alias="15", max_length=1, description="Administrative Sex"
+    )
+    nk_1_16: TimeStamp = Field(
+        None, alias="16", max_length=26, description="Date/Time of Birth"
+    )
+    nk_1_17: LivingDependency = Field(
+        None, alias="17", max_length=2, description="Living Dependency"
+    )
+    nk_1_18: AmbulatoryStatus = Field(
+        None, alias="18", max_length=2, description="Ambulatory Status"
+    )
+    nk_1_19: CodedElement = Field(
+        None, alias="19", max_length=250, description="Citizenship"
+    )
+    nk_1_20: CodedElement = Field(
+        None, alias="20", max_length=250, description="Primary Language"
+    )
+    nk_1_21: LivingArrangement = Field(
+        None, alias="21", max_length=2, description="Living Arrangement"
+    )
+    nk_1_22: PublicityCode = Field(
+        None, alias="22", max_length=250, description="Publicity Code"
+    )
+    nk_1_23: Yesornoindicator = Field(
+        None, alias="23", max_length=1, description="Protection Indicator"
+    )
+    nk_1_24: StudentStatus = Field(
+        None, alias="24", max_length=2, description="Student Indicator"
+    )
+    nk_1_25: Religion = Field(None, alias="25", max_length=250, description="Religion")
+    nk_1_26: ExtendedPersonName = Field(
+        None, alias="26", max_length=250, description="Mother's Maiden Name"
+    )
+    nk_1_27: CodedElement = Field(
+        None, alias="27", max_length=250, description="Nationality"
+    )
+    nk_1_28: EthnicGroup = Field(
+        None, alias="28", max_length=250, description="Ethnic Group"
+    )
+    nk_1_29: CodedElement = Field(
+        None, alias="29", max_length=250, description="Contact Reason"
+    )
+    nk_1_30: ExtendedPersonName = Field(
+        None, alias="30", max_length=250, description="Contact Person's Name"
+    )
+    nk_1_31: ExtendedTelecommunicationNumber = Field(
+        None,
+        alias="31",
+        max_length=250,
+        description="Contact Person's Telephone Number",
+    )
+    nk_1_32: ExtendedAddress = Field(
+        None, alias="32", max_length=250, description="Contact Person's Address"
+    )
+    nk_1_33: ExtendedCompositeIDWithCheckDigitCX = Field(
+        None,
+        alias="33",
+        max_length=250,
+        description="Next of Kin/Associated Party's Identifiers",
+    )
+    nk_1_34: JobStatus = Field(None, alias="34", max_length=2, description="Job Status")
+    nk_1_35: Race = Field(None, alias="35", max_length=250, description="Race")
+    nk_1_36: str = Field(None, alias="36", max_length=2, description="Handicap")
+    nk_1_37: str = Field(
+        None,
+        alias="37",
+        max_length=16,
+        description="Contact Person Social Security Number",
+    )
+    nk_1_38: str = Field(
+        None, alias="38", max_length=250, description="Next of Kin Birth Place"
+    )
+    nk_1_39: str = Field(None, alias="39", max_length=2, description="VIP Indicator")
+
+    _nk_1_val = validator("nk_1_1", allow_reuse=True)(si_validator)
